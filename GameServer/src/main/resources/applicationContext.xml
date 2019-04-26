@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/context
+       http://www.springframework.org/schema/context/spring-context.xsd
+       http://www.springframework.org/schema/tx
+       http://www.springframework.org/schema/tx/spring-tx.xsd">
+
+    <context:property-placeholder location="jdbc.properties"/>
+    <context:component-scan base-package="com.game" annotation-config="true"/>
+
+    <bean id="dataSource" class="org.apache.commons.dbcp2.BasicDataSource" destroy-method="close">
+        <property name="driverClassName" value="${jdbc.driverClassName}"></property>
+        <property name="url" value="${jdbc.url}"></property>
+        <property name="username" value="${jdbc.username}"></property>
+        <property name="password" value="${jdbc.password}"></property>
+        <property name="initialSize" value="10"></property>
+        <property name="maxIdle" value="10"></property>
+        <property name="minIdle" value="1"></property>
+    </bean>
+
+    <bean id="sessionFactory" class="org.springframework.orm.hibernate4.LocalSessionFactoryBean">
+        <property name="dataSource" ref="dataSource"/>
+
+        <property name="mappingResources">
+            <list>
+                <value>hibernateMapping/MapEnt.hbm.xml</value>
+                <value>hibernateMapping/EntityEnt.hbm.xml</value>
+                <value>hibernateMapping/MapInfoEnt.hbm.xml</value>
+            </list>
+        </property>
+
+       <!-- <property name="mappingResources">
+            <value>hibernateMapping/MapEnt.hbm.xml</value>
+        </property>-->
+
+        <!--<property name="mappingDirectoryLocations">
+            <list>
+                <value>classpath*:/hibernateMapping</value>
+            </list>
+        </property>-->
+        <!--<property name="configLocations" value="classpath:/hibernate.cfg.xml"/>-->
+        <property name="packagesToScan" value="com.game"/>
+        <property name="hibernateProperties">
+            <props>
+                <prop key="current_session_context_class">thread</prop>
+                <prop key="hibernate.dialect">${hibernate.dialect}</prop>
+                <prop key="hibernate.cache.use_second_level_cache">false</prop>
+                <prop key="hbm2ddl.auto">update</prop>
+                <prop key="show_sql">false</prop>
+            </props>
+        </property>
+    </bean>
+
+    <tx:annotation-driven transaction-manager="transactionManager"/>
+
+    <bean id="transactionManager"
+        class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+        <!-- 使用set方法注入数据源 -->
+        <property name="dataSource" ref="dataSource"></property>
+    </bean>
+</beans>

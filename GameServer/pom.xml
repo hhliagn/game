@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">  
+  <modelVersion>4.0.0</modelVersion>  
+  <groupId>com.lhh</groupId>  
+  <artifactId>GameServer</artifactId>  
+  <version>1.0-SNAPSHOT</version>  
+  <packaging>war</packaging>
+  <dependencies> 
+    <dependency> 
+      <groupId>junit</groupId>  
+      <artifactId>junit</artifactId>  
+      <version>4.12</version>  
+      <scope>test</scope> 
+    </dependency>  
+    <!-- https://mvnrepository.com/artifact/org.springframework/spring-context -->  
+    <dependency> 
+      <groupId>org.springframework</groupId>  
+      <artifactId>spring-context</artifactId>  
+      <version>5.1.6.RELEASE</version> 
+    </dependency>  
+    <!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-core -->  
+    <!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-core -->  
+    <dependency> 
+      <groupId>org.hibernate</groupId>  
+      <artifactId>hibernate-core</artifactId>  
+      <version>4.3.11.Final</version> 
+    </dependency>  
+    <!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-annotations -->  
+    <dependency> 
+      <groupId>org.hibernate</groupId>  
+      <artifactId>hibernate-annotations</artifactId>  
+      <version>3.5.6-Final</version> 
+    </dependency>  
+    <!-- https://mvnrepository.com/artifact/org.apache.commons/commons-dbcp2 -->  
+    <dependency> 
+      <groupId>org.apache.commons</groupId>  
+      <artifactId>commons-dbcp2</artifactId>  
+      <version>2.6.0</version> 
+    </dependency>  
+    <!-- https://mvnrepository.com/artifact/org.springframework/spring-orm -->  
+    <dependency> 
+      <groupId>org.springframework</groupId>  
+      <artifactId>spring-orm</artifactId>  
+      <version>4.3.9.RELEASE</version> 
+    </dependency>  
+    <!-- https://mvnrepository.com/artifact/org.slf4j/slf4j-log4j12 -->  
+    <!-- https://mvnrepository.com/artifact/org.slf4j/slf4j-log4j12 -->  
+    <!-- https://mvnrepository.com/artifact/org.slf4j/slf4j-log4j12 -->  
+    <dependency> 
+      <groupId>org.slf4j</groupId>  
+      <artifactId>slf4j-log4j12</artifactId>  
+      <version>1.7.26</version> 
+    </dependency>  
+    <!-- https://mvnrepository.com/artifact/org.slf4j/slf4j-api -->  
+    <dependency> 
+      <groupId>org.slf4j</groupId>  
+      <artifactId>slf4j-api</artifactId>  
+      <version>1.6.6</version> 
+    </dependency>  
+    <dependency> 
+      <groupId>org.junit.jupiter</groupId>  
+      <artifactId>junit-jupiter-api</artifactId>  
+      <version>RELEASE</version>  
+      <scope>compile</scope> 
+    </dependency>  
+    <!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->  
+    <dependency> 
+      <groupId>mysql</groupId>  
+      <artifactId>mysql-connector-java</artifactId>  
+      <version>5.1.43</version> 
+    </dependency>
+
+    <!-- https://mvnrepository.com/artifact/org.apache.mina/mina-core -->
+    <dependency>
+      <groupId>org.apache.mina</groupId>
+      <artifactId>mina-core</artifactId>
+      <version>3.0.0-M2</version>
+    </dependency>
+
+    <!-- https://mvnrepository.com/artifact/io.netty/netty-all -->
+    <dependency>
+      <groupId>io.netty</groupId>
+      <artifactId>netty-all</artifactId>
+      <version>4.1.35.Final</version>
+    </dependency>
+  </dependencies>
+
+  <build>
+    <outputDirectory>target/classes</outputDirectory>
+  </build>
+</project>
