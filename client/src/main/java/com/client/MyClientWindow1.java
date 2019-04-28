@@ -1,27 +1,26 @@
 package com.client;
 
+import com.client.nettyClient.NettyClient;
+
 import javax.swing.*;
 import javax.swing.border.EmptyBorder;
-import java.awt.*;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.io.*;
-import java.net.Socket;
 
-//Socket
-public class MyClientWindow extends JFrame {
-
+//NettySocket
+public class MyClientWindow1 extends JFrame {
     private static final long serialVersionUID = 1L;
     private JPanel contentPane;
-    private JTextArea txt;
+    private static JTextArea txt;
     private JTextField txtip;
     private JTextField txtSend;
 
-    private Socket socket;
-    private BufferedReader bReader;
-    private PrintWriter pWriter;
+    private NettyClient nettyClient;
+    /*private BufferedReader bReader;
+    private PrintWriter pWriter;*/
 
-    public MyClientWindow() throws IOException {
+    public MyClientWindow1() throws IOException {
         setAlwaysOnTop(true);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setBounds(100, 100, 450, 300);
@@ -42,10 +41,11 @@ public class MyClientWindow extends JFrame {
             public void mouseClicked(MouseEvent e) {
                 String IP = txtip.getText();
                 try{
-                    socket = new Socket(IP, 23456);
+                    nettyClient = new NettyClient();
+                    //socket = new Socket(IP, 23456);
                     // 输出流
-                    pWriter = new PrintWriter(new OutputStreamWriter(socket.getOutputStream()));
-                    bReader = new BufferedReader(new InputStreamReader(socket.getInputStream()));
+                    //pWriter = new PrintWriter(new OutputStreamWriter(socket.getOutputStream()));
+                    //bReader = new BufferedReader(new InputStreamReader(socket.getInputStream()));
                     // 输入流
                     /*String line = null;
                     // 如果读取数据为空
@@ -73,19 +73,14 @@ public class MyClientWindow extends JFrame {
             public void mouseClicked(MouseEvent e) {
                 try{
                     String sendMsg = txtSend.getText();
-                    if (pWriter != null) {
-                        pWriter.write(sendMsg + "\n");
-                        pWriter.flush();
-                    } else {
-                        appendText("当前链接已经中断...");
-                    }
+                    nettyClient.send(sendMsg);
                     appendText("我说: " + sendMsg);
                     txtSend.setText("");
 
-                    String line = null;
+                    /*String line = null;
                     while ((line = bReader.readLine())!=null){
                         appendText(line);
-                    }
+                    }*/
                 }catch (Exception e2){
                     e2.printStackTrace();
                 }
@@ -125,14 +120,7 @@ public class MyClientWindow extends JFrame {
     }
 
     /* 客户端发送的内容添加到中间的txt控件中 */
-    public void appendText(String in) {
+    public static void appendText(String in) {
         txt.append("\n" + in);
-    }
-
-    public void recieve() throws IOException {
-        String line = null;
-        if ((line = bReader.readLine()) != null) {
-            appendText(line);
-        }
     }
 }

@@ -4,10 +4,9 @@ import java.io.*;
 import java.net.ServerSocket;
 import java.net.Socket;
 
-public class testSocket {
+public class SocketTest {
 
     public static void main(String[] args) throws IOException {
-
         System.out.println("创建socket...");
         ServerSocket serverSocket = new ServerSocket(23456);
         Socket socket = serverSocket.accept();
