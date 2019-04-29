@@ -9,7 +9,7 @@ public class MapInfo {
     private int curMapId;
     private int lastMapId;
 
-    private MapInfoEnt mapInfoEnt;
+    private MapInfoEnt mapInfoEnt = new MapInfoEnt();
 
     public static MapInfo valueOf(MapInfoEnt mapInfoEnt){
 
@@ -37,6 +37,7 @@ public class MapInfo {
 
     public void setAccountId(String accountId) {
         this.accountId = accountId;
+        this.mapInfoEnt.setAccountId(accountId);
     }
 
     public int getCurMapId() {

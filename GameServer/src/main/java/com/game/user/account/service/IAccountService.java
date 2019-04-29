@@ -12,5 +12,7 @@ public interface IAccountService {
 
     Account getAccount(String accountId);
 
-    void createAccount(String accountId,String nickName);
+    void createAccount(String accountId,String password);
+
+    Account getLoginAccount(String accountId, String password);
 }

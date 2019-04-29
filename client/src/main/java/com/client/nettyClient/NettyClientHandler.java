@@ -21,9 +21,13 @@ public class NettyClientHandler extends SimpleChannelInboundHandler<String> {
 
     @Override
     protected void channelRead0(ChannelHandlerContext ctx, String msg) throws Exception {
-        frame.appendText(msg);
-        //Message.revMsg = msg;
-        System.out.println("客户端接受的消息: " + msg);
+        if (msg.equals("clear")){
+            frame.clear();
+        }else {
+            frame.appendText(msg);
+            //Message.revMsg = msg;
+            System.out.println("客户端接受的消息: " + msg);
+        }
     }
 
     //

@@ -6,6 +6,8 @@ import com.game.role.player.dao.PlayerDao;
 import com.game.role.player.entity.PlayerEnt;
 import com.game.role.player.model.Player;
 import com.game.user.account.model.Account;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import java.util.List;
@@ -14,6 +16,8 @@ import java.util.concurrent.CopyOnWriteArrayList;
 
 @Component
 public class PlayerService implements IPlayerService{
+
+    private static final Logger logger = LoggerFactory.getLogger("player");
     @Autowired
     private PlayerDao playerDao;
 
@@ -28,26 +32,55 @@ public class PlayerService implements IPlayerService{
     public Player createPlayer(String accountId) {
         long id = SpringContext.getIdentifyService()
                 .getNextIdentify(IdentifyService.IdentifyType.PLAYER);
-        Player player = playerDao.createPlayer(id, accountId);
-        //playerDao.createPlayer(id, accountId);
-        //updateAccountInfo(player);
-        return player;
+        try {
+            Player player = playerDao.createPlayer(id, accountId);
+            //playerDao.createPlayer(id, accountId);
+            //updateAccountInfo(player);
+            addPlayer(player);
+            return player;
+        } catch (Exception e) {
+            logger.warn("创建玩家保存到数据库出错");
+            e.printStackTrace();
+            throw new RuntimeException("创建玩家保存到数据库出错");
+        }
     }
 
     private void updateAccountInfo(Player player) {
-        Account account = SpringContext.getAccountService().getAccount(player.getAccountId());
-        account.setRecentPlayerId(player.getId());
+        try {
+            Account account = SpringContext.getAccountService().getAccount(player.getAccountId());
+            if (account == null){
+                logger.warn("玩家对应的账户不存在");
+            }
+            account.setRecentPlayerId(player.getId());
+        } catch (Exception e) {
+            logger.warn("更新账户最近玩家id出错");
+            e.printStackTrace();
+            throw new RuntimeException("更新账户最近玩家id出错");
+        }
     }
 
     public void loadAllPlayerInfo(){
-        List<PlayerEnt> playerEntList = playerDao.findAll();
-        for (PlayerEnt playerEnt : playerEntList) {
-            Player player = Player.valueOf(playerEnt);
-            addPlayer(player);
+        try {
+            List<PlayerEnt> playerEntList = playerDao.findAll();
+            if (playerEntList == null || playerEntList.size() == 0){
+                logger.warn("玩家数据表数据为空");
+            }
+            for (PlayerEnt playerEnt : playerEntList) {
+                Player player = Player.valueOf(playerEnt);
+                addPlayer(player);
+            }
+        } catch (Exception e) {
+            logger.warn("加载玩家数据出错");
+            e.printStackTrace();
+            throw new RuntimeException("加载玩家数据出错");
         }
     }
 
     private void addPlayer(Player player) {
+        if (getPlayer(player.getId()) != null){
+            logger.warn("id对应的玩家已存在");
+            return;
+        }
         id2Player.put(player.getId(),player);
         List<Player> basePlayers = getOrCreateBasePlayers(player.getAccountId());
         basePlayers.add(player);
@@ -85,7 +118,16 @@ public class PlayerService implements IPlayerService{
 
     @Override
     public Player getRecentPlayer(Long recentPlayerId) {
-        Player recentPlayer = playerDao.findOne(recentPlayerId);
-        return recentPlayer;
+        try {
+            Player recentPlayer = playerDao.findOne(recentPlayerId);
+            if (recentPlayer == null){
+                logger.warn("最近玩家为null");
+            }
+            return recentPlayer;
+        } catch (Exception e) {
+            logger.info("获取最近玩家出错");
+            e.printStackTrace();
+            throw new RuntimeException("获取最近玩家出错");
+        }
     }
 }

@@ -2,6 +2,8 @@ package com.game.user.account.model;
 
 import com.game.user.account.entity.AccountEnt;
 
+import javax.persistence.Transient;
+import javax.transaction.Transactional;
 import java.util.Date;
 
 public class Account {
@@ -11,8 +13,9 @@ public class Account {
     private Date LastLogin;
     private Date LastLogout;
     private long recentPlayerId;
-
-    private AccountEnt accountEnt;
+    private Date nowLogin;
+    private Date nowLogout;
+    private AccountEnt accountEnt = new AccountEnt();
 
     public static Account valueOf(AccountEnt accountEnt){
         Account account = new Account();
@@ -21,6 +24,8 @@ public class Account {
         account.LastLogin = accountEnt.getLastLogin();
         account.LastLogout = accountEnt.getLastLogout();
         account.recentPlayerId = accountEnt.getRecentPlayerId();
+        account.nowLogin = accountEnt.getNowLogin();
+        account.nowLogout = accountEnt.getNowLogout();
         account.accountEnt = accountEnt;
         return account;
     }
@@ -83,5 +88,23 @@ public class Account {
     public void setRecentPlayerId(long recentPlayerId) {
         this.recentPlayerId = recentPlayerId;
         this.accountEnt.setRecentPlayerId(recentPlayerId);
+    }
+
+    public Date getNowLogin() {
+        return nowLogin;
+    }
+
+    public void setNowLogin(Date nowLogin) {
+        this.nowLogin = nowLogin;
+        this.accountEnt.setNowLogin(nowLogin);
+    }
+
+    public Date getNowLogout() {
+        return nowLogout;
+    }
+
+    public void setNowLogout(Date nowLogout) {
+        this.nowLogout = nowLogout;
+        this.accountEnt.setNowLogout(nowLogout);
     }
 }

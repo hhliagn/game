@@ -8,7 +8,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import java.util.concurrent.ConcurrentHashMap;
-import java.util.concurrent.atomic.AtomicLong;
 
 @Component
 public class IdentifyService {
@@ -16,7 +15,8 @@ public class IdentifyService {
     private static Logger logger = LoggerFactory.getLogger("ON-OFF");
 
     public enum IdentifyType {
-        PLAYER();
+        PLAYER(),
+        ENTITY(),
     }
 
     @Autowired
@@ -30,11 +30,13 @@ public class IdentifyService {
             if (identifyEnt == null){
                 identifyEnt = identifyDao.findOne(type.name());
                 if (identifyEnt == null){
+                    logger.warn("对应的id类型不存在");
                     identifyEnt = new IdentifyEnt();
                     identifyEnt.setId(type.name());
                 }
                 IdentifyEnt oldIdentifyEnt = name2Identify.putIfAbsent(type.name(), identifyEnt);
                 if (oldIdentifyEnt != null){
+                    logger.warn("map中已存在该类型id");
                     identifyEnt = oldIdentifyEnt;
                 }
             }
@@ -43,6 +45,7 @@ public class IdentifyService {
             Long now = identifyEnt.getValue();
             if (old != now) {
                 identifyDao.save(identifyEnt);
+                logger.info("保存id数据到数据库");
             }
             return result;
         }catch (Exception e){

@@ -11,23 +11,20 @@ import java.util.Date;
 @Component
 public class LogoutService implements ILogoutService{
 
-    private static Logger logger = LoggerFactory.getLogger("ON-OFF");
+    private static Logger logger = LoggerFactory.getLogger("logout");
 
     @Override
-    public void logout(String accountId) {
+    public void logout() {
         try {
-            IAccountService accountService = SpringContext.getAccountService();
-            Account account = accountService.getAccount(accountId);
+            Account account = SpringContext.getGlobalService().getCurLoginAccount();
             if (account == null){
-                logger.info("登出账户不存在");
-                throw new RuntimeException("登出账户不存在");
+                logger.warn("登出账户不存在");
             }
-            account.setLastLogout(new Date());
-            accountService.saveAccount(account);
-            logger.info("登出成功！");
-            throw new RuntimeException("登出成功！");
+            account.setNowLogout(new Date());
+            SpringContext.getAccountService().saveAccount(account);
+            SpringContext.getGlobalService().setCurLoginAccount(null);
         } catch (Exception e) {
-            logger.info("登出失败！");
+            logger.warn("登出失败！");
             throw new RuntimeException("登出失败！");
         }
     }

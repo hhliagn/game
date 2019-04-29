@@ -19,3 +19,1218 @@ SQL Warning Code: 1265, SQLState: 01000
 Data truncated for column 'LastLogin' at row 1
 登录成功
 
+Autowired annotation is not supported on static fields: public static org.springframework.context.ApplicationContext com.game.SpringContext.applicationContext
+HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+HHH000412: Hibernate Core {4.3.11.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+HHH000399: Using default transaction strategy (direct JDBC transactions)
+HHH000397: Using ASTQueryTranslatorFactory
+启动游戏
+初始化账号数据。。。
+添加id-账户成功
+添加昵称-账户成功
+添加id-账户成功
+添加昵称-账户成功
+添加id-账户成功
+添加昵称-账户成功
+添加id-账户成功
+昵称对应的账户已存在
+添加id-账户成功
+昵称对应的账户已存在
+添加id-账户成功
+昵称对应的账户已存在
+添加id-账户成功
+添加昵称-账户成功
+添加id-账户成功
+昵称对应的账户已存在
+添加id-账户成功
+添加昵称-账户成功
+添加id-账户成功
+昵称对应的账户已存在
+添加id-账户成功
+昵称对应的账户已存在
+添加id-账户成功
+昵称对应的账户已存在
+添加id-账户成功
+昵称对应的账户已存在
+添加id-账户成功
+昵称对应的账户已存在
+添加id-账户成功
+昵称对应的账户已存在
+添加id-账户成功
+添加昵称-账户成功
+添加id-账户成功
+昵称对应的账户已存在
+添加id-账户成功
+昵称对应的账户已存在
+添加id-账户成功
+昵称对应的账户已存在
+添加id-账户成功
+昵称对应的账户已存在
+添加id-账户成功
+昵称对应的账户已存在
+添加id-账户成功
+添加昵称-账户成功
+初始化地图数据。。。
+[DEPRECATION] Encountered positional parameter near line 1, column 59 in HQL: [select e from com.game.pojo.entity.EntityEnt e where id = ?].  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+id对应的账户不存在
+登录出错
+id对应的账户不存在
+Autowired annotation is not supported on static fields: public static org.springframework.context.ApplicationContext com.game.SpringContext.applicationContext
+HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+HHH000412: Hibernate Core {4.3.11.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+HHH000399: Using default transaction strategy (direct JDBC transactions)
+HHH000397: Using ASTQueryTranslatorFactory
+启动游戏
+初始化账号数据。。。
+添加id-账户成功
+添加昵称-账户成功
+添加id-账户成功
+添加昵称-账户成功
+添加id-账户成功
+添加昵称-账户成功
+添加id-账户成功
+昵称对应的账户已存在
+添加id-账户成功
+昵称对应的账户已存在
+添加id-账户成功
+昵称对应的账户已存在
+添加id-账户成功
+添加昵称-账户成功
+添加id-账户成功
+昵称对应的账户已存在
+添加id-账户成功
+添加昵称-账户成功
+添加id-账户成功
+昵称对应的账户已存在
+添加id-账户成功
+昵称对应的账户已存在
+添加id-账户成功
+昵称对应的账户已存在
+添加id-账户成功
+昵称对应的账户已存在
+添加id-账户成功
+昵称对应的账户已存在
+添加id-账户成功
+昵称对应的账户已存在
+添加id-账户成功
+添加昵称-账户成功
+添加id-账户成功
+昵称对应的账户已存在
+添加id-账户成功
+昵称对应的账户已存在
+添加id-账户成功
+昵称对应的账户已存在
+添加id-账户成功
+昵称对应的账户已存在
+添加id-账户成功
+昵称对应的账户已存在
+添加id-账户成功
+添加昵称-账户成功
+初始化地图数据。。。
+[DEPRECATION] Encountered positional parameter near line 1, column 59 in HQL: [select e from com.game.pojo.entity.EntityEnt e where id = ?].  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+用户登录
+账号不存在，请先创建
+[DEPRECATION] Encountered positional parameter near line 1, column 64 in HQL: [select i from com.game.core.id.entity.IdentifyEnt i where id = ?].  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+保存id数据到数据库
+SQL Warning Code: 1265, SQLState: 01000
+Data truncated for column 'LastLogin' at row 1
+SQL Warning Code: 1265, SQLState: 01000
+Data truncated for column 'LasrLogout' at row 1
+添加id-账户成功
+添加昵称-账户成功
+Autowired annotation is not supported on static fields: public static org.springframework.context.ApplicationContext com.game.SpringContext.applicationContext
+HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+HHH000412: Hibernate Core {4.3.11.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+HHH000399: Using default transaction strategy (direct JDBC transactions)
+HHH000397: Using ASTQueryTranslatorFactory
+启动游戏
+初始化账号数据。。。
+添加id-账户成功
+添加昵称-账户成功
+添加id-账户成功
+添加昵称-账户成功
+添加id-账户成功
+添加昵称-账户成功
+添加id-账户成功
+昵称对应的账户已存在
+添加id-账户成功
+昵称对应的账户已存在
+添加id-账户成功
+昵称对应的账户已存在
+添加id-账户成功
+添加昵称-账户成功
+添加id-账户成功
+昵称对应的账户已存在
+添加id-账户成功
+添加昵称-账户成功
+添加id-账户成功
+昵称对应的账户已存在
+添加id-账户成功
+昵称对应的账户已存在
+添加id-账户成功
+昵称对应的账户已存在
+添加id-账户成功
+昵称对应的账户已存在
+添加id-账户成功
+昵称对应的账户已存在
+添加id-账户成功
+昵称对应的账户已存在
+添加id-账户成功
+添加昵称-账户成功
+添加id-账户成功
+昵称对应的账户已存在
+添加id-账户成功
+昵称对应的账户已存在
+添加id-账户成功
+昵称对应的账户已存在
+添加id-账户成功
+昵称对应的账户已存在
+添加id-账户成功
+昵称对应的账户已存在
+添加id-账户成功
+添加昵称-账户成功
+添加id-账户成功
+添加昵称-账户成功
+初始化地图数据。。。
+[DEPRECATION] Encountered positional parameter near line 1, column 59 in HQL: [select e from com.game.pojo.entity.EntityEnt e where id = ?].  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+[DEPRECATION] Encountered positional parameter near line 1, column 64 in HQL: [select i from com.game.core.id.entity.IdentifyEnt i where id = ?].  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+保存id数据到数据库
+SQL Warning Code: 1265, SQLState: 01000
+Data truncated for column 'LastLogin' at row 1
+SQL Warning Code: 1265, SQLState: 01000
+Data truncated for column 'LasrLogout' at row 1
+添加id-账户成功
+添加昵称-账户成功
+保存id数据到数据库
+SQL Warning Code: 1265, SQLState: 01000
+Data truncated for column 'LastLogin' at row 1
+SQL Warning Code: 1265, SQLState: 01000
+Data truncated for column 'LasrLogout' at row 1
+添加id-账户成功
+添加昵称-账户成功
+Autowired annotation is not supported on static fields: public static org.springframework.context.ApplicationContext com.game.SpringContext.applicationContext
+HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+HHH000412: Hibernate Core {4.3.11.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+HHH000399: Using default transaction strategy (direct JDBC transactions)
+HHH000397: Using ASTQueryTranslatorFactory
+启动游戏
+初始化账号数据。。。
+添加id-账户成功
+添加昵称-账户成功
+添加id-账户成功
+添加昵称-账户成功
+添加id-账户成功
+添加昵称-账户成功
+添加id-账户成功
+添加昵称-账户成功
+添加id-账户成功
+添加昵称-账户成功
+添加id-账户成功
+昵称对应的账户已存在
+添加id-账户成功
+昵称对应的账户已存在
+添加id-账户成功
+昵称对应的账户已存在
+添加id-账户成功
+添加昵称-账户成功
+添加id-账户成功
+昵称对应的账户已存在
+添加id-账户成功
+添加昵称-账户成功
+添加id-账户成功
+昵称对应的账户已存在
+添加id-账户成功
+昵称对应的账户已存在
+添加id-账户成功
+昵称对应的账户已存在
+添加id-账户成功
+昵称对应的账户已存在
+添加id-账户成功
+昵称对应的账户已存在
+添加id-账户成功
+昵称对应的账户已存在
+添加id-账户成功
+添加昵称-账户成功
+添加id-账户成功
+昵称对应的账户已存在
+添加id-账户成功
+昵称对应的账户已存在
+添加id-账户成功
+昵称对应的账户已存在
+添加id-账户成功
+昵称对应的账户已存在
+添加id-账户成功
+昵称对应的账户已存在
+添加id-账户成功
+添加昵称-账户成功
+添加id-账户成功
+添加昵称-账户成功
+初始化地图数据。。。
+[DEPRECATION] Encountered positional parameter near line 1, column 59 in HQL: [select e from com.game.pojo.entity.EntityEnt e where id = ?].  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+账户id已存在！
+[DEPRECATION] Encountered positional parameter near line 1, column 64 in HQL: [select i from com.game.core.id.entity.IdentifyEnt i where id = ?].  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+保存id数据到数据库
+SQL Warning Code: 1265, SQLState: 01000
+Data truncated for column 'LastLogin' at row 1
+SQL Warning Code: 1265, SQLState: 01000
+Data truncated for column 'LasrLogout' at row 1
+添加id-账户成功
+添加昵称-账户成功
+SQL Error: 1364, SQLState: HY000
+Field 'id' doesn't have a default value
+SQL Warning Code: 1364, SQLState: HY000
+Field 'id' doesn't have a default value
+保存用户地图信息出错
+Autowired annotation is not supported on static fields: public static org.springframework.context.ApplicationContext com.game.SpringContext.applicationContext
+HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+HHH000412: Hibernate Core {4.3.11.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+HHH000399: Using default transaction strategy (direct JDBC transactions)
+HHH000397: Using ASTQueryTranslatorFactory
+启动游戏
+初始化账号数据。。。
+添加id-账户成功
+添加昵称-账户成功
+添加id-账户成功
+添加昵称-账户成功
+添加id-账户成功
+添加昵称-账户成功
+添加id-账户成功
+添加昵称-账户成功
+添加id-账户成功
+添加昵称-账户成功
+添加id-账户成功
+添加昵称-账户成功
+添加id-账户成功
+昵称对应的账户已存在
+添加id-账户成功
+昵称对应的账户已存在
+添加id-账户成功
+昵称对应的账户已存在
+添加id-账户成功
+添加昵称-账户成功
+添加id-账户成功
+昵称对应的账户已存在
+添加id-账户成功
+添加昵称-账户成功
+添加id-账户成功
+昵称对应的账户已存在
+添加id-账户成功
+昵称对应的账户已存在
+添加id-账户成功
+昵称对应的账户已存在
+添加id-账户成功
+昵称对应的账户已存在
+添加id-账户成功
+昵称对应的账户已存在
+添加id-账户成功
+昵称对应的账户已存在
+添加id-账户成功
+添加昵称-账户成功
+添加id-账户成功
+昵称对应的账户已存在
+添加id-账户成功
+昵称对应的账户已存在
+添加id-账户成功
+昵称对应的账户已存在
+添加id-账户成功
+昵称对应的账户已存在
+添加id-账户成功
+昵称对应的账户已存在
+添加id-账户成功
+添加昵称-账户成功
+添加id-账户成功
+添加昵称-账户成功
+初始化地图数据。。。
+[DEPRECATION] Encountered positional parameter near line 1, column 59 in HQL: [select e from com.game.pojo.entity.EntityEnt e where id = ?].  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+[DEPRECATION] Encountered positional parameter near line 1, column 64 in HQL: [select i from com.game.core.id.entity.IdentifyEnt i where id = ?].  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+保存id数据到数据库
+SQL Warning Code: 1265, SQLState: 01000
+Data truncated for column 'LastLogin' at row 1
+SQL Warning Code: 1265, SQLState: 01000
+Data truncated for column 'LasrLogout' at row 1
+添加id-账户成功
+添加昵称-账户成功
+新增新用户地图数据
+Autowired annotation is not supported on static fields: public static org.springframework.context.ApplicationContext com.game.SpringContext.applicationContext
+HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+HHH000412: Hibernate Core {4.3.11.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+HHH000399: Using default transaction strategy (direct JDBC transactions)
+HHH000397: Using ASTQueryTranslatorFactory
+启动游戏
+初始化账号数据。。。
+添加id-账户成功
+添加昵称-账户成功
+添加id-账户成功
+添加昵称-账户成功
+添加id-账户成功
+添加昵称-账户成功
+添加id-账户成功
+添加昵称-账户成功
+添加id-账户成功
+添加昵称-账户成功
+添加id-账户成功
+添加昵称-账户成功
+添加id-账户成功
+添加昵称-账户成功
+添加id-账户成功
+昵称对应的账户已存在
+添加id-账户成功
+昵称对应的账户已存在
+添加id-账户成功
+昵称对应的账户已存在
+添加id-账户成功
+添加昵称-账户成功
+添加id-账户成功
+昵称对应的账户已存在
+添加id-账户成功
+添加昵称-账户成功
+添加id-账户成功
+昵称对应的账户已存在
+添加id-账户成功
+昵称对应的账户已存在
+添加id-账户成功
+昵称对应的账户已存在
+添加id-账户成功
+昵称对应的账户已存在
+添加id-账户成功
+昵称对应的账户已存在
+添加id-账户成功
+昵称对应的账户已存在
+添加id-账户成功
+添加昵称-账户成功
+添加id-账户成功
+昵称对应的账户已存在
+添加id-账户成功
+昵称对应的账户已存在
+添加id-账户成功
+昵称对应的账户已存在
+添加id-账户成功
+昵称对应的账户已存在
+添加id-账户成功
+昵称对应的账户已存在
+添加id-账户成功
+添加昵称-账户成功
+添加id-账户成功
+添加昵称-账户成功
+初始化地图数据。。。
+[DEPRECATION] Encountered positional parameter near line 1, column 59 in HQL: [select e from com.game.pojo.entity.EntityEnt e where id = ?].  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+Autowired annotation is not supported on static fields: public static org.springframework.context.ApplicationContext com.game.SpringContext.applicationContext
+HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+HHH000412: Hibernate Core {4.3.11.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+HHH000399: Using default transaction strategy (direct JDBC transactions)
+HHH000397: Using ASTQueryTranslatorFactory
+启动游戏
+初始化账号数据。。。
+添加id-账户成功
+添加昵称-账户成功
+添加id-账户成功
+添加昵称-账户成功
+添加id-账户成功
+添加昵称-账户成功
+添加id-账户成功
+添加昵称-账户成功
+添加id-账户成功
+添加昵称-账户成功
+添加id-账户成功
+添加昵称-账户成功
+添加id-账户成功
+添加昵称-账户成功
+添加id-账户成功
+昵称对应的账户已存在
+添加id-账户成功
+昵称对应的账户已存在
+添加id-账户成功
+昵称对应的账户已存在
+添加id-账户成功
+添加昵称-账户成功
+添加id-账户成功
+昵称对应的账户已存在
+添加id-账户成功
+添加昵称-账户成功
+添加id-账户成功
+昵称对应的账户已存在
+添加id-账户成功
+昵称对应的账户已存在
+添加id-账户成功
+昵称对应的账户已存在
+添加id-账户成功
+昵称对应的账户已存在
+添加id-账户成功
+昵称对应的账户已存在
+添加id-账户成功
+昵称对应的账户已存在
+添加id-账户成功
+添加昵称-账户成功
+添加id-账户成功
+昵称对应的账户已存在
+添加id-账户成功
+昵称对应的账户已存在
+添加id-账户成功
+昵称对应的账户已存在
+添加id-账户成功
+昵称对应的账户已存在
+添加id-账户成功
+昵称对应的账户已存在
+添加id-账户成功
+添加昵称-账户成功
+添加id-账户成功
+添加昵称-账户成功
+初始化地图数据。。。
+[DEPRECATION] Encountered positional parameter near line 1, column 59 in HQL: [select e from com.game.pojo.entity.EntityEnt e where id = ?].  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+[DEPRECATION] Encountered positional parameter near line 1, column 64 in HQL: [select i from com.game.core.id.entity.IdentifyEnt i where id = ?].  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+保存id数据到数据库
+SQL Warning Code: 1265, SQLState: 01000
+Data truncated for column 'LastLogin' at row 1
+SQL Warning Code: 1265, SQLState: 01000
+Data truncated for column 'LasrLogout' at row 1
+添加id-账户成功
+添加昵称-账户成功
+新增新用户地图数据
+[DEPRECATION] Encountered positional parameter near line 1, column 75 in HQL: [select m from com.game.user.mapInfo.entity.MapInfoEnt m where accountId = ?].  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+获取用户地图信息出错
+离开旧地图出错
+获取用户地图信息出错
+离开旧地图出错
+Autowired annotation is not supported on static fields: public static org.springframework.context.ApplicationContext com.game.SpringContext.applicationContext
+HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+HHH000412: Hibernate Core {4.3.11.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+HHH000399: Using default transaction strategy (direct JDBC transactions)
+HHH000397: Using ASTQueryTranslatorFactory
+启动游戏
+初始化账号数据。。。
+添加id-账户成功
+添加昵称-账户成功
+添加id-账户成功
+添加昵称-账户成功
+添加id-账户成功
+添加昵称-账户成功
+添加id-账户成功
+添加昵称-账户成功
+添加id-账户成功
+添加昵称-账户成功
+添加id-账户成功
+添加昵称-账户成功
+添加id-账户成功
+添加昵称-账户成功
+添加id-账户成功
+添加昵称-账户成功
+添加id-账户成功
+昵称对应的账户已存在
+添加id-账户成功
+昵称对应的账户已存在
+添加id-账户成功
+昵称对应的账户已存在
+添加id-账户成功
+添加昵称-账户成功
+添加id-账户成功
+昵称对应的账户已存在
+添加id-账户成功
+添加昵称-账户成功
+添加id-账户成功
+昵称对应的账户已存在
+添加id-账户成功
+昵称对应的账户已存在
+添加id-账户成功
+昵称对应的账户已存在
+添加id-账户成功
+昵称对应的账户已存在
+添加id-账户成功
+昵称对应的账户已存在
+添加id-账户成功
+昵称对应的账户已存在
+添加id-账户成功
+添加昵称-账户成功
+添加id-账户成功
+昵称对应的账户已存在
+添加id-账户成功
+昵称对应的账户已存在
+添加id-账户成功
+昵称对应的账户已存在
+添加id-账户成功
+昵称对应的账户已存在
+添加id-账户成功
+昵称对应的账户已存在
+添加id-账户成功
+添加昵称-账户成功
+添加id-账户成功
+添加昵称-账户成功
+初始化地图数据。。。
+[DEPRECATION] Encountered positional parameter near line 1, column 59 in HQL: [select e from com.game.pojo.entity.EntityEnt e where id = ?].  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+用户登录
+SQL Warning Code: 1265, SQLState: 01000
+Data truncated for column 'LastLogin' at row 1
+[DEPRECATION] Encountered positional parameter near line 1, column 75 in HQL: [select m from com.game.user.mapInfo.entity.MapInfoEnt m where accountId = ?].  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+获取用户地图信息出错
+进入世界出错
+获取用户地图信息出错
+离开旧地图出错
+获取用户地图信息出错
+离开旧地图出错
+SQL Warning Code: 1265, SQLState: 01000
+Data truncated for column 'LastLogin' at row 1
+SQL Warning Code: 1265, SQLState: 01000
+Data truncated for column 'LasrLogout' at row 1
+用户登录
+SQL Warning Code: 1265, SQLState: 01000
+Data truncated for column 'LastLogin' at row 1
+Autowired annotation is not supported on static fields: public static org.springframework.context.ApplicationContext com.game.SpringContext.applicationContext
+HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+HHH000412: Hibernate Core {4.3.11.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+HHH000399: Using default transaction strategy (direct JDBC transactions)
+HHH000397: Using ASTQueryTranslatorFactory
+启动游戏
+初始化账号数据。。。
+添加id-账户成功
+添加昵称-账户成功
+添加id-账户成功
+添加昵称-账户成功
+添加id-账户成功
+添加昵称-账户成功
+添加id-账户成功
+添加昵称-账户成功
+添加id-账户成功
+添加昵称-账户成功
+添加id-账户成功
+添加昵称-账户成功
+添加id-账户成功
+添加昵称-账户成功
+添加id-账户成功
+添加昵称-账户成功
+添加id-账户成功
+昵称对应的账户已存在
+添加id-账户成功
+昵称对应的账户已存在
+添加id-账户成功
+昵称对应的账户已存在
+添加id-账户成功
+添加昵称-账户成功
+添加id-账户成功
+昵称对应的账户已存在
+添加id-账户成功
+添加昵称-账户成功
+添加id-账户成功
+昵称对应的账户已存在
+添加id-账户成功
+昵称对应的账户已存在
+添加id-账户成功
+昵称对应的账户已存在
+添加id-账户成功
+昵称对应的账户已存在
+添加id-账户成功
+昵称对应的账户已存在
+添加id-账户成功
+昵称对应的账户已存在
+添加id-账户成功
+添加昵称-账户成功
+添加id-账户成功
+昵称对应的账户已存在
+添加id-账户成功
+昵称对应的账户已存在
+添加id-账户成功
+昵称对应的账户已存在
+添加id-账户成功
+昵称对应的账户已存在
+添加id-账户成功
+昵称对应的账户已存在
+添加id-账户成功
+添加昵称-账户成功
+添加id-账户成功
+添加昵称-账户成功
+初始化地图数据。。。
+[DEPRECATION] Encountered positional parameter near line 1, column 59 in HQL: [select e from com.game.pojo.entity.EntityEnt e where id = ?].  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+用户登录
+SQL Warning Code: 1265, SQLState: 01000
+Data truncated for column 'LastLogin' at row 1
+[DEPRECATION] Encountered positional parameter near line 1, column 75 in HQL: [select m from com.game.user.mapInfo.entity.MapInfoEnt m where accountId = ?].  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
+	at io.netty.buffer.PooledUnsafeDirectByteBuf.setBytes(PooledUnsafeDirectByteBuf.java:288)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1125)
+	at io.netty.buffer.WrappedByteBuf.writeBytes(WrappedByteBuf.java:813)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:347)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:148)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:682)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:617)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:534)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:496)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:906)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+Autowired annotation is not supported on static fields: public static org.springframework.context.ApplicationContext com.game.SpringContext.applicationContext
+HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+HHH000412: Hibernate Core {4.3.11.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+HHH000399: Using default transaction strategy (direct JDBC transactions)
+HHH000397: Using ASTQueryTranslatorFactory
+启动游戏
+初始化账号数据。。。
+添加id-账户成功
+添加昵称-账户成功
+添加id-账户成功
+添加昵称-账户成功
+添加id-账户成功
+添加昵称-账户成功
+添加id-账户成功
+添加昵称-账户成功
+添加id-账户成功
+添加昵称-账户成功
+添加id-账户成功
+添加昵称-账户成功
+添加id-账户成功
+添加昵称-账户成功
+添加id-账户成功
+添加昵称-账户成功
+添加id-账户成功
+昵称对应的账户已存在
+添加id-账户成功
+昵称对应的账户已存在
+添加id-账户成功
+昵称对应的账户已存在
+添加id-账户成功
+添加昵称-账户成功
+添加id-账户成功
+昵称对应的账户已存在
+添加id-账户成功
+添加昵称-账户成功
+添加id-账户成功
+昵称对应的账户已存在
+添加id-账户成功
+昵称对应的账户已存在
+添加id-账户成功
+昵称对应的账户已存在
+添加id-账户成功
+昵称对应的账户已存在
+添加id-账户成功
+昵称对应的账户已存在
+添加id-账户成功
+昵称对应的账户已存在
+添加id-账户成功
+添加昵称-账户成功
+添加id-账户成功
+昵称对应的账户已存在
+添加id-账户成功
+昵称对应的账户已存在
+添加id-账户成功
+昵称对应的账户已存在
+添加id-账户成功
+昵称对应的账户已存在
+添加id-账户成功
+昵称对应的账户已存在
+添加id-账户成功
+添加昵称-账户成功
+添加id-账户成功
+添加昵称-账户成功
+初始化地图数据。。。
+[DEPRECATION] Encountered positional parameter near line 1, column 59 in HQL: [select e from com.game.pojo.entity.EntityEnt e where id = ?].  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+用户登录
+SQL Warning Code: 1265, SQLState: 01000
+Data truncated for column 'LastLogin' at row 1
+[DEPRECATION] Encountered positional parameter near line 1, column 75 in HQL: [select m from com.game.user.mapInfo.entity.MapInfoEnt m where accountId = ?].  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+SQL Warning Code: 1265, SQLState: 01000
+Data truncated for column 'LastLogin' at row 1
+SQL Warning Code: 1265, SQLState: 01000
+Data truncated for column 'LastLogin' at row 1
+SQL Warning Code: 1265, SQLState: 01000
+Data truncated for column 'LasrLogout' at row 1
+用户登录
+SQL Warning Code: 1265, SQLState: 01000
+Data truncated for column 'LastLogin' at row 1
+SQL Warning Code: 1265, SQLState: 01000
+Data truncated for column 'LasrLogout' at row 1
+Autowired annotation is not supported on static fields: public static org.springframework.context.ApplicationContext com.game.SpringContext.applicationContext
+HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+HHH000412: Hibernate Core {4.3.11.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+HHH000399: Using default transaction strategy (direct JDBC transactions)
+HHH000397: Using ASTQueryTranslatorFactory
+启动游戏
+初始化账号数据。。。
+初始化地图数据。。。
+[DEPRECATION] Encountered positional parameter near line 1, column 59 in HQL: [select e from com.game.pojo.entity.EntityEnt e where id = ?].  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+用户登录
+账号不存在，请先创建
+[DEPRECATION] Encountered positional parameter near line 1, column 64 in HQL: [select i from com.game.core.id.entity.IdentifyEnt i where id = ?].  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+保存id数据到数据库
+SQL Warning Code: 1265, SQLState: 01000
+Data truncated for column 'LastLogin' at row 1
+SQL Warning Code: 1265, SQLState: 01000
+Data truncated for column 'LasrLogout' at row 1
+新增新用户地图数据
+用户登录
+SQL Warning Code: 1265, SQLState: 01000
+Data truncated for column 'LasrLogout' at row 1
+Autowired annotation is not supported on static fields: public static org.springframework.context.ApplicationContext com.game.SpringContext.applicationContext
+HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+HHH000412: Hibernate Core {4.3.11.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+HHH000399: Using default transaction strategy (direct JDBC transactions)
+HHH000397: Using ASTQueryTranslatorFactory
+启动游戏
+初始化账号数据。。。
+初始化地图数据。。。
+[DEPRECATION] Encountered positional parameter near line 1, column 59 in HQL: [select e from com.game.pojo.entity.EntityEnt e where id = ?].  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+用户登录
+账号不存在，请先创建
+[DEPRECATION] Encountered positional parameter near line 1, column 64 in HQL: [select i from com.game.core.id.entity.IdentifyEnt i where id = ?].  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+保存id数据到数据库
+SQL Warning Code: 1265, SQLState: 01000
+Data truncated for column 'nowLogin' at row 1
+新增新用户地图数据
+用户登录
+SQL Warning Code: 1265, SQLState: 01000
+Data truncated for column 'LastLogin' at row 1
+SQL Warning Code: 1265, SQLState: 01000
+Data truncated for column 'nowLogin' at row 1
+SQL Warning Code: 1265, SQLState: 01000
+Data truncated for column 'LastLogin' at row 1
+SQL Warning Code: 1265, SQLState: 01000
+Data truncated for column 'nowLogin' at row 1
+SQL Warning Code: 1265, SQLState: 01000
+Data truncated for column 'nowLogout' at row 1
+用户登录
+SQL Warning Code: 1265, SQLState: 01000
+Data truncated for column 'LastLogin' at row 1
+SQL Warning Code: 1265, SQLState: 01000
+Data truncated for column 'nowLogin' at row 1
+SQL Warning Code: 1265, SQLState: 01000
+Data truncated for column 'nowLogout' at row 1
+Autowired annotation is not supported on static fields: public static org.springframework.context.ApplicationContext com.game.SpringContext.applicationContext
+HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+HHH000412: Hibernate Core {4.3.11.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+HHH000399: Using default transaction strategy (direct JDBC transactions)
+HHH000397: Using ASTQueryTranslatorFactory
+启动游戏
+初始化账号数据。。。
+初始化地图数据。。。
+[DEPRECATION] Encountered positional parameter near line 1, column 59 in HQL: [select e from com.game.pojo.entity.EntityEnt e where id = ?].  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+[DEPRECATION] Encountered positional parameter near line 1, column 64 in HQL: [select i from com.game.core.id.entity.IdentifyEnt i where id = ?].  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+保存id数据到数据库
+SQL Warning Code: 1265, SQLState: 01000
+Data truncated for column 'nowLogin' at row 1
+新增新用户地图数据
+用户登录
+SQL Warning Code: 1265, SQLState: 01000
+Data truncated for column 'LastLogin' at row 1
+SQL Warning Code: 1265, SQLState: 01000
+Data truncated for column 'nowLogin' at row 1
+SQL Warning Code: 1265, SQLState: 01000
+Data truncated for column 'LastLogin' at row 1
+SQL Warning Code: 1265, SQLState: 01000
+Data truncated for column 'LasrLogout' at row 1
+SQL Warning Code: 1265, SQLState: 01000
+Data truncated for column 'nowLogin' at row 1
+SQL Warning Code: 1265, SQLState: 01000
+Data truncated for column 'nowLogout' at row 1
+用户登录
+SQL Warning Code: 1265, SQLState: 01000
+Data truncated for column 'LastLogin' at row 1
+SQL Warning Code: 1265, SQLState: 01000
+Data truncated for column 'LasrLogout' at row 1
+SQL Warning Code: 1265, SQLState: 01000
+Data truncated for column 'nowLogin' at row 1
+SQL Warning Code: 1265, SQLState: 01000
+Data truncated for column 'nowLogout' at row 1
+Autowired annotation is not supported on static fields: public static org.springframework.context.ApplicationContext com.game.SpringContext.applicationContext
+HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+HHH000412: Hibernate Core {4.3.11.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+HHH000399: Using default transaction strategy (direct JDBC transactions)
+HHH000397: Using ASTQueryTranslatorFactory
+启动游戏
+初始化账号数据。。。
+初始化地图数据。。。
+[DEPRECATION] Encountered positional parameter near line 1, column 59 in HQL: [select e from com.game.pojo.entity.EntityEnt e where id = ?].  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
+	at io.netty.buffer.PooledUnsafeDirectByteBuf.setBytes(PooledUnsafeDirectByteBuf.java:288)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1125)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:347)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:148)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:682)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:617)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:534)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:496)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:906)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+用户登录
+SQL Warning Code: 1265, SQLState: 01000
+Data truncated for column 'nowLogin' at row 1
+[DEPRECATION] Encountered positional parameter near line 1, column 75 in HQL: [select m from com.game.user.mapInfo.entity.MapInfoEnt m where accountId = ?].  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+SQL Warning Code: 1265, SQLState: 01000
+Data truncated for column 'LasrLogout' at row 1
+SQL Warning Code: 1265, SQLState: 01000
+Data truncated for column 'nowLogin' at row 1
+SQL Warning Code: 1265, SQLState: 01000
+Data truncated for column 'nowLogout' at row 1
+用户登录
+SQL Warning Code: 1265, SQLState: 01000
+Data truncated for column 'nowLogin' at row 1
+SQL Warning Code: 1265, SQLState: 01000
+Data truncated for column 'nowLogin' at row 1
+SQL Warning Code: 1265, SQLState: 01000
+Data truncated for column 'nowLogout' at row 1
+用户登录
+SQL Warning Code: 1265, SQLState: 01000
+Data truncated for column 'LastLogin' at row 1
+SQL Warning Code: 1265, SQLState: 01000
+Data truncated for column 'nowLogin' at row 1
+SQL Warning Code: 1265, SQLState: 01000
+Data truncated for column 'nowLogout' at row 1
+SQL Warning Code: 1265, SQLState: 01000
+Data truncated for column 'LastLogin' at row 1
+SQL Warning Code: 1265, SQLState: 01000
+Data truncated for column 'LasrLogout' at row 1
+SQL Warning Code: 1265, SQLState: 01000
+Data truncated for column 'nowLogin' at row 1
+SQL Warning Code: 1265, SQLState: 01000
+Data truncated for column 'nowLogout' at row 1
+用户登录
+SQL Warning Code: 1265, SQLState: 01000
+Data truncated for column 'LastLogin' at row 1
+SQL Warning Code: 1265, SQLState: 01000
+Data truncated for column 'LasrLogout' at row 1
+SQL Warning Code: 1265, SQLState: 01000
+Data truncated for column 'nowLogin' at row 1
+SQL Warning Code: 1265, SQLState: 01000
+Data truncated for column 'nowLogout' at row 1
+An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
+	at io.netty.buffer.PooledUnsafeDirectByteBuf.setBytes(PooledUnsafeDirectByteBuf.java:288)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1125)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:347)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:148)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:682)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:617)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:534)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:496)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:906)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+Autowired annotation is not supported on static fields: public static org.springframework.context.ApplicationContext com.game.SpringContext.applicationContext
+HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+HHH000412: Hibernate Core {4.3.11.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+HHH000399: Using default transaction strategy (direct JDBC transactions)
+HHH000397: Using ASTQueryTranslatorFactory
+启动游戏
+初始化账号数据。。。
+初始化地图数据。。。
+[DEPRECATION] Encountered positional parameter near line 1, column 59 in HQL: [select e from com.game.pojo.entity.EntityEnt e where id = ?].  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+用户登录
+SQL Warning Code: 1265, SQLState: 01000
+Data truncated for column 'nowLogin' at row 1
+[DEPRECATION] Encountered positional parameter near line 1, column 75 in HQL: [select m from com.game.user.mapInfo.entity.MapInfoEnt m where accountId = ?].  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+SQL Warning Code: 1265, SQLState: 01000
+Data truncated for column 'nowLogin' at row 1
+Autowired annotation is not supported on static fields: public static org.springframework.context.ApplicationContext com.game.SpringContext.applicationContext
+HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+HHH000412: Hibernate Core {4.3.11.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+HHH000399: Using default transaction strategy (direct JDBC transactions)
+HHH000397: Using ASTQueryTranslatorFactory
+启动游戏
+初始化账号数据。。。
+初始化地图数据。。。
+[DEPRECATION] Encountered positional parameter near line 1, column 59 in HQL: [select e from com.game.pojo.entity.EntityEnt e where id = ?].  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+用户登录
+[DEPRECATION] Encountered positional parameter near line 1, column 75 in HQL: [select m from com.game.user.mapInfo.entity.MapInfoEnt m where accountId = ?].  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+用户登录
+用户登录
+用户登录
+Autowired annotation is not supported on static fields: public static org.springframework.context.ApplicationContext com.game.SpringContext.applicationContext
+HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+HHH000412: Hibernate Core {4.3.11.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+HHH000399: Using default transaction strategy (direct JDBC transactions)
+HHH000397: Using ASTQueryTranslatorFactory
+启动游戏
+初始化账号数据。。。
+初始化地图数据。。。
+[DEPRECATION] Encountered positional parameter near line 1, column 59 in HQL: [select e from com.game.pojo.entity.EntityEnt e where id = ?].  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+用户登录
+[DEPRECATION] Encountered positional parameter near line 1, column 75 in HQL: [select m from com.game.user.mapInfo.entity.MapInfoEnt m where accountId = ?].  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+用户登录
+Autowired annotation is not supported on static fields: public static org.springframework.context.ApplicationContext com.game.SpringContext.applicationContext
+HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+HHH000412: Hibernate Core {4.3.11.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+HHH000399: Using default transaction strategy (direct JDBC transactions)
+HHH000397: Using ASTQueryTranslatorFactory
+启动游戏
+初始化账号数据。。。
+初始化地图数据。。。
+[DEPRECATION] Encountered positional parameter near line 1, column 59 in HQL: [select e from com.game.pojo.entity.EntityEnt e where id = ?].  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+Autowired annotation is not supported on static fields: public static org.springframework.context.ApplicationContext com.game.SpringContext.applicationContext
+HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+HHH000412: Hibernate Core {4.3.11.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+HHH000399: Using default transaction strategy (direct JDBC transactions)
+HHH000397: Using ASTQueryTranslatorFactory
+启动游戏
+初始化账号数据。。。
+初始化地图数据。。。
+[DEPRECATION] Encountered positional parameter near line 1, column 59 in HQL: [select e from com.game.pojo.entity.EntityEnt e where id = ?].  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+Autowired annotation is not supported on static fields: public static org.springframework.context.ApplicationContext com.game.SpringContext.applicationContext
+HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+HHH000412: Hibernate Core {4.3.11.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+HHH000399: Using default transaction strategy (direct JDBC transactions)
+HHH000397: Using ASTQueryTranslatorFactory
+启动游戏
+初始化账号数据。。。
+初始化地图数据。。。
+[DEPRECATION] Encountered positional parameter near line 1, column 59 in HQL: [select e from com.game.pojo.entity.EntityEnt e where id = ?].  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+用户登录
+[DEPRECATION] Encountered positional parameter near line 1, column 75 in HQL: [select a from com.game.user.account.entity.AccountEnt a where accountId = ? and password = ?].  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+[DEPRECATION] Encountered positional parameter near line 1, column 92 in HQL: [select a from com.game.user.account.entity.AccountEnt a where accountId = ? and password = ?].  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+[DEPRECATION] Encountered positional parameter near line 1, column 75 in HQL: [select m from com.game.user.mapInfo.entity.MapInfoEnt m where accountId = ?].  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+用户登录
+An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
+	at io.netty.buffer.PooledUnsafeDirectByteBuf.setBytes(PooledUnsafeDirectByteBuf.java:288)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1125)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:347)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:148)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:682)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:617)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:534)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:496)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:906)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+Autowired annotation is not supported on static fields: public static org.springframework.context.ApplicationContext com.game.SpringContext.applicationContext
+HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+HHH000412: Hibernate Core {4.3.11.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+HHH000399: Using default transaction strategy (direct JDBC transactions)
+HHH000397: Using ASTQueryTranslatorFactory
+启动游戏
+初始化账号数据。。。
+初始化地图数据。。。
+[DEPRECATION] Encountered positional parameter near line 1, column 59 in HQL: [select e from com.game.pojo.entity.EntityEnt e where id = ?].  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+用户登录
+[DEPRECATION] Encountered positional parameter near line 1, column 75 in HQL: [select a from com.game.user.account.entity.AccountEnt a where accountId = ? and password = ?].  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+[DEPRECATION] Encountered positional parameter near line 1, column 92 in HQL: [select a from com.game.user.account.entity.AccountEnt a where accountId = ? and password = ?].  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+[DEPRECATION] Encountered positional parameter near line 1, column 75 in HQL: [select m from com.game.user.mapInfo.entity.MapInfoEnt m where accountId = ?].  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
+	at io.netty.buffer.PooledUnsafeDirectByteBuf.setBytes(PooledUnsafeDirectByteBuf.java:288)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1125)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:347)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:148)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:682)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:617)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:534)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:496)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:906)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)

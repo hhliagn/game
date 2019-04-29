@@ -1,16 +1,12 @@
 package com.game.world.service;
 
-import com.game.role.player.model.Player;
-
 public interface IWorldService {
 
     void initMapData();
 
-    void changeMap(Player player, int mapId);
+    void changeMap(String mapName);
 
-    void leaveOldMap(String accountId, int mapId);
+    String enterTheWorld();
 
-    boolean canEnter(String accountId, int mapId);
-
-    void enterNewMap(String accountId, int mapId);
+    String printMap(String mapName);
 }

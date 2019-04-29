@@ -27,21 +27,27 @@ public class NettyServerHandler extends SimpleChannelInboundHandler<String> {
                 ctx.close();
                 break;
             case "move":
-                /*SpringContext.getMapService().initMapData();
-                Map map = SpringContext.getMapService().getMapById(1);
-                revMsg = map.getName();*/
+                try {
+                    String mapName = split[1];
+                    SpringContext.getWorldService().changeMap(mapName);
+                    //String mapName = SpringContext.getMapService().getMap(mapId);
+                    revMsg = "切换地图成功，当前地图为：" + mapName;
+                }catch (Exception e){
+                    revMsg = e.getMessage();
+                }
                 break;
             case "login":
                 try {
                     String accountId = split[1];
-                    SpringContext.getLoginService().login(accountId);
+                    String password = split[2];
+                    SpringContext.getLoginService().login(accountId, password);
                     revMsg = "登录成功";
                     break;
                 } catch (Exception e) {
                     revMsg = e.getMessage();
                 }
                 break;
-            case "rigister":
+            case "register":
                 try{
                     String account = split[1];
                     String nickName = split[2];
@@ -55,12 +61,40 @@ public class NettyServerHandler extends SimpleChannelInboundHandler<String> {
                 break;
             case "logout":
                 try {
-                    String accountIdc = split[1];
-                    SpringContext.getLogoutService().logout(accountIdc);
+                    //String accountIdc = split[1];
+                    SpringContext.getLogoutService().logout();
                     revMsg = "登出成功";
                 }catch (Exception e){
                     revMsg = e.getMessage();
                 }
+                break;
+            case "enter-the-world":
+                try {
+                    String curMapName = SpringContext.getWorldService().enterTheWorld();
+                    revMsg = "进入世界成功，当前地图为：" + curMapName;
+                }catch (Exception e){
+                    revMsg = e.getMessage();
+                }
+                break;
+            case "print-map":
+                try {
+                    String mapName = split[1];
+                    String result = SpringContext.getWorldService().printMap(mapName);
+                    revMsg = result;
+                }catch (Exception e){
+                    revMsg = e.getMessage();
+                }
+                break;
+            case "print-account":
+                try {
+                    String result = SpringContext.getGlobalService().printAccount();
+                    revMsg = result;
+                }catch (Exception e){
+                    revMsg = e.getMessage();
+                }
+                break;
+            case "clear":
+                revMsg = "clear";
                 break;
         }
 

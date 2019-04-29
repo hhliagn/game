@@ -14,7 +14,7 @@ public class Client {
                 try {
                     frame = new MyClientWindow1();
                     frame.setVisible(true);
-                    NettyClientHandler.frame = frame;
+                    //NettyClientHandler.frame = frame;
                 } catch (IOException e) {
                     e.printStackTrace();
                 }

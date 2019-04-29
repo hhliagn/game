@@ -16,5 +16,17 @@ public interface IMapService {
 
     List<Entity> getAllEntity(int mapId);
 
-    boolean isPlayerCurMap(Player player, int mapId);
+    boolean isPlayerCurMap(String accountId, int mapId);
+
+    void changeMap(String mapName);
+
+    void leaveOldMap(String accountId);
+
+    boolean canEnter(String accountId, int mapId);
+
+    void enterNewMap(String accountId, int mapId);
+
+    String getMap(int mapId);
+
+    Map getMapByName(String mapName);
 }

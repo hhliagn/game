@@ -10,6 +10,7 @@ import com.game.user.login.service.ILoginService;
 import com.game.user.logout.ILogoutService;
 import com.game.user.mapInfo.service.IMapInfoService;
 import com.game.user.regiser.service.IRegisterService;
+import com.game.world.service.IWorldService;
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
@@ -52,6 +53,13 @@ public class SpringContext implements ApplicationContextAware {
 
     @Autowired
     private ILogoutService logoutService;
+
+    @Autowired
+    private IWorldService worldService;
+
+    public static IWorldService getWorldService(){
+        return instance.worldService;
+    }
 
     public static ILogoutService getLogoutService(){
         return instance.logoutService;

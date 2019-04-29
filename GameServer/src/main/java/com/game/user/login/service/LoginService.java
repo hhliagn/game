@@ -12,18 +12,23 @@ import java.util.Date;
 @Component
 public class LoginService implements ILoginService{
 
-    private static Logger logger = LoggerFactory.getLogger("ON-OFF");
+    private static Logger logger = LoggerFactory.getLogger("login");
 
     @Override
-    public void login(String accountId) {
+    public void login(String accountId, String password) {
+        logger.info("用户登录");
         IAccountService accountService = SpringContext.getAccountService();
-        Account account = accountService.getAccount(accountId);
+        Account account = accountService.getLoginAccount(accountId, password);
         if (account == null){
-            logger.info("账户不存在，请先创建");
-            throw new RuntimeException("账户不存在，请先创建");
+            logger.warn("账号不存在，请先创建");
+            throw new RuntimeException("账号不存在，请先创建");
         }
-        account.setLastLogin(new Date());
+        Date lastLogin = account.getNowLogin();
+        Date lastLogout = account.getNowLogout();
+        account.setLastLogin(lastLogin);
+        account.setLastLogout(lastLogout);
+        account.setNowLogin(new Date());
         accountService.saveAccount(account);
-        logger.info("登录成功");
+        SpringContext.getGlobalService().setCurLoginAccount(account);
     }
 }

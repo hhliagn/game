@@ -15,6 +15,9 @@ public class AccountEnt {
     private Date LastLogin;
     private Date LastLogout;
     private Long recentPlayerId;
+    private Date nowLogin;
+    private Date nowLogout;
+    private String password;
 
     public String getAccountId() {
         return accountId;
@@ -54,5 +57,29 @@ public class AccountEnt {
 
     public void setRecentPlayerId(Long recentPlayerId) {
         this.recentPlayerId = recentPlayerId;
+    }
+
+    public Date getNowLogin() {
+        return nowLogin;
+    }
+
+    public void setNowLogin(Date nowLogin) {
+        this.nowLogin = nowLogin;
+    }
+
+    public Date getNowLogout() {
+        return nowLogout;
+    }
+
+    public void setNowLogout(Date nowLogout) {
+        this.nowLogout = nowLogout;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
     }
 }

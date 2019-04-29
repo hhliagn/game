@@ -6,7 +6,7 @@
 <hibernate-mapping package="com.game.pojo.entity">
     <class name="com.game.user.mapInfo.entity.MapInfoEnt" table="mapinfo">
         <id name="id" column="id" type="int">
-            <generator class="native"/>
+            <generator class="identity"/>
         </id>
         <property name="accountId" column="accountId" type="java.lang.String"/>
         <property name="curMapId" column="curMapId" type="int"/>

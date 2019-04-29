@@ -1,6 +1,7 @@
 package com.client;
 
 import com.client.nettyClient.NettyClient;
+import com.client.nettyClient.NettyClientHandler;
 
 import javax.swing.*;
 import javax.swing.border.EmptyBorder;
@@ -49,22 +50,32 @@ public class MyClientWindow1 extends JFrame {
         txtip = new JTextField();
         txtip.setText("127.0.0.1");
         txtip.setColumns(10);
+        txtip.setVisible(false);
+
+        NettyClientHandler.frame = this;
+
+        try {
+            nettyClient = new NettyClient();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
 
         JButton btnConnect = new JButton("connect");
+        btnConnect.setVisible(false);
         btnConnect.addMouseListener(new MouseAdapter() {
             @Override
             public void mouseClicked(MouseEvent e) {
                 String IP = txtip.getText();
                 try{
-                    nettyClient = new NettyClient();
+
                     //socket = new Socket(IP, 23456);
                     // 输出流
                     //pWriter = new PrintWriter(new OutputStreamWriter(socket.getOutputStream()));
                     //bReader = new BufferedReader(new InputStreamReader(socket.getInputStream()));
                     // 输入流
-                    /*String line = null;
+                    String line = null;
                     // 如果读取数据为空
-                    while ((line = bReader.readLine()) != null) {
+                   /* while ((line = bReader.readLine()) != null) {
                         appendText("收到： " + line);
                     }
                     // 读完数据之后要关闭
@@ -79,7 +90,7 @@ public class MyClientWindow1 extends JFrame {
         });
 
         txtSend = new JTextField();
-        txtSend.setText("hello");
+        //txtSend.setText("hello");
         txtSend.setColumns(10);
 
         JButton btnSend = new JButton("send");
@@ -138,5 +149,9 @@ public class MyClientWindow1 extends JFrame {
     /* 客户端发送的内容添加到中间的txt控件中 */
     public void appendText(String in) {
         txt.append("\n" + in);
+    }
+
+    public void clear(){
+        txt.setText("准备...");
     }
 }

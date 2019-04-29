@@ -39,6 +39,6 @@ public class MapInfoDao {
     }
 
     public void save(MapInfo mapInfo) {
-        getSession().update(mapInfo.getMapInfoEnt());
+        getSession().saveOrUpdate(mapInfo.getMapInfoEnt());
     }
 }

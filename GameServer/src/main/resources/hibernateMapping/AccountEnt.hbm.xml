@@ -12,5 +12,8 @@
         <property name="LastLogin" column="LastLogin" type="java.util.Date"/>
         <property name="LastLogout" column="LasrLogout" type="java.util.Date"/>
         <property name="recentPlayerId" column="recentPlayerId" type="java.lang.Long"/>
+        <property name="nowLogin" column="nowLogin" type="java.util.Date"/>
+        <property name="nowLogout" column="nowLogout" type="java.util.Date"/>
+        <property name="password" column="password" type="string"/>
     </class>
 </hibernate-mapping>

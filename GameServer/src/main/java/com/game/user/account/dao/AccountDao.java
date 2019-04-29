@@ -32,24 +32,35 @@ public class AccountDao {
         return list;
     }
 
-    public AccountEnt findOne(String accountId){
+    public Account findOne(String accountId){
         String hql = "select a from AccountEnt a where id = ?";
         Query query = getSession().createQuery(hql).setString(0, accountId);
         AccountEnt accountEnt = (AccountEnt) query.uniqueResult();
-        return accountEnt;
+        return Account.valueOf(accountEnt);
+    }
+
+    public Account findOne(String accountId, String password){
+        String hql = "select a from AccountEnt a where accountId = ? and password = ?";
+        Query query = getSession().createQuery(hql)
+                .setString(0, accountId).setString(1, password);
+        AccountEnt accountEnt = (AccountEnt) query.uniqueResult();
+        return Account.valueOf(accountEnt);
     }
 
     public void save(Account account) {
         getSession().update(account.getAccountEnt());
     }
 
-    public Account createAccount(String accountId,String nickName,long recentPlayerId) {
+    public Account createAccount(String accountId,String password) {
         AccountEnt accountEnt = new AccountEnt();
         accountEnt.setAccountId(accountId);
-        accountEnt.setNickName(nickName);
-        accountEnt.setRecentPlayerId(recentPlayerId);
-        accountEnt.setLastLogin(new Date());
-        accountEnt.setLastLogout(new Date());
+        accountEnt.setNickName(null);
+        accountEnt.setRecentPlayerId(null);
+        accountEnt.setNowLogin(new Date());
+        accountEnt.setNowLogout(null);
+        accountEnt.setLastLogin(null);
+        accountEnt.setLastLogout(null);
+        accountEnt.setPassword(password);
         getSession().save(accountEnt);
         Account account = Account.valueOf(accountEnt);
         return account;
