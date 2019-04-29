@@ -1,8 +1,12 @@
 package com.game.nettyServer;
 
+import com.game.SpringContext;
+import com.game.map.model.Map;
 import io.netty.channel.ChannelHandler;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.SimpleChannelInboundHandler;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
 import java.net.InetAddress;
 
 public class NettyServerHandler extends SimpleChannelInboundHandler<String> {
@@ -16,15 +20,48 @@ public class NettyServerHandler extends SimpleChannelInboundHandler<String> {
 
         String revMsg = null;
 
-        // 收到消息直接打印输出
-        System.out.println("服务端接受的消息 : " + msg);
-        if("quit".equals(msg)){//服务端断开的条件
-            ctx.close();
-        }
+        String[] split = msg.split(" ");
 
-        //业务逻辑
-        if ("move".equals(msg)){
-            revMsg = "move success";
+        switch (split[0]) {
+            case "quit":
+                ctx.close();
+                break;
+            case "move":
+                /*SpringContext.getMapService().initMapData();
+                Map map = SpringContext.getMapService().getMapById(1);
+                revMsg = map.getName();*/
+                break;
+            case "login":
+                try {
+                    String accountId = split[1];
+                    SpringContext.getLoginService().login(accountId);
+                    revMsg = "登录成功";
+                    break;
+                } catch (Exception e) {
+                    revMsg = e.getMessage();
+                }
+                break;
+            case "rigister":
+                try{
+                    String account = split[1];
+                    String nickName = split[2];
+                    SpringContext.getRegisterService().register(account, nickName);
+                    revMsg = "注册成功！";
+                }catch (Exception e){
+                    String message = e.getMessage();
+                    revMsg = message;
+                    break;
+                }
+                break;
+            case "logout":
+                try {
+                    String accountIdc = split[1];
+                    SpringContext.getLogoutService().logout(accountIdc);
+                    revMsg = "登出成功";
+                }catch (Exception e){
+                    revMsg = e.getMessage();
+                }
+                break;
         }
 
         // 返回客户端消息

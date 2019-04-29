@@ -1,5 +1,7 @@
 package com.client;
 
+import com.client.nettyClient.NettyClientHandler;
+
 import java.io.IOException;
 
 public class Client {
@@ -12,6 +14,7 @@ public class Client {
                 try {
                     frame = new MyClientWindow1();
                     frame.setVisible(true);
+                    NettyClientHandler.frame = frame;
                 } catch (IOException e) {
                     e.printStackTrace();
                 }

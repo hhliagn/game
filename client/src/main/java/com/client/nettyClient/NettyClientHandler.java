@@ -11,12 +11,17 @@ import io.netty.handler.codec.Delimiters;
 import io.netty.handler.codec.string.StringDecoder;
 import io.netty.handler.codec.string.StringEncoder;
 
-
 public class NettyClientHandler extends SimpleChannelInboundHandler<String> {
+
+    public static MyClientWindow1 frame;
+
+    public void setFrame(MyClientWindow1 frame) {
+        this.frame = frame;
+    }
 
     @Override
     protected void channelRead0(ChannelHandlerContext ctx, String msg) throws Exception {
-        MyClientWindow1.appendText(msg);
+        frame.appendText(msg);
         //Message.revMsg = msg;
         System.out.println("客户端接受的消息: " + msg);
     }

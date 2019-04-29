@@ -43,8 +43,15 @@ public class AccountDao {
         getSession().update(account.getAccountEnt());
     }
 
-    public void createAccount(Account account) {
-        account.setLastLogin(new Date());
-        getSession().save(account.getAccountEnt());
+    public Account createAccount(String accountId,String nickName,long recentPlayerId) {
+        AccountEnt accountEnt = new AccountEnt();
+        accountEnt.setAccountId(accountId);
+        accountEnt.setNickName(nickName);
+        accountEnt.setRecentPlayerId(recentPlayerId);
+        accountEnt.setLastLogin(new Date());
+        accountEnt.setLastLogout(new Date());
+        getSession().save(accountEnt);
+        Account account = Account.valueOf(accountEnt);
+        return account;
     }
 }

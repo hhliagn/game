@@ -29,7 +29,6 @@ public class SocketTest {
                 //printWriter.close();
             }
         }
-
     }
 
     private static String move() {

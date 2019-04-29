@@ -31,6 +31,9 @@
                 <value>hibernateMapping/MapEnt.hbm.xml</value>
                 <value>hibernateMapping/EntityEnt.hbm.xml</value>
                 <value>hibernateMapping/MapInfoEnt.hbm.xml</value>
+                <value>hibernateMapping/AccountEnt.hbm.xml</value>
+                <value>hibernateMapping/PlayerEnt.hbm.xml</value>
+                <value>hibernateMapping/IdentifyEnt.hbm.xml</value>
             </list>
         </property>
 

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding='UTF-8'?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.game.user.account.entity">
+    <class name="com.game.user.account.entity.AccountEnt" table="account">
+        <id name="accountId" column="accountId" type="java.lang.String">
+            <generator class="assigned"/>
+        </id>
+        <property name="nickName" column="nickName" type="java.lang.String"/>
+        <property name="LastLogin" column="LastLogin" type="java.util.Date"/>
+        <property name="LastLogout" column="LasrLogout" type="java.util.Date"/>
+        <property name="recentPlayerId" column="recentPlayerId" type="java.lang.Long"/>
+    </class>
+</hibernate-mapping>

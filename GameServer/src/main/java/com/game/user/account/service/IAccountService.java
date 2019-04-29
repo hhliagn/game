@@ -12,5 +12,5 @@ public interface IAccountService {
 
     Account getAccount(String accountId);
 
-    void createAccount(String accountId,String nickName, int sex, int job);
+    void createAccount(String accountId,String nickName);
 }

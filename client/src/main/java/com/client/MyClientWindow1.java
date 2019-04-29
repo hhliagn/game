@@ -4,6 +4,7 @@ import com.client.nettyClient.NettyClient;
 
 import javax.swing.*;
 import javax.swing.border.EmptyBorder;
+import java.awt.*;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.io.*;
@@ -12,15 +13,17 @@ import java.io.*;
 public class MyClientWindow1 extends JFrame {
     private static final long serialVersionUID = 1L;
     private JPanel contentPane;
-    private static JTextArea txt;
+    private JTextArea txt;
     private JTextField txtip;
     private JTextField txtSend;
+    private JScrollPane jsp;
 
     private NettyClient nettyClient;
     /*private BufferedReader bReader;
     private PrintWriter pWriter;*/
 
     public MyClientWindow1() throws IOException {
+        setTitle("CLIENT");
         setAlwaysOnTop(true);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setBounds(100, 100, 450, 300);
@@ -30,6 +33,18 @@ public class MyClientWindow1 extends JFrame {
 
         txt = new JTextArea();
         txt.setText("准备...");
+
+        /*jsp = new JScrollPane();
+        contentPane.add(jsp, BorderLayout.CENTER);
+
+        jsp.add(txt);
+        jsp.setViewportView(txt);*/
+
+        jsp = new JScrollPane(txt);
+        //设置矩形大小.参数依次为(矩形左上角横坐标x,矩形左上角纵坐标y，矩形长度，矩形宽度)
+        jsp.setBounds(13, 10, 350, 340);
+        //默认的设置是超过文本框才会显示滚动条，以下设置让滚动条一直显示
+        jsp.setVerticalScrollBarPolicy( JScrollPane.VERTICAL_SCROLLBAR_ALWAYS);
 
         txtip = new JTextField();
         txtip.setText("127.0.0.1");
@@ -86,6 +101,7 @@ public class MyClientWindow1 extends JFrame {
                 }
             }
         });
+
         GroupLayout gl_contentPane = new GroupLayout(contentPane);
 
         gl_contentPane.setHorizontalGroup(gl_contentPane.createParallelGroup(GroupLayout.Alignment.LEADING).addGroup(
@@ -120,7 +136,7 @@ public class MyClientWindow1 extends JFrame {
     }
 
     /* 客户端发送的内容添加到中间的txt控件中 */
-    public static void appendText(String in) {
+    public void appendText(String in) {
         txt.append("\n" + in);
     }
 }

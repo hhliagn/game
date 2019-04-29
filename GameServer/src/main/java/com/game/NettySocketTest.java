@@ -1,6 +1,7 @@
 package com.game;
 
 import com.game.nettyServer.NettyServer;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 /**
  * @author lhh
@@ -11,6 +12,9 @@ public class NettySocketTest {
         new Thread(new Runnable() {
             @Override
             public void run() {
+                ClassPathXmlApplicationContext applicationContext
+                        = new ClassPathXmlApplicationContext("applicationContext.xml");
+                applicationContext.start();
                 NettyServer nettyServer = new NettyServer();
             }
         }).start();
