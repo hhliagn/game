@@ -15,7 +15,7 @@ public class LogoutService implements ILogoutService{
 
     @Override
     public void logout() {
-        try {
+        /*try {
             Account account = SpringContext.getGlobalService().getCurLoginAccount();
             if (account == null){
                 logger.warn("登出账户不存在");
@@ -26,6 +26,6 @@ public class LogoutService implements ILogoutService{
         } catch (Exception e) {
             logger.warn("登出失败！");
             throw new RuntimeException("登出失败！");
-        }
+        }*/
     }
 }

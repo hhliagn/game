@@ -25,44 +25,35 @@ public class AccountDao {
         return sessionFactory.getCurrentSession();
     }
 
-    public List<AccountEnt> findAll(){
+    ////////
+    public AccountEnt get(String accountId) {
+        String hql = "select a from AccountEnt a where accountId = ?";
+        Query query = getSession().createQuery(hql).setString(0, accountId);
+        AccountEnt accountEnt = (AccountEnt) query.uniqueResult();
+        accountEnt.doDeserialize();
+        return accountEnt;
+    }
+
+    public void save(AccountEnt accountEnt) {
+        accountEnt.doSerialize();
+        getSession().saveOrUpdate(accountEnt);
+    }
+
+    public List<AccountEnt> loadAll() {
         String hql = "FROM AccountEnt";
         Query query = getSession().createQuery(hql);
         List<AccountEnt> list = query.list();
+        for (AccountEnt accountEnt : list) {
+            accountEnt.doDeserialize();
+        }
         return list;
     }
 
-    public Account findOne(String accountId){
-        String hql = "select a from AccountEnt a where id = ?";
-        Query query = getSession().createQuery(hql).setString(0, accountId);
-        AccountEnt accountEnt = (AccountEnt) query.uniqueResult();
-        return Account.valueOf(accountEnt);
-    }
-
-    public Account findOne(String accountId, String password){
+    public AccountEnt getLoginAccount(String accountId, String password) {
         String hql = "select a from AccountEnt a where accountId = ? and password = ?";
         Query query = getSession().createQuery(hql)
                 .setString(0, accountId).setString(1, password);
         AccountEnt accountEnt = (AccountEnt) query.uniqueResult();
-        return Account.valueOf(accountEnt);
-    }
-
-    public void save(Account account) {
-        getSession().update(account.getAccountEnt());
-    }
-
-    public Account createAccount(String accountId,String password) {
-        AccountEnt accountEnt = new AccountEnt();
-        accountEnt.setAccountId(accountId);
-        accountEnt.setNickName(null);
-        accountEnt.setRecentPlayerId(null);
-        accountEnt.setNowLogin(new Date());
-        accountEnt.setNowLogout(null);
-        accountEnt.setLastLogin(null);
-        accountEnt.setLastLogout(null);
-        accountEnt.setPassword(password);
-        getSession().save(accountEnt);
-        Account account = Account.valueOf(accountEnt);
-        return account;
+        return accountEnt;
     }
 }

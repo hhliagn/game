@@ -31,14 +31,14 @@ public class MapInfoDao {
         return list;
     }
 
-    public MapInfoEnt findOne(String accountId){
+    public MapInfoEnt get(String accountId){
         String hql = "select m from MapInfoEnt m where accountId = ?";
         Query query = getSession().createQuery(hql).setString(0, accountId);
         MapInfoEnt mapInfoEnt = (MapInfoEnt) query.uniqueResult();
         return mapInfoEnt;
     }
 
-    public void save(MapInfo mapInfo) {
-        getSession().saveOrUpdate(mapInfo.getMapInfoEnt());
+    public void save(MapInfoEnt mapInfoEnt) {
+        getSession().saveOrUpdate(mapInfoEnt);
     }
 }

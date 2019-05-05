@@ -3,6 +3,7 @@ package com.game.publicsystem.common.service;
 import com.game.SpringContext;
 import com.game.map.model.Map;
 import com.game.user.account.model.Account;
+import com.game.user.account.model.BaseAccountInfo;
 import com.game.user.mapInfo.model.MapInfo;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

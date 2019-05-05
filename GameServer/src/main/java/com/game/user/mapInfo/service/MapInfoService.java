@@ -29,7 +29,7 @@ public class MapInfoService implements IMapInfoService {
             if (mapInfo != null){
                 return mapInfo;
             }
-            MapInfoEnt mapInfoEnt = mapInfoDao.findOne(accountId);
+            MapInfoEnt mapInfoEnt = mapInfoDao.get(accountId);
             mapInfo = MapInfo.valueOf(mapInfoEnt);
             addMapInfo(accountId, mapInfo);
             return mapInfo;
@@ -44,15 +44,8 @@ public class MapInfoService implements IMapInfoService {
         accountId2MapInfo.put(accountId, mapInfo);
     }
 
-    public void saveMapInfo(MapInfo mapInfo){
-        try {
-            mapInfoDao.save(mapInfo);
-            accountId2MapInfo.put(mapInfo.getAccountId(),mapInfo);
-        } catch (Exception e) {
-            logger.warn("保存用户地图信息出错");
-            e.printStackTrace();
-            throw new RuntimeException("保存用户地图信息出错");
-        }
+    public void saveMapInfoEnt(MapInfoEnt mapInfoEnt){
+        mapInfoDao.save(mapInfoEnt);
     }
 
     public void createMapInfo(String accountId){
@@ -60,7 +53,7 @@ public class MapInfoService implements IMapInfoService {
         mapInfo.setAccountId(accountId);
         mapInfo.setCurMapId(1);
         mapInfo.setLastMapId(1);
-        saveMapInfo(mapInfo);
+        saveMapInfoEnt(mapInfo.getMapInfoEnt());
         logger.info("新增新用户地图数据");
         addMapInfo(accountId, mapInfo);
     }
@@ -99,5 +92,12 @@ public class MapInfoService implements IMapInfoService {
             e.printStackTrace();
             throw new RuntimeException("获取账户上一个地图出错");
         }
+    }
+
+    ///////
+    @Override
+    public MapInfoEnt getMapInfoEnt(String accountId) {
+        MapInfoEnt mapInfoEnt = mapInfoDao.get(accountId);
+        return mapInfoEnt;
     }
 }

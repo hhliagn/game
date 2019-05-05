@@ -16,6 +16,7 @@ import java.util.List;
 @Component("PlayerDao")
 @Transactional
 public class PlayerDao {
+
     @Autowired
     private SessionFactory sessionFactory;
 
@@ -23,42 +24,27 @@ public class PlayerDao {
         return sessionFactory.getCurrentSession();
     }
 
-    public List<PlayerEnt> findAll(){
+    ////
+    public List<PlayerEnt> loadAll() {
         String hql = "FROM PlayerEnt";
         Query query = getSession().createQuery(hql);
         List<PlayerEnt> playerEntList = query.list();
+        for (PlayerEnt playerEnt : playerEntList) {
+            playerEnt.doDeserialize();
+        }
         return playerEntList;
     }
 
-    public Player findOne(long id) {
+    public PlayerEnt get(long id) {
         String hql = "select p from PlayerEnt p where id = ?";
         Query query = getSession().createQuery(hql).setLong(0, id);
         PlayerEnt playerEnt = (PlayerEnt) query.uniqueResult();
-        return Player.valueOf(playerEnt);
+        playerEnt.doDeserialize();
+        return playerEnt;
     }
 
-    public List<PlayerEnt> find(String accountId) {
-        String hql = "select p from PlayerEnt p where accountId = ?";
-        Query query = getSession().createQuery(hql).setString(0, accountId);
-        List<PlayerEnt> playerEntList = query.list();
-        return playerEntList;
-    }
-
-    public void save(Player player) {
-        getSession().update(player.getPlayerEnt());
-    }
-
-    public Player createPlayer(long id, String accountId) {
-        try{
-            PlayerEnt playerEnt = new PlayerEnt();
-            playerEnt.setId(id);
-            playerEnt.setAccountId(accountId);
-            playerEnt.setAlive(true);
-            getSession().save(playerEnt);
-            return Player.valueOf(playerEnt);
-        }catch (Exception e){
-            e.printStackTrace();
-            return null;
-        }
+    public void save(PlayerEnt playerEnt) {
+        playerEnt.doSerialize();
+        getSession().saveOrUpdate(playerEnt);
     }
 }

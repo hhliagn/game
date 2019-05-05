@@ -14,14 +14,16 @@ public class NettyServer {
 
     public NettyServer(){
         try {
-            b.group(group);
-            b.channel(NioServerSocketChannel.class);
-            b.childHandler(new NettyServerFilter()); //设置过滤器
-            // 服务器绑定端口监听
-            ChannelFuture f = b.bind(port).sync();
-            System.out.println("服务端启动成功...");
-            // 监听服务器关闭监听
-            f.channel().closeFuture().sync();
+            while (true){
+                b.group(group);
+                b.channel(NioServerSocketChannel.class);
+                b.childHandler(new NettyServerFilter()); //设置过滤器
+                // 服务器绑定端口监听
+                ChannelFuture f = b.bind(port).sync();
+                System.out.println("服务端启动成功...");
+                // 监听服务器关闭监听
+                f.channel().closeFuture().sync();
+            }
         } catch (Exception e){
             e.printStackTrace();
         } finally{

@@ -16,7 +16,7 @@ public class LoginService implements ILoginService{
 
     @Override
     public void login(String accountId, String password) {
-        logger.info("用户登录");
+        /*logger.info("用户登录");
         IAccountService accountService = SpringContext.getAccountService();
         Account account = accountService.getLoginAccount(accountId, password);
         if (account == null){
@@ -29,6 +29,6 @@ public class LoginService implements ILoginService{
         account.setLastLogout(lastLogout);
         account.setNowLogin(new Date());
         accountService.saveAccount(account);
-        SpringContext.getGlobalService().setCurLoginAccount(account);
+        SpringContext.getGlobalService().setCurLoginAccount(account);*/
     }
 }

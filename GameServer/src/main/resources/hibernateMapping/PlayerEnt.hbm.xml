@@ -9,6 +9,6 @@
             <generator class="assigned"/>
         </id>
         <property name="accountId" column="accountId" type="java.lang.String"/>
-        <property name="alive" column="alive" type="java.lang.Boolean"/>
+        <property name="alive" column="alive" type="int"/>
     </class>
 </hibernate-mapping>

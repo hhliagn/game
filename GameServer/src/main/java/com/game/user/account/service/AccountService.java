@@ -1,203 +1,107 @@
 package com.game.user.account.service;
 
 import com.game.SpringContext;
+import com.game.role.player.model.BasePlayerInfo;
 import com.game.role.player.model.Player;
-import com.game.user.account.dao.AccountDao;
 import com.game.user.account.entity.AccountEnt;
 import com.game.user.account.model.Account;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import com.game.user.account.model.BaseAccountInfo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
-import java.util.HashMap;
+
 import java.util.List;
 
 @Component
 public class AccountService implements IAccountService{
 
-    private static Logger logger = LoggerFactory.getLogger("account");
-
     @Autowired
-    private AccountDao accountDao;
+    private AccountManager accountManager;
 
-    private HashMap<String, Account> id2Account = new HashMap<>();
+    @Override
+    public BaseAccountInfo getBaseAccountInfo(String accountId) {
+        if (accountId.isEmpty()){
+            return null;
+        }
+        return accountManager.getBaseAccountInfo(accountId);
+    }
 
-    private HashMap<String, Account> nickName2Account = new HashMap<>();
+    public BaseAccountInfo getBaseAccountInfoByNickName(String nickName){
+        return accountManager.getBaseAccountInfoByNickName(nickName);
+    }
+
+    public Account getAccount(String accountId){
+        BaseAccountInfo baseAccountInfo = accountManager.getBaseAccountInfo(accountId);
+        if (baseAccountInfo == null) {
+            return null;
+        }
+        return accountManager.getAccount(accountId);
+    }
 
     public void loadAllAccountInfo() {
-        try {
-            SpringContext.getPlayerService().loadAllPlayerInfo();
-            List<AccountEnt> accountEntList = accountDao.findAll();
-            if (accountEntList == null){
-                logger.warn("账号表中不存在数据");
-            }
-            for (AccountEnt accountEnt : accountEntList) {
-                Account account = Account.valueOf(accountEnt);
-                addAccountInfo(account);
-            }
-        } catch (Exception e) {
-            logger.warn("加载用户数据出错");
-            e.printStackTrace();
-            throw new RuntimeException("加载用户数据出错");
-        }
-    }
-
-    public void addAccountInfo(Account account) {
-        try {
-            if (account == null){
-                logger.warn("添加的账户为null");
-            }
-            Account existId = id2Account.get(account.getAccountId());
-            if (existId == null){
-                id2Account.put(account.getAccountId(), account);
-            }
-
-            Account existNickName = nickName2Account.get(account.getNickName());
-            if (existNickName == null){
-                nickName2Account.put(account.getNickName(), account);
-            }
-        } catch (Exception e) {
-            logger.warn("添加账户信息出错");
-            e.printStackTrace();
-            throw new RuntimeException("添加账户信息出错");
-        }
-    }
-
-    public void saveAccount(Account account) {
-        try {
-            accountDao.save(account);
-            id2Account.put(account.getAccountId(),account);
-            nickName2Account.put(account.getNickName(), account);
-        } catch (Exception e) {
-            logger.warn("保存账户出错");
-            e.printStackTrace();
-            throw new RuntimeException("保存账户出错");
-        }
-    }
-
-    public Account getAccount(String accountId) {
-        Account account = id2Account.get(accountId);
-        return account;
-    }
-
-    public Account getAccountByNickName(String nickName){
-        Account account = nickName2Account.get(nickName);
-        return account;
+        accountManager.loadAllBaseAccountInfo();
     }
 
     public void createAccount(String accountId, String password){
-        boolean exist = isExistAccount(accountId);
-        if (!exist){
-
-            Account account = null;
-            try {
-                account = accountDao.createAccount(accountId, password);
-            } catch (Exception e) {
-                logger.warn("账户表创建用户失败");
-                e.printStackTrace();
-                throw new RuntimeException("账户表创建用户失败");
-            }
-            addAccountInfo(account);
-            doAfterCreateAccount(account);
-        }
+        accountManager.createAccount(accountId, password);
+        doAfterCreateAccount(accountId);
     }
 
-    @Override
-    public Account getLoginAccount(String accountId, String password) {
-        try {
-            Account loginAccount = accountDao.findOne(accountId, password);
-            return loginAccount;
-        } catch (Exception e) {
-            logger.info("获取登录用户出错");
-            e.printStackTrace();
-            throw new RuntimeException("获取登录用户出错");
-        }
-    }
-
-    public void doAfterCreateAccount(Account account){
-        //创建玩家的地图信息
-        //设置玩家curMapId为起始之地
-        SpringContext.getMapInfoService().createMapInfo(account.getAccountId());
-    }
-
-    private boolean isExistAccount(String accountId) {
-        Account account = getAccount(accountId);
-        //Account accountByNickName = getAccountByNickName(nickName);
-        if (account != null){
-            logger.info("账户id已存在！");
-            throw new RuntimeException("账户id已存在！");
-        }
-        /*if (accountByNickName != null){
-            logger.info("账户昵称已存在！");
-            throw new RuntimeException("账户昵称已存在！");
-        }*/
-        return false;
-    }
-
-    private Player createPlayer(String name) {
-
+    public Player createPlayer(String nickName){
+        Player newPlayer = null;
         Account curLoginAccount = SpringContext.getGlobalService().getCurLoginAccount();
         if (curLoginAccount == null){
             throw new RuntimeException("当前未登录");
         }
         String accountId = curLoginAccount.getAccountId();
 
-        List<Player> basePlayers = SpringContext.getPlayerService().getBasePlayers(accountId);
-        if (basePlayers == null){
-            SpringContext.getPlayerService().createPlayer(accountId);
-            curLoginAccount.setNickName(name);
-            saveAccount(curLoginAccount);
-        }else {
-            SpringContext.getPlayerService().createPlayer(accountId);
-        }
-        if (canCreatePlayer(accountId)){
+        List<BasePlayerInfo> basePlayerInfosByAccount
+                = SpringContext.getPlayerService().getBasePlayerInfos(accountId);
 
-            Player player = SpringContext.getPlayerService().createPlayer(accountId);
-            if (player == null){
-                logger.warn("创建的用户为null");
+        if (basePlayerInfosByAccount.isEmpty()){
+            BaseAccountInfo baseAccountInfo = getBaseAccountInfo(accountId);
+            if (baseAccountInfo.getNickName().isEmpty()){
+                if (!accountManager.occupyNickName(nickName, baseAccountInfo)){
+                    throw new RuntimeException("名字已存在");
+                }
+                baseAccountInfo.setNickName(nickName);
             }
-            return player;
+            newPlayer = SpringContext.getPlayerService().createPlayer(accountId);
+            baseAccountInfo.setRecentPlayerId(newPlayer.getId());
+            saveAccount(accountId);
+
+            /////
+            curLoginAccount.setBaseAccountInfo(baseAccountInfo);
+            SpringContext.getGlobalService().setCurLoginAccount(curLoginAccount);
         }else {
-            return getRecentPlayer(accountId);
+            newPlayer = SpringContext.getPlayerService().createPlayer(accountId);
         }
+        return newPlayer;
     }
 
-    private Player getRecentPlayer(String accountId) {
-        Account account = getAccount(accountId);
-        long recentPlayerId = account.getRecentPlayerId();
-        Player player = SpringContext.getPlayerService().getRecentPlayer(recentPlayerId);
-        if (player == null){
-            logger.warn("获取到的账户最近玩家为null");
+    public void saveAccount(String accountId){
+        accountManager.saveAccount(accountId);
+    }
+
+    public AccountEnt getAccountEnt(String accountId){
+        return accountManager.getAccountEnt(accountId);
+    }
+
+    public void saveAccountEnt(AccountEnt accountEnt) {
+        accountManager.saveAccountEnt(accountEnt);
+    }
+
+    @Override
+    public boolean getLoginAccount(String accountId, String password) {
+        AccountEnt accountEnt = accountManager.getLoginAccount(accountId, password);
+        if (accountEnt == null){
+            return false;
         }
-        return player;
+        return true;
     }
 
-    private boolean canCreatePlayer(String accountId) {
-        boolean result = SpringContext.getPlayerService().canCreatePlayer(accountId);
-        return result;
-    }
-
-    public List<Player> getBasePlayers(String accountId){
-        List<Player> basePlayers = SpringContext.getPlayerService().getBasePlayers(accountId);
-        if (basePlayers == null || basePlayers.size() == 0){
-            logger.warn("账号不存在对应的玩家");
-        }
-        return basePlayers;
-    }
-
-    public HashMap<String, Account> getId2Account() {
-        return id2Account;
-    }
-
-    public void setId2Account(HashMap<String, Account> id2Account) {
-        this.id2Account = id2Account;
-    }
-
-    public HashMap<String, Account> getNickName2Account() {
-        return nickName2Account;
-    }
-
-    public void setNickName2Account(HashMap<String, Account> nickName2Account) {
-        this.nickName2Account = nickName2Account;
+    public void doAfterCreateAccount(String accountId){
+        //创建玩家的地图信息
+        //设置玩家curMapId为起始之地
+        SpringContext.getMapInfoService().createMapInfo(accountId);
     }
 }

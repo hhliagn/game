@@ -2,14 +2,20 @@ package com.game.role.player.service;
 
 import com.game.SpringContext;
 import com.game.core.id.service.IdentifyService;
-import com.game.role.player.dao.PlayerDao;
 import com.game.role.player.entity.PlayerEnt;
+import com.game.role.player.model.BasePlayerInfo;
 import com.game.role.player.model.Player;
 import com.game.user.account.model.Account;
+import com.game.user.account.model.BaseAccountInfo;
+import com.game.user.account.service.AccountManager;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
+
+import javax.management.relation.RoleUnresolved;
+import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.CopyOnWriteArrayList;
@@ -18,116 +24,105 @@ import java.util.concurrent.CopyOnWriteArrayList;
 public class PlayerService implements IPlayerService{
 
     private static final Logger logger = LoggerFactory.getLogger("player");
+
     @Autowired
-    private PlayerDao playerDao;
+    private PlayerManager playerManager;
+
+    @Autowired
+    private AccountManager accountManager;
 
     private static final int MAX_PLAYER_PER_ACCOUNT = 5;
 
-    private ConcurrentHashMap<Long,Player> id2Player = new ConcurrentHashMap<>();
-
-    private ConcurrentHashMap<String, CopyOnWriteArrayList<Player>> accountId2BasePlayers
-            = new ConcurrentHashMap<>();
+    public void loadAllPlayerInfo(){
+        playerManager.loadAllPlayerInfo();
+    }
 
     @Override
     public Player createPlayer(String accountId) {
         long id = SpringContext.getIdentifyService()
                 .getNextIdentify(IdentifyService.IdentifyType.PLAYER);
-        try {
-            Player player = playerDao.createPlayer(id, accountId);
-            //playerDao.createPlayer(id, accountId);
-            //updateAccountInfo(player);
-            addPlayer(player);
-            return player;
-        } catch (Exception e) {
-            logger.warn("创建玩家保存到数据库出错");
-            e.printStackTrace();
-            throw new RuntimeException("创建玩家保存到数据库出错");
-        }
+        PlayerEnt playerEnt = playerManager.createPlayer(id, accountId);
+        Player player = playerEnt.getPlayer();
+        //Player player = getPlayer(id);
+        //savePlayer(player);
+        return player;
     }
 
-    private void updateAccountInfo(Player player) {
-        try {
-            Account account = SpringContext.getAccountService().getAccount(player.getAccountId());
-            if (account == null){
-                logger.warn("玩家对应的账户不存在");
-            }
-            account.setRecentPlayerId(player.getId());
-        } catch (Exception e) {
-            logger.warn("更新账户最近玩家id出错");
-            e.printStackTrace();
-            throw new RuntimeException("更新账户最近玩家id出错");
-        }
-    }
-
-    public void loadAllPlayerInfo(){
-        try {
-            List<PlayerEnt> playerEntList = playerDao.findAll();
-            if (playerEntList == null || playerEntList.size() == 0){
-                logger.warn("玩家数据表数据为空");
-            }
-            for (PlayerEnt playerEnt : playerEntList) {
-                Player player = Player.valueOf(playerEnt);
-                addPlayer(player);
-            }
-        } catch (Exception e) {
-            logger.warn("加载玩家数据出错");
-            e.printStackTrace();
-            throw new RuntimeException("加载玩家数据出错");
-        }
-    }
-
-    private void addPlayer(Player player) {
-        if (getPlayer(player.getId()) != null){
-            logger.warn("id对应的玩家已存在");
+    public void savePlayer(Player player){
+        if (player == null){
             return;
         }
-        id2Player.put(player.getId(),player);
-        List<Player> basePlayers = getOrCreateBasePlayers(player.getAccountId());
-        basePlayers.add(player);
-    }
-
-    private List<Player> getOrCreateBasePlayers(String accountId) {
-        CopyOnWriteArrayList<Player> basePlayers = accountId2BasePlayers.get(accountId);
-        if (basePlayers == null) {
-            basePlayers = new CopyOnWriteArrayList<Player>();
-            CopyOnWriteArrayList<Player> oldBasePlayers
-                    = accountId2BasePlayers.putIfAbsent(accountId, basePlayers);
-            if (oldBasePlayers != null) {
-                basePlayers = oldBasePlayers;
-            }
-        }
-        return basePlayers;
+        PlayerEnt playerEnt = playerManager.getPlayerEnt(player.getId());
+        playerEnt.setPlayer(player);
+        playerManager.savePlayerEnt(playerEnt);
     }
 
     public Player getPlayer(Long id){
-        return id2Player.get(id);
+        PlayerEnt playerEnt = playerManager.getPlayerEnt(id);
+        if (playerEnt == null){
+            return null;
+        }
+        Player player = playerEnt.getPlayer();
+        return player;
     }
 
-    public List<Player> getBasePlayers(String accountId){
-        return accountId2BasePlayers.get(accountId);
+    public String getAccountId(Long playerId){
+        BasePlayerInfo basePlayerInfo = playerManager.getBasePlayerInfo(playerId);
+        return basePlayerInfo == null ? null : basePlayerInfo.getAccountId();
+    }
+
+    public BasePlayerInfo getBasePlayerInfo(Long playerId){
+        return playerManager.getBasePlayerInfo(playerId);
+    }
+
+    public BaseAccountInfo getBaseAccountInfo(Long playerId){
+        return SpringContext.getAccountService().getBaseAccountInfo(getAccountId(playerId));
     }
 
     @Override
-    public boolean canCreatePlayer(String accountId) {
-        List<Player> basePlayers = getBasePlayers(accountId);
-        if (basePlayers == null || basePlayers.size() < MAX_PLAYER_PER_ACCOUNT){
-            return true;
-        }
-        return false;
+    public List<BasePlayerInfo> getBasePlayerInfos(String accountId) {
+        return playerManager.getOrCreateBasePlayerInfos(accountId);
     }
 
-    @Override
-    public Player getRecentPlayer(Long recentPlayerId) {
-        try {
-            Player recentPlayer = playerDao.findOne(recentPlayerId);
-            if (recentPlayer == null){
-                logger.warn("最近玩家为null");
-            }
-            return recentPlayer;
-        } catch (Exception e) {
-            logger.info("获取最近玩家出错");
-            e.printStackTrace();
-            throw new RuntimeException("获取最近玩家出错");
+    public List<Player> getAllPlayers(String accountId){
+        List<BasePlayerInfo> basePlayerInfos = getBasePlayerInfos(accountId);
+        List<Player> players = new ArrayList<>();
+        for (BasePlayerInfo basePlayerInfo : basePlayerInfos) {
+            Player player = getPlayer(basePlayerInfo.getId());
+            players.add(player);
         }
+        return players;
+    }
+
+    public void login(Long playerId){
+        if (playerId == null || playerId <= 0){
+            throw new RuntimeException("playerId不存在");
+        }
+        Player player = getPlayer(playerId);
+        if (player == null){
+            throw new RuntimeException("player不存在");
+        }
+
+        String accountId = player.getAccountId();
+        BaseAccountInfo baseAccountInfo = SpringContext.getAccountService().getBaseAccountInfo(accountId);
+        login(player, baseAccountInfo);
+    }
+
+    public void login(Player player, BaseAccountInfo baseAccountInfo){
+        Account account = SpringContext.getAccountService().getAccount(player.getAccountId());
+        logger.info("用户登录");
+        updateAccountInfo(account, player);
+        savePlayer(player);
+    }
+
+    private void updateAccountInfo(Account account, Player player) {
+        Date now = new Date();
+        BaseAccountInfo baseAccountInfo = player.getBaseAccountInfo();
+        baseAccountInfo.setLoginTime(now);
+        baseAccountInfo.setRecentPlayerId(player.getId());
+
+        account.setLastLogin(now);
+
+        accountManager.saveAccount(player.getAccountId());
     }
 }

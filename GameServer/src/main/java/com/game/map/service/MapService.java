@@ -101,7 +101,7 @@ public class MapService implements IMapService {
     }
 
     public void leaveOldMap(String accountId) {
-        try {
+        /*try {
             IMapInfoService mapInfoService = SpringContext.getMapInfoService();
             MapInfo mapInfo = mapInfoService.getMapInfo(accountId);
             int curMapId = mapInfo.getCurMapId();
@@ -111,7 +111,7 @@ public class MapService implements IMapService {
             logger.warn("离开旧地图出错");
             e.printStackTrace();
             throw new RuntimeException("离开旧地图出错");
-        }
+        }*/
     }
 
     public boolean canEnter(String accountId, int mapId) {
@@ -134,7 +134,7 @@ public class MapService implements IMapService {
     }
 
     public void enterNewMap(String accountId, int mapId ) {
-        try {
+        /*try {
             IMapInfoService mapInfoService = SpringContext.getMapInfoService();
             MapInfo mapInfo = mapInfoService.getMapInfo(accountId);
             mapInfo.setCurMapId(mapId);
@@ -143,7 +143,7 @@ public class MapService implements IMapService {
             logger.warn("进入新地图出错");
             e.printStackTrace();
             throw new RuntimeException("进入新地图出错");
-        }
+        }*/
     }
 
     @Override
