@@ -1,8 +1,7 @@
 package com.game.user.mapInfo.dao;
 
-import com.game.map.entity.MapEnt;
+import com.game.world.service.map.entity.MapEnt;
 import com.game.user.mapInfo.entity.MapInfoEnt;
-import com.game.user.mapInfo.model.MapInfo;
 import org.hibernate.Query;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
@@ -10,7 +9,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.springframework.transaction.annotation.Transactional;
 
-import java.io.Serializable;
 import java.util.List;
 
 @Component("MapInfoDao")

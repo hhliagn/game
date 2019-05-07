@@ -1,7 +1,6 @@
-package com.game.map.dao;
+package com.game.world.service.map.dao;
 
-import com.game.map.entity.MapEnt;
-import com.game.map.model.Map;
+import com.game.world.service.map.entity.MapEnt;
 import org.hibernate.Query;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
@@ -22,21 +21,25 @@ public class MapEntDao{
         return sessionFactory.getCurrentSession();
     }
 
-    public List<MapEnt> findAll(){
-        String hql = "FROM MapEnt";
-        Query query = getSession().createQuery(hql);
-        List<MapEnt> list = query.list();
-        return list;
+    public List<MapEnt> loadAll(){
+        try {
+            String hql = "FROM MapEnt";
+            Query query = getSession().createQuery(hql);
+            List<MapEnt> list = query.list();
+            return list;
+        }catch (Exception e){
+            throw new RuntimeException("获取地图数据出错");
+        }
     }
 
-    public MapEnt findOne(int id){
+    public MapEnt get(int id){
         String hql = "select m from MapEnt m where id = ?";
         Query query = getSession().createQuery(hql).setInteger(0, id);
         MapEnt mapEnt = (MapEnt) query.uniqueResult();
         return mapEnt;
     }
 
-    public void save(Map map) {
-        getSession().update(map.getMapEnt());
+    public void save(MapEnt mapEnt) {
+        getSession().saveOrUpdate(mapEnt);
     }
 }

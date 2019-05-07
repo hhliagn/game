@@ -201,12 +201,12 @@ JDBC version : 4.0
 Unexpected error trying to gauge level of JDBC REF_CURSOR support : null
 HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
 Processing hbm.xml files
-Mapping class: com.game.map.entity.MapEnt -> map
+Mapping class: com.game.world.service.map.entity.MapEnt -> map
 Mapped property: id -> id
 Mapped property: name -> name
 Mapped property: entityIdList -> entityIdList
 Mapped property: mapIdNearby -> mapIdNearby
-Mapping class: com.game.pojo.entity.EntityEnt -> entity
+Mapping class: com.game.world.service.pojo.entity.EntityEnt -> entity
 Mapped property: id -> id
 Mapped property: name -> name
 Mapped property: type -> type
@@ -449,7 +449,7 @@ LoadPlan(entity=com.game.core.id.entity.IdentifyEnt)
 Static select for entity com.game.core.id.entity.IdentifyEnt [OPTIMISTIC_FORCE_INCREMENT]: select identifyen0_.id as id1_2_0_, identifyen0_.val as val2_2_0_ from identify identifyen0_ where identifyen0_.id=?
 Static select for action ACTION_MERGE on entity com.game.core.id.entity.IdentifyEnt: select identifyen0_.id as id1_2_0_, identifyen0_.val as val2_2_0_ from identify identifyen0_ where identifyen0_.id=?
 Static select for action ACTION_REFRESH on entity com.game.core.id.entity.IdentifyEnt: select identifyen0_.id as id1_2_0_, identifyen0_.val as val2_2_0_ from identify identifyen0_ where identifyen0_.id=?
-Static SQL for entity: com.game.pojo.entity.EntityEnt
+Static SQL for entity: com.game.world.service.pojo.entity.EntityEnt
  Version select: select id from entity where id =?
  Snapshot select: select entityent_.id, entityent_.name as name2_1_, entityent_.type as type3_1_, entityent_.isAlive as isAlive4_1_ from entity entityent_ where entityent_.id=?
  Insert 0: insert into entity (name, type, isAlive, id) values (?, ?, ?, ?)
@@ -462,178 +462,178 @@ Visiting attribute path : type
 Visiting attribute path : alive
 Building LoadPlan...
 processing queryspace <gen:0>
-LoadPlan(entity=com.game.pojo.entity.EntityEnt)
+LoadPlan(entity=com.game.world.service.pojo.entity.EntityEnt)
     - Returns
-       - EntityReturnImpl(entity=com.game.pojo.entity.EntityEnt, querySpaceUid=<gen:0>, path=com.game.pojo.entity.EntityEnt)
+       - EntityReturnImpl(entity=com.game.world.service.pojo.entity.EntityEnt, querySpaceUid=<gen:0>, path=com.game.world.service.pojo.entity.EntityEnt)
     - QuerySpaces
-       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.game.pojo.entity.EntityEnt)
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.game.world.service.pojo.entity.EntityEnt)
           - SQL table alias mapping - entityent0_
           - alias suffix - 0_
           - suffixed key columns - {id1_1_0_}
 
-Static select for entity com.game.pojo.entity.EntityEnt [NONE]: select entityent0_.id as id1_1_0_, entityent0_.name as name2_1_0_, entityent0_.type as type3_1_0_, entityent0_.isAlive as isAlive4_1_0_ from entity entityent0_ where entityent0_.id=?
+Static select for entity com.game.world.service.pojo.entity.EntityEnt [NONE]: select entityent0_.id as id1_1_0_, entityent0_.name as name2_1_0_, entityent0_.type as type3_1_0_, entityent0_.isAlive as isAlive4_1_0_ from entity entityent0_ where entityent0_.id=?
 Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@75769ab0]
 Visiting attribute path : name
 Visiting attribute path : type
 Visiting attribute path : alive
 Building LoadPlan...
 processing queryspace <gen:0>
-LoadPlan(entity=com.game.pojo.entity.EntityEnt)
+LoadPlan(entity=com.game.world.service.pojo.entity.EntityEnt)
     - Returns
-       - EntityReturnImpl(entity=com.game.pojo.entity.EntityEnt, querySpaceUid=<gen:0>, path=com.game.pojo.entity.EntityEnt)
+       - EntityReturnImpl(entity=com.game.world.service.pojo.entity.EntityEnt, querySpaceUid=<gen:0>, path=com.game.world.service.pojo.entity.EntityEnt)
     - QuerySpaces
-       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.game.pojo.entity.EntityEnt)
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.game.world.service.pojo.entity.EntityEnt)
           - SQL table alias mapping - entityent0_
           - alias suffix - 0_
           - suffixed key columns - {id1_1_0_}
 
-Static select for entity com.game.pojo.entity.EntityEnt [READ]: select entityent0_.id as id1_1_0_, entityent0_.name as name2_1_0_, entityent0_.type as type3_1_0_, entityent0_.isAlive as isAlive4_1_0_ from entity entityent0_ where entityent0_.id=?
+Static select for entity com.game.world.service.pojo.entity.EntityEnt [READ]: select entityent0_.id as id1_1_0_, entityent0_.name as name2_1_0_, entityent0_.type as type3_1_0_, entityent0_.isAlive as isAlive4_1_0_ from entity entityent0_ where entityent0_.id=?
 Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@6ab4ba9f]
 Visiting attribute path : name
 Visiting attribute path : type
 Visiting attribute path : alive
 Building LoadPlan...
 processing queryspace <gen:0>
-LoadPlan(entity=com.game.pojo.entity.EntityEnt)
+LoadPlan(entity=com.game.world.service.pojo.entity.EntityEnt)
     - Returns
-       - EntityReturnImpl(entity=com.game.pojo.entity.EntityEnt, querySpaceUid=<gen:0>, path=com.game.pojo.entity.EntityEnt)
+       - EntityReturnImpl(entity=com.game.world.service.pojo.entity.EntityEnt, querySpaceUid=<gen:0>, path=com.game.world.service.pojo.entity.EntityEnt)
     - QuerySpaces
-       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.game.pojo.entity.EntityEnt)
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.game.world.service.pojo.entity.EntityEnt)
           - SQL table alias mapping - entityent0_
           - alias suffix - 0_
           - suffixed key columns - {id1_1_0_}
 
-Static select for entity com.game.pojo.entity.EntityEnt [UPGRADE]: select entityent0_.id as id1_1_0_, entityent0_.name as name2_1_0_, entityent0_.type as type3_1_0_, entityent0_.isAlive as isAlive4_1_0_ from entity entityent0_ where entityent0_.id=? for update
+Static select for entity com.game.world.service.pojo.entity.EntityEnt [UPGRADE]: select entityent0_.id as id1_1_0_, entityent0_.name as name2_1_0_, entityent0_.type as type3_1_0_, entityent0_.isAlive as isAlive4_1_0_ from entity entityent0_ where entityent0_.id=? for update
 Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@664e5dee]
 Visiting attribute path : name
 Visiting attribute path : type
 Visiting attribute path : alive
 Building LoadPlan...
 processing queryspace <gen:0>
-LoadPlan(entity=com.game.pojo.entity.EntityEnt)
+LoadPlan(entity=com.game.world.service.pojo.entity.EntityEnt)
     - Returns
-       - EntityReturnImpl(entity=com.game.pojo.entity.EntityEnt, querySpaceUid=<gen:0>, path=com.game.pojo.entity.EntityEnt)
+       - EntityReturnImpl(entity=com.game.world.service.pojo.entity.EntityEnt, querySpaceUid=<gen:0>, path=com.game.world.service.pojo.entity.EntityEnt)
     - QuerySpaces
-       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.game.pojo.entity.EntityEnt)
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.game.world.service.pojo.entity.EntityEnt)
           - SQL table alias mapping - entityent0_
           - alias suffix - 0_
           - suffixed key columns - {id1_1_0_}
 
-Static select for entity com.game.pojo.entity.EntityEnt [UPGRADE_NOWAIT]: select entityent0_.id as id1_1_0_, entityent0_.name as name2_1_0_, entityent0_.type as type3_1_0_, entityent0_.isAlive as isAlive4_1_0_ from entity entityent0_ where entityent0_.id=? for update
+Static select for entity com.game.world.service.pojo.entity.EntityEnt [UPGRADE_NOWAIT]: select entityent0_.id as id1_1_0_, entityent0_.name as name2_1_0_, entityent0_.type as type3_1_0_, entityent0_.isAlive as isAlive4_1_0_ from entity entityent0_ where entityent0_.id=? for update
 Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@cb03411]
 Visiting attribute path : name
 Visiting attribute path : type
 Visiting attribute path : alive
 Building LoadPlan...
 processing queryspace <gen:0>
-LoadPlan(entity=com.game.pojo.entity.EntityEnt)
+LoadPlan(entity=com.game.world.service.pojo.entity.EntityEnt)
     - Returns
-       - EntityReturnImpl(entity=com.game.pojo.entity.EntityEnt, querySpaceUid=<gen:0>, path=com.game.pojo.entity.EntityEnt)
+       - EntityReturnImpl(entity=com.game.world.service.pojo.entity.EntityEnt, querySpaceUid=<gen:0>, path=com.game.world.service.pojo.entity.EntityEnt)
     - QuerySpaces
-       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.game.pojo.entity.EntityEnt)
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.game.world.service.pojo.entity.EntityEnt)
           - SQL table alias mapping - entityent0_
           - alias suffix - 0_
           - suffixed key columns - {id1_1_0_}
 
-Static select for entity com.game.pojo.entity.EntityEnt [UPGRADE_SKIPLOCKED]: select entityent0_.id as id1_1_0_, entityent0_.name as name2_1_0_, entityent0_.type as type3_1_0_, entityent0_.isAlive as isAlive4_1_0_ from entity entityent0_ where entityent0_.id=? for update
+Static select for entity com.game.world.service.pojo.entity.EntityEnt [UPGRADE_SKIPLOCKED]: select entityent0_.id as id1_1_0_, entityent0_.name as name2_1_0_, entityent0_.type as type3_1_0_, entityent0_.isAlive as isAlive4_1_0_ from entity entityent0_ where entityent0_.id=? for update
 Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@6ea04618]
 Visiting attribute path : name
 Visiting attribute path : type
 Visiting attribute path : alive
 Building LoadPlan...
 processing queryspace <gen:0>
-LoadPlan(entity=com.game.pojo.entity.EntityEnt)
+LoadPlan(entity=com.game.world.service.pojo.entity.EntityEnt)
     - Returns
-       - EntityReturnImpl(entity=com.game.pojo.entity.EntityEnt, querySpaceUid=<gen:0>, path=com.game.pojo.entity.EntityEnt)
+       - EntityReturnImpl(entity=com.game.world.service.pojo.entity.EntityEnt, querySpaceUid=<gen:0>, path=com.game.world.service.pojo.entity.EntityEnt)
     - QuerySpaces
-       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.game.pojo.entity.EntityEnt)
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.game.world.service.pojo.entity.EntityEnt)
           - SQL table alias mapping - entityent0_
           - alias suffix - 0_
           - suffixed key columns - {id1_1_0_}
 
-Static select for entity com.game.pojo.entity.EntityEnt [FORCE]: select entityent0_.id as id1_1_0_, entityent0_.name as name2_1_0_, entityent0_.type as type3_1_0_, entityent0_.isAlive as isAlive4_1_0_ from entity entityent0_ where entityent0_.id=? for update
+Static select for entity com.game.world.service.pojo.entity.EntityEnt [FORCE]: select entityent0_.id as id1_1_0_, entityent0_.name as name2_1_0_, entityent0_.type as type3_1_0_, entityent0_.isAlive as isAlive4_1_0_ from entity entityent0_ where entityent0_.id=? for update
 Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@56078cea]
 Visiting attribute path : name
 Visiting attribute path : type
 Visiting attribute path : alive
 Building LoadPlan...
 processing queryspace <gen:0>
-LoadPlan(entity=com.game.pojo.entity.EntityEnt)
+LoadPlan(entity=com.game.world.service.pojo.entity.EntityEnt)
     - Returns
-       - EntityReturnImpl(entity=com.game.pojo.entity.EntityEnt, querySpaceUid=<gen:0>, path=com.game.pojo.entity.EntityEnt)
+       - EntityReturnImpl(entity=com.game.world.service.pojo.entity.EntityEnt, querySpaceUid=<gen:0>, path=com.game.world.service.pojo.entity.EntityEnt)
     - QuerySpaces
-       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.game.pojo.entity.EntityEnt)
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.game.world.service.pojo.entity.EntityEnt)
           - SQL table alias mapping - entityent0_
           - alias suffix - 0_
           - suffixed key columns - {id1_1_0_}
 
-Static select for entity com.game.pojo.entity.EntityEnt [PESSIMISTIC_READ]: select entityent0_.id as id1_1_0_, entityent0_.name as name2_1_0_, entityent0_.type as type3_1_0_, entityent0_.isAlive as isAlive4_1_0_ from entity entityent0_ where entityent0_.id=? lock in share mode
+Static select for entity com.game.world.service.pojo.entity.EntityEnt [PESSIMISTIC_READ]: select entityent0_.id as id1_1_0_, entityent0_.name as name2_1_0_, entityent0_.type as type3_1_0_, entityent0_.isAlive as isAlive4_1_0_ from entity entityent0_ where entityent0_.id=? lock in share mode
 Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@36fcf6c0]
 Visiting attribute path : name
 Visiting attribute path : type
 Visiting attribute path : alive
 Building LoadPlan...
 processing queryspace <gen:0>
-LoadPlan(entity=com.game.pojo.entity.EntityEnt)
+LoadPlan(entity=com.game.world.service.pojo.entity.EntityEnt)
     - Returns
-       - EntityReturnImpl(entity=com.game.pojo.entity.EntityEnt, querySpaceUid=<gen:0>, path=com.game.pojo.entity.EntityEnt)
+       - EntityReturnImpl(entity=com.game.world.service.pojo.entity.EntityEnt, querySpaceUid=<gen:0>, path=com.game.world.service.pojo.entity.EntityEnt)
     - QuerySpaces
-       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.game.pojo.entity.EntityEnt)
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.game.world.service.pojo.entity.EntityEnt)
           - SQL table alias mapping - entityent0_
           - alias suffix - 0_
           - suffixed key columns - {id1_1_0_}
 
-Static select for entity com.game.pojo.entity.EntityEnt [PESSIMISTIC_WRITE]: select entityent0_.id as id1_1_0_, entityent0_.name as name2_1_0_, entityent0_.type as type3_1_0_, entityent0_.isAlive as isAlive4_1_0_ from entity entityent0_ where entityent0_.id=? for update
+Static select for entity com.game.world.service.pojo.entity.EntityEnt [PESSIMISTIC_WRITE]: select entityent0_.id as id1_1_0_, entityent0_.name as name2_1_0_, entityent0_.type as type3_1_0_, entityent0_.isAlive as isAlive4_1_0_ from entity entityent0_ where entityent0_.id=? for update
 Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@7026b7ee]
 Visiting attribute path : name
 Visiting attribute path : type
 Visiting attribute path : alive
 Building LoadPlan...
 processing queryspace <gen:0>
-LoadPlan(entity=com.game.pojo.entity.EntityEnt)
+LoadPlan(entity=com.game.world.service.pojo.entity.EntityEnt)
     - Returns
-       - EntityReturnImpl(entity=com.game.pojo.entity.EntityEnt, querySpaceUid=<gen:0>, path=com.game.pojo.entity.EntityEnt)
+       - EntityReturnImpl(entity=com.game.world.service.pojo.entity.EntityEnt, querySpaceUid=<gen:0>, path=com.game.world.service.pojo.entity.EntityEnt)
     - QuerySpaces
-       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.game.pojo.entity.EntityEnt)
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.game.world.service.pojo.entity.EntityEnt)
           - SQL table alias mapping - entityent0_
           - alias suffix - 0_
           - suffixed key columns - {id1_1_0_}
 
-Static select for entity com.game.pojo.entity.EntityEnt [PESSIMISTIC_FORCE_INCREMENT]: select entityent0_.id as id1_1_0_, entityent0_.name as name2_1_0_, entityent0_.type as type3_1_0_, entityent0_.isAlive as isAlive4_1_0_ from entity entityent0_ where entityent0_.id=? for update
+Static select for entity com.game.world.service.pojo.entity.EntityEnt [PESSIMISTIC_FORCE_INCREMENT]: select entityent0_.id as id1_1_0_, entityent0_.name as name2_1_0_, entityent0_.type as type3_1_0_, entityent0_.isAlive as isAlive4_1_0_ from entity entityent0_ where entityent0_.id=? for update
 Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@7cb8437d]
 Visiting attribute path : name
 Visiting attribute path : type
 Visiting attribute path : alive
 Building LoadPlan...
 processing queryspace <gen:0>
-LoadPlan(entity=com.game.pojo.entity.EntityEnt)
+LoadPlan(entity=com.game.world.service.pojo.entity.EntityEnt)
     - Returns
-       - EntityReturnImpl(entity=com.game.pojo.entity.EntityEnt, querySpaceUid=<gen:0>, path=com.game.pojo.entity.EntityEnt)
+       - EntityReturnImpl(entity=com.game.world.service.pojo.entity.EntityEnt, querySpaceUid=<gen:0>, path=com.game.world.service.pojo.entity.EntityEnt)
     - QuerySpaces
-       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.game.pojo.entity.EntityEnt)
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.game.world.service.pojo.entity.EntityEnt)
           - SQL table alias mapping - entityent0_
           - alias suffix - 0_
           - suffixed key columns - {id1_1_0_}
 
-Static select for entity com.game.pojo.entity.EntityEnt [OPTIMISTIC]: select entityent0_.id as id1_1_0_, entityent0_.name as name2_1_0_, entityent0_.type as type3_1_0_, entityent0_.isAlive as isAlive4_1_0_ from entity entityent0_ where entityent0_.id=?
+Static select for entity com.game.world.service.pojo.entity.EntityEnt [OPTIMISTIC]: select entityent0_.id as id1_1_0_, entityent0_.name as name2_1_0_, entityent0_.type as type3_1_0_, entityent0_.isAlive as isAlive4_1_0_ from entity entityent0_ where entityent0_.id=?
 Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@43f61afb]
 Visiting attribute path : name
 Visiting attribute path : type
 Visiting attribute path : alive
 Building LoadPlan...
 processing queryspace <gen:0>
-LoadPlan(entity=com.game.pojo.entity.EntityEnt)
+LoadPlan(entity=com.game.world.service.pojo.entity.EntityEnt)
     - Returns
-       - EntityReturnImpl(entity=com.game.pojo.entity.EntityEnt, querySpaceUid=<gen:0>, path=com.game.pojo.entity.EntityEnt)
+       - EntityReturnImpl(entity=com.game.world.service.pojo.entity.EntityEnt, querySpaceUid=<gen:0>, path=com.game.world.service.pojo.entity.EntityEnt)
     - QuerySpaces
-       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.game.pojo.entity.EntityEnt)
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.game.world.service.pojo.entity.EntityEnt)
           - SQL table alias mapping - entityent0_
           - alias suffix - 0_
           - suffixed key columns - {id1_1_0_}
 
-Static select for entity com.game.pojo.entity.EntityEnt [OPTIMISTIC_FORCE_INCREMENT]: select entityent0_.id as id1_1_0_, entityent0_.name as name2_1_0_, entityent0_.type as type3_1_0_, entityent0_.isAlive as isAlive4_1_0_ from entity entityent0_ where entityent0_.id=?
-Static select for action ACTION_MERGE on entity com.game.pojo.entity.EntityEnt: select entityent0_.id as id1_1_0_, entityent0_.name as name2_1_0_, entityent0_.type as type3_1_0_, entityent0_.isAlive as isAlive4_1_0_ from entity entityent0_ where entityent0_.id=?
-Static select for action ACTION_REFRESH on entity com.game.pojo.entity.EntityEnt: select entityent0_.id as id1_1_0_, entityent0_.name as name2_1_0_, entityent0_.type as type3_1_0_, entityent0_.isAlive as isAlive4_1_0_ from entity entityent0_ where entityent0_.id=?
+Static select for entity com.game.world.service.pojo.entity.EntityEnt [OPTIMISTIC_FORCE_INCREMENT]: select entityent0_.id as id1_1_0_, entityent0_.name as name2_1_0_, entityent0_.type as type3_1_0_, entityent0_.isAlive as isAlive4_1_0_ from entity entityent0_ where entityent0_.id=?
+Static select for action ACTION_MERGE on entity com.game.world.service.pojo.entity.EntityEnt: select entityent0_.id as id1_1_0_, entityent0_.name as name2_1_0_, entityent0_.type as type3_1_0_, entityent0_.isAlive as isAlive4_1_0_ from entity entityent0_ where entityent0_.id=?
+Static select for action ACTION_REFRESH on entity com.game.world.service.pojo.entity.EntityEnt: select entityent0_.id as id1_1_0_, entityent0_.name as name2_1_0_, entityent0_.type as type3_1_0_, entityent0_.isAlive as isAlive4_1_0_ from entity entityent0_ where entityent0_.id=?
 Static SQL for entity: com.game.role.player.entity.PlayerEnt
  Version select: select id from player where id =?
  Snapshot select: select playerent_.id, playerent_.accountId as accountI2_5_, playerent_.alive as alive3_5_ from player playerent_ where playerent_.id=?
@@ -807,7 +807,7 @@ LoadPlan(entity=com.game.role.player.entity.PlayerEnt)
 Static select for entity com.game.role.player.entity.PlayerEnt [OPTIMISTIC_FORCE_INCREMENT]: select playerent0_.id as id1_5_0_, playerent0_.accountId as accountI2_5_0_, playerent0_.alive as alive3_5_0_ from player playerent0_ where playerent0_.id=?
 Static select for action ACTION_MERGE on entity com.game.role.player.entity.PlayerEnt: select playerent0_.id as id1_5_0_, playerent0_.accountId as accountI2_5_0_, playerent0_.alive as alive3_5_0_ from player playerent0_ where playerent0_.id=?
 Static select for action ACTION_REFRESH on entity com.game.role.player.entity.PlayerEnt: select playerent0_.id as id1_5_0_, playerent0_.accountId as accountI2_5_0_, playerent0_.alive as alive3_5_0_ from player playerent0_ where playerent0_.id=?
-Static SQL for entity: com.game.map.entity.MapEnt
+Static SQL for entity: com.game.world.service.map.entity.MapEnt
  Version select: select id from map where id =?
  Snapshot select: select mapent_.id, mapent_.name as name2_3_, mapent_.entityIdList as entityId3_3_, mapent_.mapIdNearby as mapIdNea4_3_ from map mapent_ where mapent_.id=?
  Insert 0: insert into map (name, entityIdList, mapIdNearby, id) values (?, ?, ?, ?)
@@ -820,178 +820,178 @@ Visiting attribute path : entityIdList
 Visiting attribute path : mapIdNearby
 Building LoadPlan...
 processing queryspace <gen:0>
-LoadPlan(entity=com.game.map.entity.MapEnt)
+LoadPlan(entity=com.game.world.service.map.entity.MapEnt)
     - Returns
-       - EntityReturnImpl(entity=com.game.map.entity.MapEnt, querySpaceUid=<gen:0>, path=com.game.map.entity.MapEnt)
+       - EntityReturnImpl(entity=com.game.world.service.map.entity.MapEnt, querySpaceUid=<gen:0>, path=com.game.world.service.map.entity.MapEnt)
     - QuerySpaces
-       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.game.map.entity.MapEnt)
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.game.world.service.map.entity.MapEnt)
           - SQL table alias mapping - mapent0_
           - alias suffix - 0_
           - suffixed key columns - {id1_3_0_}
 
-Static select for entity com.game.map.entity.MapEnt [NONE]: select mapent0_.id as id1_3_0_, mapent0_.name as name2_3_0_, mapent0_.entityIdList as entityId3_3_0_, mapent0_.mapIdNearby as mapIdNea4_3_0_ from map mapent0_ where mapent0_.id=?
+Static select for entity com.game.world.service.map.entity.MapEnt [NONE]: select mapent0_.id as id1_3_0_, mapent0_.name as name2_3_0_, mapent0_.entityIdList as entityId3_3_0_, mapent0_.mapIdNearby as mapIdNea4_3_0_ from map mapent0_ where mapent0_.id=?
 Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@4b2e3e8f]
 Visiting attribute path : name
 Visiting attribute path : entityIdList
 Visiting attribute path : mapIdNearby
 Building LoadPlan...
 processing queryspace <gen:0>
-LoadPlan(entity=com.game.map.entity.MapEnt)
+LoadPlan(entity=com.game.world.service.map.entity.MapEnt)
     - Returns
-       - EntityReturnImpl(entity=com.game.map.entity.MapEnt, querySpaceUid=<gen:0>, path=com.game.map.entity.MapEnt)
+       - EntityReturnImpl(entity=com.game.world.service.map.entity.MapEnt, querySpaceUid=<gen:0>, path=com.game.world.service.map.entity.MapEnt)
     - QuerySpaces
-       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.game.map.entity.MapEnt)
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.game.world.service.map.entity.MapEnt)
           - SQL table alias mapping - mapent0_
           - alias suffix - 0_
           - suffixed key columns - {id1_3_0_}
 
-Static select for entity com.game.map.entity.MapEnt [READ]: select mapent0_.id as id1_3_0_, mapent0_.name as name2_3_0_, mapent0_.entityIdList as entityId3_3_0_, mapent0_.mapIdNearby as mapIdNea4_3_0_ from map mapent0_ where mapent0_.id=?
+Static select for entity com.game.world.service.map.entity.MapEnt [READ]: select mapent0_.id as id1_3_0_, mapent0_.name as name2_3_0_, mapent0_.entityIdList as entityId3_3_0_, mapent0_.mapIdNearby as mapIdNea4_3_0_ from map mapent0_ where mapent0_.id=?
 Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@f096f37]
 Visiting attribute path : name
 Visiting attribute path : entityIdList
 Visiting attribute path : mapIdNearby
 Building LoadPlan...
 processing queryspace <gen:0>
-LoadPlan(entity=com.game.map.entity.MapEnt)
+LoadPlan(entity=com.game.world.service.map.entity.MapEnt)
     - Returns
-       - EntityReturnImpl(entity=com.game.map.entity.MapEnt, querySpaceUid=<gen:0>, path=com.game.map.entity.MapEnt)
+       - EntityReturnImpl(entity=com.game.world.service.map.entity.MapEnt, querySpaceUid=<gen:0>, path=com.game.world.service.map.entity.MapEnt)
     - QuerySpaces
-       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.game.map.entity.MapEnt)
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.game.world.service.map.entity.MapEnt)
           - SQL table alias mapping - mapent0_
           - alias suffix - 0_
           - suffixed key columns - {id1_3_0_}
 
-Static select for entity com.game.map.entity.MapEnt [UPGRADE]: select mapent0_.id as id1_3_0_, mapent0_.name as name2_3_0_, mapent0_.entityIdList as entityId3_3_0_, mapent0_.mapIdNearby as mapIdNea4_3_0_ from map mapent0_ where mapent0_.id=? for update
+Static select for entity com.game.world.service.map.entity.MapEnt [UPGRADE]: select mapent0_.id as id1_3_0_, mapent0_.name as name2_3_0_, mapent0_.entityIdList as entityId3_3_0_, mapent0_.mapIdNearby as mapIdNea4_3_0_ from map mapent0_ where mapent0_.id=? for update
 Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@41f4fe5]
 Visiting attribute path : name
 Visiting attribute path : entityIdList
 Visiting attribute path : mapIdNearby
 Building LoadPlan...
 processing queryspace <gen:0>
-LoadPlan(entity=com.game.map.entity.MapEnt)
+LoadPlan(entity=com.game.world.service.map.entity.MapEnt)
     - Returns
-       - EntityReturnImpl(entity=com.game.map.entity.MapEnt, querySpaceUid=<gen:0>, path=com.game.map.entity.MapEnt)
+       - EntityReturnImpl(entity=com.game.world.service.map.entity.MapEnt, querySpaceUid=<gen:0>, path=com.game.world.service.map.entity.MapEnt)
     - QuerySpaces
-       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.game.map.entity.MapEnt)
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.game.world.service.map.entity.MapEnt)
           - SQL table alias mapping - mapent0_
           - alias suffix - 0_
           - suffixed key columns - {id1_3_0_}
 
-Static select for entity com.game.map.entity.MapEnt [UPGRADE_NOWAIT]: select mapent0_.id as id1_3_0_, mapent0_.name as name2_3_0_, mapent0_.entityIdList as entityId3_3_0_, mapent0_.mapIdNearby as mapIdNea4_3_0_ from map mapent0_ where mapent0_.id=? for update
+Static select for entity com.game.world.service.map.entity.MapEnt [UPGRADE_NOWAIT]: select mapent0_.id as id1_3_0_, mapent0_.name as name2_3_0_, mapent0_.entityIdList as entityId3_3_0_, mapent0_.mapIdNearby as mapIdNea4_3_0_ from map mapent0_ where mapent0_.id=? for update
 Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@514cd540]
 Visiting attribute path : name
 Visiting attribute path : entityIdList
 Visiting attribute path : mapIdNearby
 Building LoadPlan...
 processing queryspace <gen:0>
-LoadPlan(entity=com.game.map.entity.MapEnt)
+LoadPlan(entity=com.game.world.service.map.entity.MapEnt)
     - Returns
-       - EntityReturnImpl(entity=com.game.map.entity.MapEnt, querySpaceUid=<gen:0>, path=com.game.map.entity.MapEnt)
+       - EntityReturnImpl(entity=com.game.world.service.map.entity.MapEnt, querySpaceUid=<gen:0>, path=com.game.world.service.map.entity.MapEnt)
     - QuerySpaces
-       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.game.map.entity.MapEnt)
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.game.world.service.map.entity.MapEnt)
           - SQL table alias mapping - mapent0_
           - alias suffix - 0_
           - suffixed key columns - {id1_3_0_}
 
-Static select for entity com.game.map.entity.MapEnt [UPGRADE_SKIPLOCKED]: select mapent0_.id as id1_3_0_, mapent0_.name as name2_3_0_, mapent0_.entityIdList as entityId3_3_0_, mapent0_.mapIdNearby as mapIdNea4_3_0_ from map mapent0_ where mapent0_.id=? for update
+Static select for entity com.game.world.service.map.entity.MapEnt [UPGRADE_SKIPLOCKED]: select mapent0_.id as id1_3_0_, mapent0_.name as name2_3_0_, mapent0_.entityIdList as entityId3_3_0_, mapent0_.mapIdNearby as mapIdNea4_3_0_ from map mapent0_ where mapent0_.id=? for update
 Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@6f4ade6e]
 Visiting attribute path : name
 Visiting attribute path : entityIdList
 Visiting attribute path : mapIdNearby
 Building LoadPlan...
 processing queryspace <gen:0>
-LoadPlan(entity=com.game.map.entity.MapEnt)
+LoadPlan(entity=com.game.world.service.map.entity.MapEnt)
     - Returns
-       - EntityReturnImpl(entity=com.game.map.entity.MapEnt, querySpaceUid=<gen:0>, path=com.game.map.entity.MapEnt)
+       - EntityReturnImpl(entity=com.game.world.service.map.entity.MapEnt, querySpaceUid=<gen:0>, path=com.game.world.service.map.entity.MapEnt)
     - QuerySpaces
-       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.game.map.entity.MapEnt)
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.game.world.service.map.entity.MapEnt)
           - SQL table alias mapping - mapent0_
           - alias suffix - 0_
           - suffixed key columns - {id1_3_0_}
 
-Static select for entity com.game.map.entity.MapEnt [FORCE]: select mapent0_.id as id1_3_0_, mapent0_.name as name2_3_0_, mapent0_.entityIdList as entityId3_3_0_, mapent0_.mapIdNearby as mapIdNea4_3_0_ from map mapent0_ where mapent0_.id=? for update
+Static select for entity com.game.world.service.map.entity.MapEnt [FORCE]: select mapent0_.id as id1_3_0_, mapent0_.name as name2_3_0_, mapent0_.entityIdList as entityId3_3_0_, mapent0_.mapIdNearby as mapIdNea4_3_0_ from map mapent0_ where mapent0_.id=? for update
 Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@eb507b9]
 Visiting attribute path : name
 Visiting attribute path : entityIdList
 Visiting attribute path : mapIdNearby
 Building LoadPlan...
 processing queryspace <gen:0>
-LoadPlan(entity=com.game.map.entity.MapEnt)
+LoadPlan(entity=com.game.world.service.map.entity.MapEnt)
     - Returns
-       - EntityReturnImpl(entity=com.game.map.entity.MapEnt, querySpaceUid=<gen:0>, path=com.game.map.entity.MapEnt)
+       - EntityReturnImpl(entity=com.game.world.service.map.entity.MapEnt, querySpaceUid=<gen:0>, path=com.game.world.service.map.entity.MapEnt)
     - QuerySpaces
-       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.game.map.entity.MapEnt)
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.game.world.service.map.entity.MapEnt)
           - SQL table alias mapping - mapent0_
           - alias suffix - 0_
           - suffixed key columns - {id1_3_0_}
 
-Static select for entity com.game.map.entity.MapEnt [PESSIMISTIC_READ]: select mapent0_.id as id1_3_0_, mapent0_.name as name2_3_0_, mapent0_.entityIdList as entityId3_3_0_, mapent0_.mapIdNearby as mapIdNea4_3_0_ from map mapent0_ where mapent0_.id=? lock in share mode
+Static select for entity com.game.world.service.map.entity.MapEnt [PESSIMISTIC_READ]: select mapent0_.id as id1_3_0_, mapent0_.name as name2_3_0_, mapent0_.entityIdList as entityId3_3_0_, mapent0_.mapIdNearby as mapIdNea4_3_0_ from map mapent0_ where mapent0_.id=? lock in share mode
 Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@86733]
 Visiting attribute path : name
 Visiting attribute path : entityIdList
 Visiting attribute path : mapIdNearby
 Building LoadPlan...
 processing queryspace <gen:0>
-LoadPlan(entity=com.game.map.entity.MapEnt)
+LoadPlan(entity=com.game.world.service.map.entity.MapEnt)
     - Returns
-       - EntityReturnImpl(entity=com.game.map.entity.MapEnt, querySpaceUid=<gen:0>, path=com.game.map.entity.MapEnt)
+       - EntityReturnImpl(entity=com.game.world.service.map.entity.MapEnt, querySpaceUid=<gen:0>, path=com.game.world.service.map.entity.MapEnt)
     - QuerySpaces
-       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.game.map.entity.MapEnt)
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.game.world.service.map.entity.MapEnt)
           - SQL table alias mapping - mapent0_
           - alias suffix - 0_
           - suffixed key columns - {id1_3_0_}
 
-Static select for entity com.game.map.entity.MapEnt [PESSIMISTIC_WRITE]: select mapent0_.id as id1_3_0_, mapent0_.name as name2_3_0_, mapent0_.entityIdList as entityId3_3_0_, mapent0_.mapIdNearby as mapIdNea4_3_0_ from map mapent0_ where mapent0_.id=? for update
+Static select for entity com.game.world.service.map.entity.MapEnt [PESSIMISTIC_WRITE]: select mapent0_.id as id1_3_0_, mapent0_.name as name2_3_0_, mapent0_.entityIdList as entityId3_3_0_, mapent0_.mapIdNearby as mapIdNea4_3_0_ from map mapent0_ where mapent0_.id=? for update
 Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@3ec2ecea]
 Visiting attribute path : name
 Visiting attribute path : entityIdList
 Visiting attribute path : mapIdNearby
 Building LoadPlan...
 processing queryspace <gen:0>
-LoadPlan(entity=com.game.map.entity.MapEnt)
+LoadPlan(entity=com.game.world.service.map.entity.MapEnt)
     - Returns
-       - EntityReturnImpl(entity=com.game.map.entity.MapEnt, querySpaceUid=<gen:0>, path=com.game.map.entity.MapEnt)
+       - EntityReturnImpl(entity=com.game.world.service.map.entity.MapEnt, querySpaceUid=<gen:0>, path=com.game.world.service.map.entity.MapEnt)
     - QuerySpaces
-       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.game.map.entity.MapEnt)
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.game.world.service.map.entity.MapEnt)
           - SQL table alias mapping - mapent0_
           - alias suffix - 0_
           - suffixed key columns - {id1_3_0_}
 
-Static select for entity com.game.map.entity.MapEnt [PESSIMISTIC_FORCE_INCREMENT]: select mapent0_.id as id1_3_0_, mapent0_.name as name2_3_0_, mapent0_.entityIdList as entityId3_3_0_, mapent0_.mapIdNearby as mapIdNea4_3_0_ from map mapent0_ where mapent0_.id=? for update
+Static select for entity com.game.world.service.map.entity.MapEnt [PESSIMISTIC_FORCE_INCREMENT]: select mapent0_.id as id1_3_0_, mapent0_.name as name2_3_0_, mapent0_.entityIdList as entityId3_3_0_, mapent0_.mapIdNearby as mapIdNea4_3_0_ from map mapent0_ where mapent0_.id=? for update
 Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@7fc7c4a]
 Visiting attribute path : name
 Visiting attribute path : entityIdList
 Visiting attribute path : mapIdNearby
 Building LoadPlan...
 processing queryspace <gen:0>
-LoadPlan(entity=com.game.map.entity.MapEnt)
+LoadPlan(entity=com.game.world.service.map.entity.MapEnt)
     - Returns
-       - EntityReturnImpl(entity=com.game.map.entity.MapEnt, querySpaceUid=<gen:0>, path=com.game.map.entity.MapEnt)
+       - EntityReturnImpl(entity=com.game.world.service.map.entity.MapEnt, querySpaceUid=<gen:0>, path=com.game.world.service.map.entity.MapEnt)
     - QuerySpaces
-       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.game.map.entity.MapEnt)
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.game.world.service.map.entity.MapEnt)
           - SQL table alias mapping - mapent0_
           - alias suffix - 0_
           - suffixed key columns - {id1_3_0_}
 
-Static select for entity com.game.map.entity.MapEnt [OPTIMISTIC]: select mapent0_.id as id1_3_0_, mapent0_.name as name2_3_0_, mapent0_.entityIdList as entityId3_3_0_, mapent0_.mapIdNearby as mapIdNea4_3_0_ from map mapent0_ where mapent0_.id=?
+Static select for entity com.game.world.service.map.entity.MapEnt [OPTIMISTIC]: select mapent0_.id as id1_3_0_, mapent0_.name as name2_3_0_, mapent0_.entityIdList as entityId3_3_0_, mapent0_.mapIdNearby as mapIdNea4_3_0_ from map mapent0_ where mapent0_.id=?
 Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@53a5e217]
 Visiting attribute path : name
 Visiting attribute path : entityIdList
 Visiting attribute path : mapIdNearby
 Building LoadPlan...
 processing queryspace <gen:0>
-LoadPlan(entity=com.game.map.entity.MapEnt)
+LoadPlan(entity=com.game.world.service.map.entity.MapEnt)
     - Returns
-       - EntityReturnImpl(entity=com.game.map.entity.MapEnt, querySpaceUid=<gen:0>, path=com.game.map.entity.MapEnt)
+       - EntityReturnImpl(entity=com.game.world.service.map.entity.MapEnt, querySpaceUid=<gen:0>, path=com.game.world.service.map.entity.MapEnt)
     - QuerySpaces
-       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.game.map.entity.MapEnt)
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.game.world.service.map.entity.MapEnt)
           - SQL table alias mapping - mapent0_
           - alias suffix - 0_
           - suffixed key columns - {id1_3_0_}
 
-Static select for entity com.game.map.entity.MapEnt [OPTIMISTIC_FORCE_INCREMENT]: select mapent0_.id as id1_3_0_, mapent0_.name as name2_3_0_, mapent0_.entityIdList as entityId3_3_0_, mapent0_.mapIdNearby as mapIdNea4_3_0_ from map mapent0_ where mapent0_.id=?
-Static select for action ACTION_MERGE on entity com.game.map.entity.MapEnt: select mapent0_.id as id1_3_0_, mapent0_.name as name2_3_0_, mapent0_.entityIdList as entityId3_3_0_, mapent0_.mapIdNearby as mapIdNea4_3_0_ from map mapent0_ where mapent0_.id=?
-Static select for action ACTION_REFRESH on entity com.game.map.entity.MapEnt: select mapent0_.id as id1_3_0_, mapent0_.name as name2_3_0_, mapent0_.entityIdList as entityId3_3_0_, mapent0_.mapIdNearby as mapIdNea4_3_0_ from map mapent0_ where mapent0_.id=?
+Static select for entity com.game.world.service.map.entity.MapEnt [OPTIMISTIC_FORCE_INCREMENT]: select mapent0_.id as id1_3_0_, mapent0_.name as name2_3_0_, mapent0_.entityIdList as entityId3_3_0_, mapent0_.mapIdNearby as mapIdNea4_3_0_ from map mapent0_ where mapent0_.id=?
+Static select for action ACTION_MERGE on entity com.game.world.service.map.entity.MapEnt: select mapent0_.id as id1_3_0_, mapent0_.name as name2_3_0_, mapent0_.entityIdList as entityId3_3_0_, mapent0_.mapIdNearby as mapIdNea4_3_0_ from map mapent0_ where mapent0_.id=?
+Static select for action ACTION_REFRESH on entity com.game.world.service.map.entity.MapEnt: select mapent0_.id as id1_3_0_, mapent0_.name as name2_3_0_, mapent0_.entityIdList as entityId3_3_0_, mapent0_.mapIdNearby as mapIdNea4_3_0_ from map mapent0_ where mapent0_.id=?
 Static SQL for entity: com.game.user.mapInfo.entity.MapInfoEnt
  Version select: select id from mapinfo where id =?
  Snapshot select: select mapinfoent_.id, mapinfoent_.accountId as accountI2_4_, mapinfoent_.curMapId as curMapId3_4_, mapinfoent_.lastMapId as lastMapI4_4_ from mapinfo mapinfoent_ where mapinfoent_.id=?
@@ -1379,16 +1379,16 @@ Instantiated session factory
 Checking 0 named HQL queries
 Checking 0 named SQL queries
 Statistics initialized [enabled=false]
-Adding transactional method 'com.game.pojo.dao.EntityEntDao.save' with attribute: PROPAGATION_REQUIRED,ISOLATION_DEFAULT; ''
+Adding transactional method 'com.game.world.service.pojo.dao.EntityEntDao.save' with attribute: PROPAGATION_REQUIRED,ISOLATION_DEFAULT; ''
 Creating shared instance of singleton bean 'org.springframework.transaction.interceptor.TransactionInterceptor#0'
-Adding transactional method 'com.game.pojo.dao.EntityEntDao.findAll' with attribute: PROPAGATION_REQUIRED,ISOLATION_DEFAULT; ''
-Adding transactional method 'com.game.pojo.dao.EntityEntDao.getSession' with attribute: PROPAGATION_REQUIRED,ISOLATION_DEFAULT; ''
-Adding transactional method 'com.game.pojo.dao.EntityEntDao.findOne' with attribute: PROPAGATION_REQUIRED,ISOLATION_DEFAULT; ''
+Adding transactional method 'com.game.world.service.pojo.dao.EntityEntDao.findAll' with attribute: PROPAGATION_REQUIRED,ISOLATION_DEFAULT; ''
+Adding transactional method 'com.game.world.service.pojo.dao.EntityEntDao.getSession' with attribute: PROPAGATION_REQUIRED,ISOLATION_DEFAULT; ''
+Adding transactional method 'com.game.world.service.pojo.dao.EntityEntDao.findOne' with attribute: PROPAGATION_REQUIRED,ISOLATION_DEFAULT; ''
 Creating shared instance of singleton bean 'mapService'
 Creating shared instance of singleton bean 'MapEntDao'
-Adding transactional method 'com.game.map.dao.MapEntDao.save' with attribute: PROPAGATION_REQUIRED,ISOLATION_DEFAULT; ''
-Adding transactional method 'com.game.map.dao.MapEntDao.findAll' with attribute: PROPAGATION_REQUIRED,ISOLATION_DEFAULT; ''
-Adding transactional method 'com.game.map.dao.MapEntDao.findOne' with attribute: PROPAGATION_REQUIRED,ISOLATION_DEFAULT; ''
+Adding transactional method 'com.game.world.service.map.dao.MapEntDao.save' with attribute: PROPAGATION_REQUIRED,ISOLATION_DEFAULT; ''
+Adding transactional method 'com.game.world.service.map.dao.MapEntDao.findAll' with attribute: PROPAGATION_REQUIRED,ISOLATION_DEFAULT; ''
+Adding transactional method 'com.game.world.service.map.dao.MapEntDao.findOne' with attribute: PROPAGATION_REQUIRED,ISOLATION_DEFAULT; ''
 Creating shared instance of singleton bean 'identifyService'
 Creating shared instance of singleton bean 'IdentifyDao'
 Adding transactional method 'com.game.core.id.dao.IdentifyDao.save' with attribute: PROPAGATION_REQUIRED,ISOLATION_DEFAULT; ''
@@ -1759,10 +1759,10 @@ Committing JDBC transaction on Connection [1261545224, URL=jdbc:mysql://localhos
 Releasing JDBC Connection [1261545224, URL=jdbc:mysql://localhost/game?useUnicode=true&characterEncoding=utf-8, UserName=root@localhost, MySQL Connector Java] after transaction
 Returning JDBC Connection to DataSource
 初始化地图数据。。。
-Creating new transaction with name [com.game.map.dao.MapEntDao.findAll]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT; ''
+Creating new transaction with name [com.game.world.service.map.dao.MapEntDao.findAll]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT; ''
 Acquired Connection [1664927413, URL=jdbc:mysql://localhost/game?useUnicode=true&characterEncoding=utf-8, UserName=root@localhost, MySQL Connector Java] for JDBC transaction
 Switching JDBC Connection [1664927413, URL=jdbc:mysql://localhost/game?useUnicode=true&characterEncoding=utf-8, UserName=root@localhost, MySQL Connector Java] to manual commit
-parse() - HQL: FROM com.game.map.entity.MapEnt
+parse() - HQL: FROM com.game.world.service.map.entity.MapEnt
 --- HQL AST ---
  \-[QUERY] Node: 'query'
     \-[SELECT_FROM] Node: 'SELECT_FROM'
@@ -1780,7 +1780,7 @@ parse() - HQL: FROM com.game.map.entity.MapEnt
 
 throwQueryException() : no errors
 select << begin [level=1, statement=select]
-FromClause{level=1} : com.game.map.entity.MapEnt (<no alias>) -> mapent0_
+FromClause{level=1} : com.game.world.service.map.entity.MapEnt (<no alias>) -> mapent0_
 select : finishing up [level=1, statement=select]
 processQuery() :  ( SELECT ( FromClause{level=1} map mapent0_ ) )
 Derived SELECT clause created.
@@ -1789,44 +1789,44 @@ select >> end [level=1, statement=select]
 --- SQL AST ---
  \-[SELECT] QueryNode: 'SELECT'  querySpaces (map)
     +-[SELECT_CLAUSE] SelectClause: '{derived select clause}'
-    |  +-[SELECT_EXPR] SelectExpressionImpl: 'mapent0_.id as id1_3_' {FromElement{explicit,not a collection join,not a fetch join,fetch non-lazy properties,classAlias=null,role=null,tableName=map,tableAlias=mapent0_,origin=null,columns={,className=com.game.map.entity.MapEnt}}}
+    |  +-[SELECT_EXPR] SelectExpressionImpl: 'mapent0_.id as id1_3_' {FromElement{explicit,not a collection join,not a fetch join,fetch non-lazy properties,classAlias=null,role=null,tableName=map,tableAlias=mapent0_,origin=null,columns={,className=com.game.world.service.map.entity.MapEnt}}}
     |  \-[SQL_TOKEN] SqlFragment: 'mapent0_.name as name2_3_, mapent0_.entityIdList as entityId3_3_, mapent0_.mapIdNearby as mapIdNea4_3_'
     \-[FROM] FromClause: 'FROM' FromClause{level=1, fromElementCounter=1, fromElements=1, fromElementByClassAlias=[], fromElementByTableAlias=[mapent0_], fromElementsByPath=[], collectionJoinFromElementsByPath=[], impliedElements=[]}
-       \-[FROM_FRAGMENT] FromElement: 'map mapent0_' FromElement{explicit,not a collection join,not a fetch join,fetch non-lazy properties,classAlias=null,role=null,tableName=map,tableAlias=mapent0_,origin=null,columns={,className=com.game.map.entity.MapEnt}}
+       \-[FROM_FRAGMENT] FromElement: 'map mapent0_' FromElement{explicit,not a collection join,not a fetch join,fetch non-lazy properties,classAlias=null,role=null,tableName=map,tableAlias=mapent0_,origin=null,columns={,className=com.game.world.service.map.entity.MapEnt}}
 
 throwQueryException() : no errors
-HQL: FROM com.game.map.entity.MapEnt
+HQL: FROM com.game.world.service.map.entity.MapEnt
 SQL: select mapent0_.id as id1_3_, mapent0_.name as name2_3_, mapent0_.entityIdList as entityId3_3_, mapent0_.mapIdNearby as mapIdNea4_3_ from map mapent0_
 throwQueryException() : no errors
 select mapent0_.id as id1_3_, mapent0_.name as name2_3_, mapent0_.entityIdList as entityId3_3_, mapent0_.mapIdNearby as mapIdNea4_3_ from map mapent0_
 Obtaining JDBC connection
 Obtained JDBC connection
 Result set row: 0
-Result row: EntityKey[com.game.map.entity.MapEnt#1]
+Result row: EntityKey[com.game.world.service.map.entity.MapEnt#1]
 Result set row: 1
-Result row: EntityKey[com.game.map.entity.MapEnt#2]
+Result row: EntityKey[com.game.world.service.map.entity.MapEnt#2]
 Result set row: 2
-Result row: EntityKey[com.game.map.entity.MapEnt#3]
+Result row: EntityKey[com.game.world.service.map.entity.MapEnt#3]
 Result set row: 3
-Result row: EntityKey[com.game.map.entity.MapEnt#4]
-Resolving associations for [com.game.map.entity.MapEnt#1]
-Done materializing entity [com.game.map.entity.MapEnt#1]
-Resolving associations for [com.game.map.entity.MapEnt#2]
-Done materializing entity [com.game.map.entity.MapEnt#2]
-Resolving associations for [com.game.map.entity.MapEnt#3]
-Done materializing entity [com.game.map.entity.MapEnt#3]
-Resolving associations for [com.game.map.entity.MapEnt#4]
-Done materializing entity [com.game.map.entity.MapEnt#4]
+Result row: EntityKey[com.game.world.service.map.entity.MapEnt#4]
+Resolving associations for [com.game.world.service.map.entity.MapEnt#1]
+Done materializing entity [com.game.world.service.map.entity.MapEnt#1]
+Resolving associations for [com.game.world.service.map.entity.MapEnt#2]
+Done materializing entity [com.game.world.service.map.entity.MapEnt#2]
+Resolving associations for [com.game.world.service.map.entity.MapEnt#3]
+Done materializing entity [com.game.world.service.map.entity.MapEnt#3]
+Resolving associations for [com.game.world.service.map.entity.MapEnt#4]
+Done materializing entity [com.game.world.service.map.entity.MapEnt#4]
 Flushing Hibernate Session on transaction synchronization
 Processing flush-time cascades
 Dirty checking collections
 Flushed: 0 insertions, 0 updates, 0 deletions to 4 objects
 Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
 Listing entities:
-com.game.map.entity.MapEnt{mapIdNearby=2, name=森林, entityIdList=4,5, id=3}
-com.game.map.entity.MapEnt{mapIdNearby=2, name=传说秘境, entityIdList=6, id=4}
-com.game.map.entity.MapEnt{mapIdNearby=2, name=启始之地, entityIdList=1, id=1}
-com.game.map.entity.MapEnt{mapIdNearby=3,4, name=村子, entityIdList=2,3, id=2}
+com.game.world.service.map.entity.MapEnt{mapIdNearby=2, name=森林, entityIdList=4,5, id=3}
+com.game.world.service.map.entity.MapEnt{mapIdNearby=2, name=传说秘境, entityIdList=6, id=4}
+com.game.world.service.map.entity.MapEnt{mapIdNearby=2, name=启始之地, entityIdList=1, id=1}
+com.game.world.service.map.entity.MapEnt{mapIdNearby=3,4, name=村子, entityIdList=2,3, id=2}
 Disconnecting session
 Releasing JDBC connection
 Released JDBC connection
@@ -1834,10 +1834,10 @@ Initiating transaction commit
 Committing JDBC transaction on Connection [1664927413, URL=jdbc:mysql://localhost/game?useUnicode=true&characterEncoding=utf-8, UserName=root@localhost, MySQL Connector Java]
 Releasing JDBC Connection [1664927413, URL=jdbc:mysql://localhost/game?useUnicode=true&characterEncoding=utf-8, UserName=root@localhost, MySQL Connector Java] after transaction
 Returning JDBC Connection to DataSource
-Creating new transaction with name [com.game.pojo.dao.EntityEntDao.findOne]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT; ''
+Creating new transaction with name [com.game.world.service.pojo.dao.EntityEntDao.findOne]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT; ''
 Acquired Connection [111819772, URL=jdbc:mysql://localhost/game?useUnicode=true&characterEncoding=utf-8, UserName=root@localhost, MySQL Connector Java] for JDBC transaction
 Switching JDBC Connection [111819772, URL=jdbc:mysql://localhost/game?useUnicode=true&characterEncoding=utf-8, UserName=root@localhost, MySQL Connector Java] to manual commit
-parse() - HQL: select e from com.game.pojo.entity.EntityEnt e where id = ?
+parse() - HQL: select e from com.game.world.service.pojo.entity.EntityEnt e where id = ?
 --- HQL AST ---
  \-[QUERY] Node: 'query'
     +-[SELECT_FROM] Node: 'SELECT_FROM'
@@ -1862,12 +1862,12 @@ parse() - HQL: select e from com.game.pojo.entity.EntityEnt e where id = ?
 
 throwQueryException() : no errors
 select << begin [level=1, statement=select]
-FromClause{level=1} : com.game.pojo.entity.EntityEnt (e) -> entityent0_
+FromClause{level=1} : com.game.world.service.pojo.entity.EntityEnt (e) -> entityent0_
 Resolved : e -> entityent0_.id
 Resolved : {synthetic-alias} -> {synthetic-alias}
 getDataType() : id -> org.hibernate.type.LongType@71cf1b07
 Resolved : {synthetic-alias}.id -> entityent0_.id
-[DEPRECATION] Encountered positional parameter near line 1, column 59 in HQL: [select e from com.game.pojo.entity.EntityEnt e where id = ?].  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+[DEPRECATION] Encountered positional parameter near line 1, column 59 in HQL: [select e from com.game.world.service.pojo.entity.EntityEnt e where id = ?].  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
 select : finishing up [level=1, statement=select]
 processQuery() :  ( SELECT ( {select clause} entityent0_.id ) ( FromClause{level=1} entity entityent0_ ) ( where ( = ( entityent0_.id {synthetic-alias} id ) ? ) ) )
 Using FROM fragment [entity entityent0_]
@@ -1875,35 +1875,35 @@ select >> end [level=1, statement=select]
 --- SQL AST ---
  \-[SELECT] QueryNode: 'SELECT'  querySpaces (entity)
     +-[SELECT_CLAUSE] SelectClause: '{select clause}'
-    |  +-[ALIAS_REF] IdentNode: 'entityent0_.id as id1_1_' {alias=e, className=com.game.pojo.entity.EntityEnt, tableAlias=entityent0_}
+    |  +-[ALIAS_REF] IdentNode: 'entityent0_.id as id1_1_' {alias=e, className=com.game.world.service.pojo.entity.EntityEnt, tableAlias=entityent0_}
     |  \-[SQL_TOKEN] SqlFragment: 'entityent0_.name as name2_1_, entityent0_.type as type3_1_, entityent0_.isAlive as isAlive4_1_'
     +-[FROM] FromClause: 'from' FromClause{level=1, fromElementCounter=1, fromElements=1, fromElementByClassAlias=[e], fromElementByTableAlias=[entityent0_], fromElementsByPath=[], collectionJoinFromElementsByPath=[], impliedElements=[]}
-    |  \-[FROM_FRAGMENT] FromElement: 'entity entityent0_' FromElement{explicit,not a collection join,not a fetch join,fetch non-lazy properties,classAlias=e,role=null,tableName=entity,tableAlias=entityent0_,origin=null,columns={,className=com.game.pojo.entity.EntityEnt}}
+    |  \-[FROM_FRAGMENT] FromElement: 'entity entityent0_' FromElement{explicit,not a collection join,not a fetch join,fetch non-lazy properties,classAlias=e,role=null,tableName=entity,tableAlias=entityent0_,origin=null,columns={,className=com.game.world.service.pojo.entity.EntityEnt}}
     \-[WHERE] SqlNode: 'where'
        \-[EQ] BinaryLogicOperatorNode: '='
-          +-[DOT] DotNode: 'entityent0_.id' {propertyName=id,dereferenceType=PRIMITIVE,getPropertyPath=id,path={synthetic-alias}.id,tableAlias=entityent0_,className=com.game.pojo.entity.EntityEnt,classAlias=e}
+          +-[DOT] DotNode: 'entityent0_.id' {propertyName=id,dereferenceType=PRIMITIVE,getPropertyPath=id,path={synthetic-alias}.id,tableAlias=entityent0_,className=com.game.world.service.pojo.entity.EntityEnt,classAlias=e}
           |  +-[IDENT] IdentNode: '{synthetic-alias}' {originalText={synthetic-alias}}
           |  \-[IDENT] IdentNode: 'id' {originalText=id}
           \-[PARAM] ParameterNode: '?' {ordinal=0, expectedType=org.hibernate.type.LongType@71cf1b07}
 
 throwQueryException() : no errors
-HQL: select e from com.game.pojo.entity.EntityEnt e where id = ?
+HQL: select e from com.game.world.service.pojo.entity.EntityEnt e where id = ?
 SQL: select entityent0_.id as id1_1_, entityent0_.name as name2_1_, entityent0_.type as type3_1_, entityent0_.isAlive as isAlive4_1_ from entity entityent0_ where entityent0_.id=?
 throwQueryException() : no errors
 select entityent0_.id as id1_1_, entityent0_.name as name2_1_, entityent0_.type as type3_1_, entityent0_.isAlive as isAlive4_1_ from entity entityent0_ where entityent0_.id=?
 Obtaining JDBC connection
 Obtained JDBC connection
 Result set row: 0
-Result row: EntityKey[com.game.pojo.entity.EntityEnt#1]
-Resolving associations for [com.game.pojo.entity.EntityEnt#1]
-Done materializing entity [com.game.pojo.entity.EntityEnt#1]
+Result row: EntityKey[com.game.world.service.pojo.entity.EntityEnt#1]
+Resolving associations for [com.game.world.service.pojo.entity.EntityEnt#1]
+Done materializing entity [com.game.world.service.pojo.entity.EntityEnt#1]
 Flushing Hibernate Session on transaction synchronization
 Processing flush-time cascades
 Dirty checking collections
 Flushed: 0 insertions, 0 updates, 0 deletions to 1 objects
 Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
 Listing entities:
-com.game.pojo.entity.EntityEnt{alive=true, name=新手指导员, id=1, type=1}
+com.game.world.service.pojo.entity.EntityEnt{alive=true, name=新手指导员, id=1, type=1}
 Disconnecting session
 Releasing JDBC connection
 Released JDBC connection
@@ -1911,23 +1911,23 @@ Initiating transaction commit
 Committing JDBC transaction on Connection [111819772, URL=jdbc:mysql://localhost/game?useUnicode=true&characterEncoding=utf-8, UserName=root@localhost, MySQL Connector Java]
 Releasing JDBC Connection [111819772, URL=jdbc:mysql://localhost/game?useUnicode=true&characterEncoding=utf-8, UserName=root@localhost, MySQL Connector Java] after transaction
 Returning JDBC Connection to DataSource
-Creating new transaction with name [com.game.pojo.dao.EntityEntDao.findOne]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT; ''
+Creating new transaction with name [com.game.world.service.pojo.dao.EntityEntDao.findOne]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT; ''
 Acquired Connection [117162427, URL=jdbc:mysql://localhost/game?useUnicode=true&characterEncoding=utf-8, UserName=root@localhost, MySQL Connector Java] for JDBC transaction
 Switching JDBC Connection [117162427, URL=jdbc:mysql://localhost/game?useUnicode=true&characterEncoding=utf-8, UserName=root@localhost, MySQL Connector Java] to manual commit
 select entityent0_.id as id1_1_, entityent0_.name as name2_1_, entityent0_.type as type3_1_, entityent0_.isAlive as isAlive4_1_ from entity entityent0_ where entityent0_.id=?
 Obtaining JDBC connection
 Obtained JDBC connection
 Result set row: 0
-Result row: EntityKey[com.game.pojo.entity.EntityEnt#2]
-Resolving associations for [com.game.pojo.entity.EntityEnt#2]
-Done materializing entity [com.game.pojo.entity.EntityEnt#2]
+Result row: EntityKey[com.game.world.service.pojo.entity.EntityEnt#2]
+Resolving associations for [com.game.world.service.pojo.entity.EntityEnt#2]
+Done materializing entity [com.game.world.service.pojo.entity.EntityEnt#2]
 Flushing Hibernate Session on transaction synchronization
 Processing flush-time cascades
 Dirty checking collections
 Flushed: 0 insertions, 0 updates, 0 deletions to 1 objects
 Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
 Listing entities:
-com.game.pojo.entity.EntityEnt{alive=true, name=村长, id=2, type=1}
+com.game.world.service.pojo.entity.EntityEnt{alive=true, name=村长, id=2, type=1}
 Disconnecting session
 Releasing JDBC connection
 Released JDBC connection
@@ -1935,23 +1935,23 @@ Initiating transaction commit
 Committing JDBC transaction on Connection [117162427, URL=jdbc:mysql://localhost/game?useUnicode=true&characterEncoding=utf-8, UserName=root@localhost, MySQL Connector Java]
 Releasing JDBC Connection [117162427, URL=jdbc:mysql://localhost/game?useUnicode=true&characterEncoding=utf-8, UserName=root@localhost, MySQL Connector Java] after transaction
 Returning JDBC Connection to DataSource
-Creating new transaction with name [com.game.pojo.dao.EntityEntDao.findOne]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT; ''
+Creating new transaction with name [com.game.world.service.pojo.dao.EntityEntDao.findOne]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT; ''
 Acquired Connection [1911671810, URL=jdbc:mysql://localhost/game?useUnicode=true&characterEncoding=utf-8, UserName=root@localhost, MySQL Connector Java] for JDBC transaction
 Switching JDBC Connection [1911671810, URL=jdbc:mysql://localhost/game?useUnicode=true&characterEncoding=utf-8, UserName=root@localhost, MySQL Connector Java] to manual commit
 select entityent0_.id as id1_1_, entityent0_.name as name2_1_, entityent0_.type as type3_1_, entityent0_.isAlive as isAlive4_1_ from entity entityent0_ where entityent0_.id=?
 Obtaining JDBC connection
 Obtained JDBC connection
 Result set row: 0
-Result row: EntityKey[com.game.pojo.entity.EntityEnt#3]
-Resolving associations for [com.game.pojo.entity.EntityEnt#3]
-Done materializing entity [com.game.pojo.entity.EntityEnt#3]
+Result row: EntityKey[com.game.world.service.pojo.entity.EntityEnt#3]
+Resolving associations for [com.game.world.service.pojo.entity.EntityEnt#3]
+Done materializing entity [com.game.world.service.pojo.entity.EntityEnt#3]
 Flushing Hibernate Session on transaction synchronization
 Processing flush-time cascades
 Dirty checking collections
 Flushed: 0 insertions, 0 updates, 0 deletions to 1 objects
 Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
 Listing entities:
-com.game.pojo.entity.EntityEnt{alive=true, name=商人, id=3, type=1}
+com.game.world.service.pojo.entity.EntityEnt{alive=true, name=商人, id=3, type=1}
 Disconnecting session
 Releasing JDBC connection
 Released JDBC connection
@@ -1959,23 +1959,23 @@ Initiating transaction commit
 Committing JDBC transaction on Connection [1911671810, URL=jdbc:mysql://localhost/game?useUnicode=true&characterEncoding=utf-8, UserName=root@localhost, MySQL Connector Java]
 Releasing JDBC Connection [1911671810, URL=jdbc:mysql://localhost/game?useUnicode=true&characterEncoding=utf-8, UserName=root@localhost, MySQL Connector Java] after transaction
 Returning JDBC Connection to DataSource
-Creating new transaction with name [com.game.pojo.dao.EntityEntDao.findOne]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT; ''
+Creating new transaction with name [com.game.world.service.pojo.dao.EntityEntDao.findOne]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT; ''
 Acquired Connection [1177206467, URL=jdbc:mysql://localhost/game?useUnicode=true&characterEncoding=utf-8, UserName=root@localhost, MySQL Connector Java] for JDBC transaction
 Switching JDBC Connection [1177206467, URL=jdbc:mysql://localhost/game?useUnicode=true&characterEncoding=utf-8, UserName=root@localhost, MySQL Connector Java] to manual commit
 select entityent0_.id as id1_1_, entityent0_.name as name2_1_, entityent0_.type as type3_1_, entityent0_.isAlive as isAlive4_1_ from entity entityent0_ where entityent0_.id=?
 Obtaining JDBC connection
 Obtained JDBC connection
 Result set row: 0
-Result row: EntityKey[com.game.pojo.entity.EntityEnt#4]
-Resolving associations for [com.game.pojo.entity.EntityEnt#4]
-Done materializing entity [com.game.pojo.entity.EntityEnt#4]
+Result row: EntityKey[com.game.world.service.pojo.entity.EntityEnt#4]
+Resolving associations for [com.game.world.service.pojo.entity.EntityEnt#4]
+Done materializing entity [com.game.world.service.pojo.entity.EntityEnt#4]
 Flushing Hibernate Session on transaction synchronization
 Processing flush-time cascades
 Dirty checking collections
 Flushed: 0 insertions, 0 updates, 0 deletions to 1 objects
 Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
 Listing entities:
-com.game.pojo.entity.EntityEnt{alive=true, name=野狼, id=4, type=2}
+com.game.world.service.pojo.entity.EntityEnt{alive=true, name=野狼, id=4, type=2}
 Disconnecting session
 Releasing JDBC connection
 Released JDBC connection
@@ -1983,23 +1983,23 @@ Initiating transaction commit
 Committing JDBC transaction on Connection [1177206467, URL=jdbc:mysql://localhost/game?useUnicode=true&characterEncoding=utf-8, UserName=root@localhost, MySQL Connector Java]
 Releasing JDBC Connection [1177206467, URL=jdbc:mysql://localhost/game?useUnicode=true&characterEncoding=utf-8, UserName=root@localhost, MySQL Connector Java] after transaction
 Returning JDBC Connection to DataSource
-Creating new transaction with name [com.game.pojo.dao.EntityEntDao.findOne]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT; ''
+Creating new transaction with name [com.game.world.service.pojo.dao.EntityEntDao.findOne]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT; ''
 Acquired Connection [43729075, URL=jdbc:mysql://localhost/game?useUnicode=true&characterEncoding=utf-8, UserName=root@localhost, MySQL Connector Java] for JDBC transaction
 Switching JDBC Connection [43729075, URL=jdbc:mysql://localhost/game?useUnicode=true&characterEncoding=utf-8, UserName=root@localhost, MySQL Connector Java] to manual commit
 select entityent0_.id as id1_1_, entityent0_.name as name2_1_, entityent0_.type as type3_1_, entityent0_.isAlive as isAlive4_1_ from entity entityent0_ where entityent0_.id=?
 Obtaining JDBC connection
 Obtained JDBC connection
 Result set row: 0
-Result row: EntityKey[com.game.pojo.entity.EntityEnt#5]
-Resolving associations for [com.game.pojo.entity.EntityEnt#5]
-Done materializing entity [com.game.pojo.entity.EntityEnt#5]
+Result row: EntityKey[com.game.world.service.pojo.entity.EntityEnt#5]
+Resolving associations for [com.game.world.service.pojo.entity.EntityEnt#5]
+Done materializing entity [com.game.world.service.pojo.entity.EntityEnt#5]
 Flushing Hibernate Session on transaction synchronization
 Processing flush-time cascades
 Dirty checking collections
 Flushed: 0 insertions, 0 updates, 0 deletions to 1 objects
 Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
 Listing entities:
-com.game.pojo.entity.EntityEnt{alive=true, name=猩猩, id=5, type=2}
+com.game.world.service.pojo.entity.EntityEnt{alive=true, name=猩猩, id=5, type=2}
 Disconnecting session
 Releasing JDBC connection
 Released JDBC connection
@@ -2007,23 +2007,23 @@ Initiating transaction commit
 Committing JDBC transaction on Connection [43729075, URL=jdbc:mysql://localhost/game?useUnicode=true&characterEncoding=utf-8, UserName=root@localhost, MySQL Connector Java]
 Releasing JDBC Connection [43729075, URL=jdbc:mysql://localhost/game?useUnicode=true&characterEncoding=utf-8, UserName=root@localhost, MySQL Connector Java] after transaction
 Returning JDBC Connection to DataSource
-Creating new transaction with name [com.game.pojo.dao.EntityEntDao.findOne]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT; ''
+Creating new transaction with name [com.game.world.service.pojo.dao.EntityEntDao.findOne]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT; ''
 Acquired Connection [1322559460, URL=jdbc:mysql://localhost/game?useUnicode=true&characterEncoding=utf-8, UserName=root@localhost, MySQL Connector Java] for JDBC transaction
 Switching JDBC Connection [1322559460, URL=jdbc:mysql://localhost/game?useUnicode=true&characterEncoding=utf-8, UserName=root@localhost, MySQL Connector Java] to manual commit
 select entityent0_.id as id1_1_, entityent0_.name as name2_1_, entityent0_.type as type3_1_, entityent0_.isAlive as isAlive4_1_ from entity entityent0_ where entityent0_.id=?
 Obtaining JDBC connection
 Obtained JDBC connection
 Result set row: 0
-Result row: EntityKey[com.game.pojo.entity.EntityEnt#6]
-Resolving associations for [com.game.pojo.entity.EntityEnt#6]
-Done materializing entity [com.game.pojo.entity.EntityEnt#6]
+Result row: EntityKey[com.game.world.service.pojo.entity.EntityEnt#6]
+Resolving associations for [com.game.world.service.pojo.entity.EntityEnt#6]
+Done materializing entity [com.game.world.service.pojo.entity.EntityEnt#6]
 Flushing Hibernate Session on transaction synchronization
 Processing flush-time cascades
 Dirty checking collections
 Flushed: 0 insertions, 0 updates, 0 deletions to 1 objects
 Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
 Listing entities:
-com.game.pojo.entity.EntityEnt{alive=true, name=强盗, id=6, type=2}
+com.game.world.service.pojo.entity.EntityEnt{alive=true, name=强盗, id=6, type=2}
 Disconnecting session
 Releasing JDBC connection
 Released JDBC connection
@@ -2133,8 +2133,8 @@ java.sql.SQLWarning: Data truncated for column 'LastLogin' at row 1
 	at com.game.user.account.dao.AccountDao$$EnhancerBySpringCGLIB$$b3786ab1.save(<generated>)
 	at com.game.user.account.service.AccountService.saveAccount(AccountService.java:54)
 	at com.game.user.login.service.LoginService.login(LoginService.java:26)
-	at com.game.nettyServer.NettyServerHandler.channelRead0(NettyServerHandler.java:37)
-	at com.game.nettyServer.NettyServerHandler.channelRead0(NettyServerHandler.java:12)
+	at com.game.core.server.NettyServerHandler.channelRead0(NettyServerHandler.java:37)
+	at com.game.core.server.NettyServerHandler.channelRead0(NettyServerHandler.java:12)
 	at io.netty.channel.SimpleChannelInboundHandler.channelRead(SimpleChannelInboundHandler.java:105)
 	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:374)
 	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:360)

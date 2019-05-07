@@ -1,7 +1,7 @@
 package com.lhh.service;
 
-import com.game.map.dao.MapEntDao;
-import com.game.map.entity.MapEnt;
+import com.game.world.service.map.dao.MapEntDao;
+import com.game.world.service.map.entity.MapEnt;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
@@ -41,7 +41,7 @@ public class HelloServiceTest {
 
         //applicationContext.getBean()
 
-        List<MapEnt> all = mapEntDao.findAll();
+        List<MapEnt> all = mapEntDao.loadAll();
         for (MapEnt mapEnt : all) {
             System.out.println(mapEnt.getName());
         }

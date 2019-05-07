@@ -6,12 +6,12 @@
     <!--表明以下的配置是针对session-factory配置的，SessionFactory是Hibernate中的一个类，这个类主要负责保存HIbernate的配置信息，以及对Session的操作-->
     <session-factory>
 
-        <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+        <!--<property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
         <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/game</property>
         <property name="hibernate.connection.username">root</property>
-        <property name="hibernate.connection.password">123456</property>
+        <property name="hibernate.connection.password">123456</property>-->
 
-        <property name="current_session_context_class">thread</property>
+        <!--<property name="current_session_context_class">thread</property>-->
         <property name="hibernate.dialect">org.hibernate.dialect.MySQL5InnoDBDialect</property>
         <property name="hibernate.cache.use_second_level_cache">false</property>
         <property name="hbm2ddl.auto">update</property>
@@ -20,5 +20,9 @@
         <!--指定多个映射文件为-->
         <mapping resource="hibernateMapping/PlayerEnt.hbm.xml"/>
         <mapping resource="hibernateMapping/AccountEnt.hbm.xml"/>
+        <mapping resource="hibernateMapping/EntityEnt.hbm.xml"/>
+        <mapping resource="hibernateMapping/IdentifyEnt.hbm.xml"/>
+        <mapping resource="hibernateMapping/MapEnt.hbm.xml"/>
+        <mapping resource="hibernateMapping/MapInfoEnt.hbm.xml"/>
     </session-factory>
 </hibernate-configuration>

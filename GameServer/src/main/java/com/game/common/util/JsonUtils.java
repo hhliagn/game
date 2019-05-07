@@ -1,14 +1,16 @@
 package com.game.common.util;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
-
-import javax.management.relation.RoleUnresolved;
+import org.codehaus.jackson.map.ObjectMapper;
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 
 public final class JsonUtils {
 
     private static ObjectMapper mapper;
+
+    static {
+        mapper = new ObjectMapper();
+    }
 
     public static byte[] toNoCompressBytes(Object object){
         byte[] data = object2Bytes(object);

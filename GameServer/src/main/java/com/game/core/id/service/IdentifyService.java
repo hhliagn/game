@@ -16,13 +16,12 @@ public class IdentifyService {
 
     public enum IdentifyType {
         PLAYER(),
-        ENTITY(),
     }
 
     @Autowired
     private IdentifyDao identifyDao;
 
-    private ConcurrentHashMap<String,IdentifyEnt> name2Identify = new ConcurrentHashMap<>();
+    private ConcurrentHashMap<String, IdentifyEnt> name2Identify = new ConcurrentHashMap<>();
 
     public long getNextIdentify(IdentifyType type) {
         try {

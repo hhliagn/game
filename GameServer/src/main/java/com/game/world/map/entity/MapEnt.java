@@ -1,16 +1,20 @@
-package com.game.map.entity;
+package com.game.world.service.map.entity;
 
 import javax.persistence.*;
 import java.io.Serializable;
 
 @Entity
-@Table(name = "map")
+@org.hibernate.annotations.Table(appliesTo = "map", comment = "地图信息")
 public class MapEnt implements Serializable {
 
     @Id
+    @Column(columnDefinition = "int default 0 comment '地图id'")
     private int id;
+    @Column(columnDefinition = "varchar(255) CHARACTER SET utf8 COLLATE utf8_bin comment '地图名称'")
     private String name;
+    @Column(columnDefinition = "varchar(255) CHARACTER SET utf8 COLLATE utf8_bin comment '地图中实体集合'")
     private String entityIdList;
+    @Column(columnDefinition = "varchar(255) CHARACTER SET utf8 COLLATE utf8_bin comment '附近地图Id'")
     private String mapIdNearby;
 
     public int getId() {

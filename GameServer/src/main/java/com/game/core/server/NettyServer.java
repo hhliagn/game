@@ -1,4 +1,4 @@
-package com.game.nettyServer;
+package com.game.core.server;
 
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.channel.ChannelFuture;
@@ -14,7 +14,7 @@ public class NettyServer {
 
     public NettyServer(){
         try {
-            while (true){
+            /*while (true){
                 b.group(group);
                 b.channel(NioServerSocketChannel.class);
                 b.childHandler(new NettyServerFilter()); //设置过滤器
@@ -23,7 +23,17 @@ public class NettyServer {
                 System.out.println("服务端启动成功...");
                 // 监听服务器关闭监听
                 f.channel().closeFuture().sync();
-            }
+            }*/
+
+            b.group(group);
+            b.channel(NioServerSocketChannel.class);
+            b.childHandler(new NettyServerFilter()); //设置过滤器
+            // 服务器绑定端口监听
+            ChannelFuture f = b.bind(port).sync();
+            System.out.println("服务端启动成功...");
+            // 监听服务器关闭，阻塞
+            f.channel().closeFuture().sync();
+
         } catch (Exception e){
             e.printStackTrace();
         } finally{

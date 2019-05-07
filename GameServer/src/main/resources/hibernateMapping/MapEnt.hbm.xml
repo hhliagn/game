@@ -3,10 +3,10 @@
         <!DOCTYPE hibernate-mapping PUBLIC
                 "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
                 "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
-<hibernate-mapping package="com.game.map.entity">
-<class name="com.game.map.entity.MapEnt" table="map">
+<hibernate-mapping package="com.game.world.map.entity">
+<class name="com.game.world.service.map.entity.MapEnt" table="map">
     <id name="id" column="id" type="int">
-        <generator class="native"/>
+        <generator class="assigned"/>
     </id>
     <property name="name" column="name" type="java.lang.String"/>
     <property name="entityIdList" column="entityIdList" type="java.lang.String"/>

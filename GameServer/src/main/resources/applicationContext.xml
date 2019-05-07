@@ -28,6 +28,8 @@
 
         <property name="configLocations" value="hibernate.cfg.xml"/>
 
+        <!--<property name="lobHandler" ref="lobHandler"></property>-->
+
         <!--<property name="mappingResources">
             <list>
                 <value>hibernateMapping/MapEnt.hbm.xml</value>
@@ -38,9 +40,6 @@
                 <value>hibernateMapping/IdentifyEnt.hbm.xml</value>
             </list>
         </property>-->
-
-
-
 
        <!-- <property name="mappingResources">
             <value>hibernateMapping/MapEnt.hbm.xml</value>
@@ -55,8 +54,9 @@
 
 
 
-
         <property name="packagesToScan" value="com.game"/>
+
+
         <!--<property name="hibernateProperties">
             <props>
                 <prop key="current_session_context_class">thread</prop>
@@ -66,9 +66,9 @@
                 <prop key="show_sql">false</prop>
             </props>
         </property>-->
-
-
     </bean>
+
+    <!--<bean id="lobHandler" class="org.springframework.jdbc.support.lob.DefaultLobHandler" lazy-init="true" />-->
 
     <tx:annotation-driven transaction-manager="transactionManager"/>
 

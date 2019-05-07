@@ -1,8 +1,6 @@
 package com.game.core.id.dao;
 
 import com.game.core.id.entity.IdentifyEnt;
-import com.game.map.entity.MapEnt;
-import com.game.map.model.Map;
 import org.hibernate.Query;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;

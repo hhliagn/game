@@ -10,5 +10,8 @@
         </id>
         <property name="accountId" column="accountId" type="java.lang.String"/>
         <property name="alive" column="alive" type="int"/>
+        <property name="name" column="name" type="java.lang.String"/>
+        <property name="job" column="job" type="int"/>
+        <property name="sex" column="sex" type="int"/>
     </class>
 </hibernate-mapping>

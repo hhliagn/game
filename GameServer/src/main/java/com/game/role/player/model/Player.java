@@ -53,7 +53,7 @@ public class Player {
     public void setCurMapId(int newMapId){
         MapInfoEnt mapInfoEnt = SpringContext.getMapInfoService().getMapInfoEnt(getAccountId());
         mapInfoEnt.setCurMapId(newMapId);
-        SpringContext.getMapInfoService().saveMapInfoEnt(mapInfoEnt);
+        SpringContext.getMapInfoService().saveMapInfoEnt(getAccountId());
     }
 
     public Long getId(){
@@ -66,5 +66,17 @@ public class Player {
 
     public void setBaseAccountInfo(BaseAccountInfo baseAccountInfo) {
         this.baseAccountInfo = baseAccountInfo;
+    }
+
+    public String getName() {
+        return playerEnt.getName();
+    }
+
+    public int getJob() {
+        return playerEnt.getJob();
+    }
+
+    public int getSex() {
+        return playerEnt.getSex();
     }
 }

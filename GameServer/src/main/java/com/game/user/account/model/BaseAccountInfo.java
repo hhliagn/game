@@ -12,7 +12,9 @@ public class BaseAccountInfo {
 
     private String nickName;
 
-    private Long recentPlayerId;
+    private long showPlayerId;
+
+    private long recentPlayerId;
 
     private Date loginTime;
 
@@ -28,8 +30,12 @@ public class BaseAccountInfo {
         return SpringContext.getPlayerService().getBasePlayerInfos(this.getAccountId());
     }
 
+    //报错
     public BasePlayerInfo getRecentPlayerInfo(){
         BasePlayerInfo result = null;
+        if (getBasePlayerInfos() == null){
+            return result;
+        }
         for (BasePlayerInfo basePlayerInfo : getBasePlayerInfos()) {
             if (basePlayerInfo.getId() == recentPlayerId){
                 result = basePlayerInfo;
@@ -57,12 +63,8 @@ public class BaseAccountInfo {
         this.nickName = nickName;
     }
 
-    public Long getRecentPlayerId() {
+    public long getRecentPlayerId() {
         return recentPlayerId;
-    }
-
-    public void setRecentPlayerId(Long recentPlayerId) {
-        this.recentPlayerId = recentPlayerId;
     }
 
     public Date getLoginTime() {
@@ -79,5 +81,17 @@ public class BaseAccountInfo {
 
     public void setLogoutTime(Date logoutTime) {
         this.logoutTime = logoutTime;
+    }
+
+    public long getShowPlayerId() {
+        return showPlayerId;
+    }
+
+    public void setShowPlayerId(long showPlayerId) {
+        this.showPlayerId = showPlayerId;
+    }
+
+    public void setRecentPlayerId(long recentPlayerId) {
+        this.recentPlayerId = recentPlayerId;
     }
 }

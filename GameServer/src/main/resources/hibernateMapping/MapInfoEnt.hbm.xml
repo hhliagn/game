@@ -3,7 +3,7 @@
 <!DOCTYPE hibernate-mapping PUBLIC
         "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
         "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
-<hibernate-mapping package="com.game.pojo.entity">
+<hibernate-mapping package="com.game.user.mapInfo.entity">
     <class name="com.game.user.mapInfo.entity.MapInfoEnt" table="mapinfo">
         <id name="id" column="id" type="int">
             <generator class="identity"/>

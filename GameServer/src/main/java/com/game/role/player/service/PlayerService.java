@@ -2,23 +2,24 @@ package com.game.role.player.service;
 
 import com.game.SpringContext;
 import com.game.core.id.service.IdentifyService;
+import com.game.role.player.constant.Job;
 import com.game.role.player.entity.PlayerEnt;
 import com.game.role.player.model.BasePlayerInfo;
 import com.game.role.player.model.Player;
+import com.game.user.account.entity.AccountEnt;
 import com.game.user.account.model.Account;
 import com.game.user.account.model.BaseAccountInfo;
 import com.game.user.account.service.AccountManager;
+import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-import javax.management.relation.RoleUnresolved;
+import javax.persistence.Id;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
-import java.util.concurrent.ConcurrentHashMap;
-import java.util.concurrent.CopyOnWriteArrayList;
 
 @Component
 public class PlayerService implements IPlayerService{
@@ -37,15 +38,39 @@ public class PlayerService implements IPlayerService{
         playerManager.loadAllPlayerInfo();
     }
 
-    @Override
-    public Player createPlayer(String accountId) {
-        long id = SpringContext.getIdentifyService()
-                .getNextIdentify(IdentifyService.IdentifyType.PLAYER);
-        PlayerEnt playerEnt = playerManager.createPlayer(id, accountId);
-        Player player = playerEnt.getPlayer();
-        //Player player = getPlayer(id);
+    private Player createPlayer(String accountId, long playerId, String name, int job, int sex){
+        playerManager.addBasePlayerInfo(accountId, playerId, name, job, sex);
+        PlayerEnt playerEnt = PlayerEnt.valueOf(playerId, accountId, name, job, sex);
+        playerManager.savePlayerEnt(playerEnt);
+        return getPlayer(playerId);
+    }
+
+    public Player createPlayer(String accountId, String nickName, int job, int sex){
+        logger.info("create player");
+        String pName = getName(job, sex);
+        long playerId
+                = SpringContext.getIdentifyService().getNextIdentify(IdentifyService.IdentifyType.PLAYER);
+        Player player = createPlayer(accountId, playerId, pName, job, sex);
+
+        //playerManager.initNewRole(player);
         //savePlayer(player);
         return player;
+    }
+
+    @Override
+    public void createRole(String accountId, int job, int sex) {
+        List<BasePlayerInfo> basePlayerInfos = playerManager.getOrCreateBasePlayerInfos(accountId);
+        if (basePlayerInfos.size() >= getAccountMaxPlayer()){
+            throw new RuntimeException("创建玩家数超过上限");
+        }
+        long playerId = SpringContext.getIdentifyService().getNextIdentify(IdentifyService.IdentifyType.PLAYER);
+        String name = getName(job, sex);
+        Player player = createPlayer(accountId, playerId, name, job, sex);
+        this.savePlayer(player);
+    }
+
+    private String getName(int job, int sex) {
+        return Job.valueOf(job).getName(sex);
     }
 
     public void savePlayer(Player player){
@@ -59,11 +84,27 @@ public class PlayerService implements IPlayerService{
 
     public Player getPlayer(Long id){
         PlayerEnt playerEnt = playerManager.getPlayerEnt(id);
-        if (playerEnt == null){
+        return playerEnt == null ? null : playerEnt.getPlayer();
+    }
+
+    public Player getPlayer(String accountId){
+        BaseAccountInfo baseAccountInfo
+                = SpringContext.getAccountService().getBaseAccountInfo(accountId);
+        if (baseAccountInfo == null){
             return null;
         }
-        Player player = playerEnt.getPlayer();
-        return player;
+        List<BasePlayerInfo> basePlayerInfos = getBasePlayerInfos(accountId);
+        if (basePlayerInfos != null && basePlayerInfos.size() > 0){
+            BasePlayerInfo basePlayerInfo = basePlayerInfos.get(0);
+            return getPlayer(basePlayerInfo.getId());
+        }
+        return null;
+    }
+
+    public Player getRecentPlayer(String accountId){
+        BaseAccountInfo baseAccountInfo
+                = SpringContext.getAccountService().getBaseAccountInfo(accountId);
+        return getPlayer(baseAccountInfo.getRecentPlayerId());
     }
 
     public String getAccountId(Long playerId){
@@ -83,6 +124,20 @@ public class PlayerService implements IPlayerService{
     public List<BasePlayerInfo> getBasePlayerInfos(String accountId) {
         return playerManager.getOrCreateBasePlayerInfos(accountId);
     }
+
+   /* public Player createPlayer(String accountId){
+        long id = SpringContext.getIdentifyService()
+                .getNextIdentify(IdentifyService.IdentifyType.PLAYER);
+        PlayerEnt playerEnt = playerManager.createPlayer(id, accountId);
+        Player player = playerEnt.getPlayer();
+        //Player player = getPlayer(id);
+        //savePlayer(player);
+        return player;
+    }*/
+
+    /*public Player createRole(String accountId){
+
+    }*/
 
     public List<Player> getAllPlayers(String accountId){
         List<BasePlayerInfo> basePlayerInfos = getBasePlayerInfos(accountId);
@@ -110,9 +165,9 @@ public class PlayerService implements IPlayerService{
 
     public void login(Player player, BaseAccountInfo baseAccountInfo){
         Account account = SpringContext.getAccountService().getAccount(player.getAccountId());
-        logger.info("用户登录");
         updateAccountInfo(account, player);
         savePlayer(player);
+        logger.info("玩家登录");
     }
 
     private void updateAccountInfo(Account account, Player player) {
@@ -120,9 +175,39 @@ public class PlayerService implements IPlayerService{
         BaseAccountInfo baseAccountInfo = player.getBaseAccountInfo();
         baseAccountInfo.setLoginTime(now);
         baseAccountInfo.setRecentPlayerId(player.getId());
-
         account.setLastLogin(now);
 
-        accountManager.saveAccount(player.getAccountId());
+        accountManager.saveAccount(account);
+    }
+
+    public void logout(Player player){
+        Date lastLogout = new Date();
+        BaseAccountInfo baseAccountInfo
+                = SpringContext.getAccountService().getBaseAccountInfo(player.getAccountId());
+        baseAccountInfo.setLogoutTime(lastLogout);
+        String accountId = player.getAccountId();
+        Account account = SpringContext.getAccountService().getAccount(accountId);
+        account.setLastLogout(lastLogout);
+//        AccountEnt accountEnt = SpringContext.getAccountService().getAccountEnt(player.getAccountId());
+//        accountEnt.setAccount(account);
+        SpringContext.getAccountService().saveAccount(account);
+    }
+
+//    public void showAccountAlterDetailInfo(String accountId, String nickName){
+//
+//    }
+
+    private int getAccountMaxPlayer(){
+        return this.playerManager.getAccountMaxPlayer();
+    }
+
+//    public void rename(Player player, long playerId,String name){
+//
+//    }
+
+    public boolean checkPlayerId(String accountId, long playerId){
+        BasePlayerInfo basePlayerInfo = playerManager.getBasePlayerInfo(playerId);
+        return !(basePlayerInfo == null ||
+                !StringUtils.equals(basePlayerInfo.getAccountId(), accountId));
     }
 }

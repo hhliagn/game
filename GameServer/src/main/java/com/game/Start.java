@@ -1,6 +1,6 @@
 package com.game;
 
-import com.game.nettyServer.NettyServer;
+import com.game.core.server.NettyServer;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class Start {

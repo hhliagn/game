@@ -1,22 +1,21 @@
 package com.game.core.id.entity;
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
-import javax.persistence.Transient;
+import javax.persistence.*;
 
 @Entity
-@Table(name = "identify")
+@org.hibernate.annotations.Table(appliesTo = "identify", comment = "各模块id生成")
 public class IdentifyEnt {
 
     private static final int STEP = 100;
 
     @Id
+    @Column(columnDefinition = "varchar(64) CHARSET SET utf8 COLLATE utf8_bin comment '功能name'", nullable = false)
     private String id;
 
     @Transient
     private long now;
 
+    @Column(columnDefinition = "bigint(20) default 0 comment '下一次启动服务从这个数字开始递增'", nullable = false)
     private volatile long value;
 
     public Long getNextIdentify(){

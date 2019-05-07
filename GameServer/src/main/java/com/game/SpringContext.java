@@ -1,21 +1,21 @@
 package com.game;
 
 import com.game.core.id.service.IdentifyService;
-import com.game.map.service.IMapService;
-import com.game.pojo.service.IEntityService;
 import com.game.publicsystem.common.service.GlobalService;
 import com.game.role.player.service.IPlayerService;
 import com.game.user.account.service.IAccountService;
 import com.game.user.login.service.ILoginService;
 import com.game.user.logout.ILogoutService;
 import com.game.user.mapInfo.service.IMapInfoService;
-import com.game.user.regiser.service.IRegisterService;
+import com.game.world.map.service.IMapService;
 import com.game.world.service.IWorldService;
+import com.game.world.service.pojo.service.IEntityService;
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.ApplicationContextAware;
 import org.springframework.stereotype.Component;
+
 import javax.annotation.PostConstruct;
 
 @Component
@@ -43,9 +43,6 @@ public class SpringContext implements ApplicationContextAware {
     private IAccountService accountService;
 
     @Autowired
-    private IRegisterService registerService;
-
-    @Autowired
     private ILoginService loginService;
 
     @Autowired
@@ -69,9 +66,6 @@ public class SpringContext implements ApplicationContextAware {
         return instance.globalService;
     }
 
-    public static IRegisterService getRegisterService(){
-        return instance.registerService;
-    }
 
     public static ILoginService getLoginService(){
         return instance.loginService;

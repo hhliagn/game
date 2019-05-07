@@ -34,6 +34,9 @@ public class AccountEnt implements Serializable {
     @Column(columnDefinition = "int default 0 comment '创建时间'")
     private Date createTime;
 
+    @Column(columnDefinition = "bigint comment '显示玩家id'")
+    private long showPlayerId;
+
     @Column(columnDefinition = "bigint comment '最近登录玩家id'")
     private long recentPlayerId;
 
@@ -48,7 +51,7 @@ public class AccountEnt implements Serializable {
         accountEnt.accountId = accountId;
         accountEnt.password = password;
         accountEnt.account = Account.valueOf(accountId);
-        return null;
+        return accountEnt;
     }
 
     public String getId () {
@@ -59,10 +62,12 @@ public class AccountEnt implements Serializable {
         BaseAccountInfo baseAccountInfo = account.getBaseAccountInfo();
         this.nickName = baseAccountInfo.getNickName();
         this.recentPlayerId = baseAccountInfo.getRecentPlayerId();
+        this.showPlayerId = baseAccountInfo.getShowPlayerId();
         this.lastLogin = account.getLastLogin();
         this.lastLogout = account.getLastLogout();
         this.createTime = account.getCreateTime();
-        this.accountData = JsonUtils.toNoCompressBytes(getAccount());
+        Account account = getAccount();
+        this.accountData = JsonUtils.toNoCompressBytes(account);
         return true;
     }
 
@@ -145,5 +150,13 @@ public class AccountEnt implements Serializable {
 
     public void setLastLogout(Date lastLogout) {
         this.lastLogout = lastLogout;
+    }
+
+    public long getShowPlayerId() {
+        return showPlayerId;
+    }
+
+    public void setShowPlayerId(long showPlayerId) {
+        this.showPlayerId = showPlayerId;
     }
 }
