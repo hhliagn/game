@@ -28,7 +28,7 @@ public class LoginService implements ILoginService{
         BaseAccountInfo baseAccountInfo = accountService.getBaseAccountInfo(accountId);
         if (baseAccountInfo == null){
             accountService.createAccount(accountId, password);
-//            baseAccountInfo = accountService.getBaseAccountInfo(accountId);
+            baseAccountInfo = accountService.getBaseAccountInfo(accountId);
         }
 
         Account loginAccount = SpringContext.getAccountService().getLoginAccount(accountId, password);

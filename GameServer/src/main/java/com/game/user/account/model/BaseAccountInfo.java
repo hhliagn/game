@@ -2,6 +2,7 @@ package com.game.user.account.model;
 
 import com.game.SpringContext;
 import com.game.role.player.model.BasePlayerInfo;
+import org.springframework.util.CollectionUtils;
 
 import java.util.Date;
 import java.util.List;
@@ -30,10 +31,9 @@ public class BaseAccountInfo {
         return SpringContext.getPlayerService().getBasePlayerInfos(this.getAccountId());
     }
 
-    //报错
     public BasePlayerInfo getRecentPlayerInfo(){
         BasePlayerInfo result = null;
-        if (getBasePlayerInfos() == null){
+        if (CollectionUtils.isEmpty(getBasePlayerInfos())){
             return result;
         }
         for (BasePlayerInfo basePlayerInfo : getBasePlayerInfos()) {
