@@ -1,5 +1,6 @@
 package com.game.common.util;
 
+import javafx.beans.binding.ObjectExpression;
 import org.codehaus.jackson.map.ObjectMapper;
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
@@ -41,6 +42,30 @@ public final class JsonUtils {
     private static <M> M bytes2Object(byte[] content, int offset, int len, Class<M> clazz) {
         try {
             return mapper.readValue(content, offset, len, clazz);
+        }catch (Exception e){
+            throw new RuntimeException(e);
+        }
+    }
+
+    public static <T> T bytes2Object(byte[] content, Class<T> clazz){
+        try {
+            return mapper.readValue(content, clazz);
+        }catch (Exception e){
+            throw new RuntimeException(e);
+        }
+    }
+
+    public static String Object2String(Object object){
+        try {
+            return mapper.writerWithDefaultPrettyPrinter().writeValueAsString(object);
+        }catch (Exception e){
+            throw new RuntimeException(e);
+        }
+    }
+
+    public static <M> M String2Object(String jsonString, Class<M> clazz){
+        try {
+            return mapper.readValue(jsonString, clazz);
         }catch (Exception e){
             throw new RuntimeException(e);
         }

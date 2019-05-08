@@ -11,7 +11,6 @@ import java.util.Date;
 
 @Entity(name = "account")
 @org.hibernate.annotations.Table(appliesTo = "account", comment = "账号信息")
-//@NamedQuery(name = "AccountEnt.loadBaseAccountInfo", query = "select accountId, password, lastLogin, lastLogout from account")
 public class AccountEnt implements Serializable {
 
     @Transient

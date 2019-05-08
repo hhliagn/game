@@ -25,50 +25,9 @@
 
     <bean id="sessionFactory" class="org.springframework.orm.hibernate4.LocalSessionFactoryBean">
         <property name="dataSource" ref="dataSource"/>
-
         <property name="configLocations" value="hibernate.cfg.xml"/>
-
-        <!--<property name="lobHandler" ref="lobHandler"></property>-->
-
-        <!--<property name="mappingResources">
-            <list>
-                <value>hibernateMapping/MapEnt.hbm.xml</value>
-                <value>hibernateMapping/EntityEnt.hbm.xml</value>
-                <value>hibernateMapping/MapInfoEnt.hbm.xml</value>
-                <value>hibernateMapping/AccountEnt.hbm.xml</value>
-                <value>hibernateMapping/PlayerEnt.hbm.xml</value>
-                <value>hibernateMapping/IdentifyEnt.hbm.xml</value>
-            </list>
-        </property>-->
-
-       <!-- <property name="mappingResources">
-            <value>hibernateMapping/MapEnt.hbm.xml</value>
-        </property>-->
-
-        <!--<property name="mappingDirectoryLocations">
-            <list>
-                <value>classpath*:/hibernateMapping</value>
-            </list>
-        </property>-->
-        <!--<property name="configLocations" value="classpath:/hibernate.cfg.xml"/>-->
-
-
-
         <property name="packagesToScan" value="com.game"/>
-
-
-        <!--<property name="hibernateProperties">
-            <props>
-                <prop key="current_session_context_class">thread</prop>
-                <prop key="hibernate.dialect">${hibernate.dialect}</prop>
-                <prop key="hibernate.cache.use_second_level_cache">false</prop>
-                <prop key="hbm2ddl.auto">update</prop>
-                <prop key="show_sql">false</prop>
-            </props>
-        </property>-->
     </bean>
-
-    <!--<bean id="lobHandler" class="org.springframework.jdbc.support.lob.DefaultLobHandler" lazy-init="true" />-->
 
     <tx:annotation-driven transaction-manager="transactionManager"/>
 

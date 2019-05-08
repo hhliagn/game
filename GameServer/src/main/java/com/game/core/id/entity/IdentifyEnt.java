@@ -12,11 +12,11 @@ public class IdentifyEnt {
     @Column(columnDefinition = "varchar(64) CHARSET SET utf8 COLLATE utf8_bin comment '功能name'", nullable = false)
     private String id;
 
-    @Transient
-    private long now;
-
     @Column(columnDefinition = "bigint(20) default 0 comment '下一次启动服务从这个数字开始递增'", nullable = false)
     private volatile long value;
+
+    @Transient
+    private long now;
 
     public Long getNextIdentify(){
         if (now == 0){

@@ -2537,3 +2537,27 @@ create player
 对应的id类型不存在
 保存id数据到数据库
 [DEPRECATION] Encountered positional parameter near line 1, column 66 in HQL: [select p from com.game.role.player.entity.PlayerEnt p where id = ?].  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+Autowired annotation is not supported on static fields: public static org.springframework.context.ApplicationContext com.game.SpringContext.applicationContext
+HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+HHH000412: Hibernate Core {4.3.11.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HHH000044: Configuring from URL: file:/D:/game/game/GameServer/target/classes/hibernate.cfg.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/PlayerEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/AccountEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/EntityEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/IdentifyEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/MapEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/MapInfoEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000041: Configured SessionFactory: null
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+HHH000399: Using default transaction strategy (direct JDBC transactions)
+HHH000397: Using ASTQueryTranslatorFactory
+Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'springContext': Unsatisfied dependency expressed through field 'identifyService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'identifyService': Unsatisfied dependency expressed through field 'identifyDao'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'IdentifyDao': Unsatisfied dependency expressed through field 'sessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sessionFactory' defined in class path resource [applicationContext.xml]: Invocation of init method failed; nested exception is org.hibernate.MappingException: entity class not found: com.game.world.service.map.entity.MapEnt

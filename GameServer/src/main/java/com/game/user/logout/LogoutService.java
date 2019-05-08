@@ -23,7 +23,7 @@ public class LogoutService implements ILogoutService{
 //        AccountEnt accountEnt = SpringContext.getAccountService().getAccountEnt(account.getAccountId());
 //        accountEnt.setAccount(account);
         SpringContext.getAccountService().saveAccount(account);
-        SpringContext.getGlobalService().setCurLoginAccount(null);
+//        SpringContext.getGlobalService().setCurLoginAccount(null);
         logger.info("用户登出");
     }
 }

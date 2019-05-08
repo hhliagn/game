@@ -1,6 +1,6 @@
-package com.game.world.service.map.dao;
+package com.game.scene.dao;
 
-import com.game.world.service.map.entity.MapEnt;
+import com.game.scene.entity.MapEnt;
 import org.hibernate.Query;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;

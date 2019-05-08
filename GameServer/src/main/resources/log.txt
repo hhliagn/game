@@ -3786,7 +3786,7 @@ java.lang.UnsupportedOperationException: The application must supply JDBC connec
 	at org.hibernate.tool.hbm2ddl.SchemaExport.execute(SchemaExport.java:368)
 	at org.hibernate.tool.hbm2ddl.SchemaExport.create(SchemaExport.java:305)
 	at org.hibernate.tool.hbm2ddl.SchemaExport.create(SchemaExport.java:294)
-	at com.game.AutoCreateTest.main(AutoCreateTest.java:11)
+	at com.game.AutoCreateTable.main(AutoCreateTest.java:11)
 HHH000230: Schema export complete
 HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
 HHH000412: Hibernate Core {4.3.11.Final}
@@ -3819,7 +3819,7 @@ java.lang.UnsupportedOperationException: The application must supply JDBC connec
 	at org.hibernate.tool.hbm2ddl.SchemaExport.execute(SchemaExport.java:368)
 	at org.hibernate.tool.hbm2ddl.SchemaExport.create(SchemaExport.java:305)
 	at org.hibernate.tool.hbm2ddl.SchemaExport.create(SchemaExport.java:294)
-	at com.game.AutoCreateTest.main(AutoCreateTest.java:11)
+	at com.game.AutoCreateTable.main(AutoCreateTest.java:11)
 HHH000230: Schema export complete
 HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
 HHH000412: Hibernate Core {4.3.11.Final}

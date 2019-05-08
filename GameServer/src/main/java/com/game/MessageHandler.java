@@ -1,8 +1,5 @@
 package com.game;
 
-import com.game.world.service.map.entity.MapEnt;
-import com.game.role.player.model.Player;
-
 public class MessageHandler {
 
     private String message;
@@ -23,9 +20,11 @@ public class MessageHandler {
         switch (split[0]) {
             case "move":
                 try {
-                    String mapName = split[1];
-                    SpringContext.getWorldService().changeMap(mapName);
-                    //String mapName = SpringContext.getMapService().getMap(mapId);
+                    String accountID = split[1];
+                    String mapName = split[2];
+                    SpringContext.getMapService().changeMap(accountID, mapName);
+                    int mapId = SpringContext.getMapService().name2Id(mapName);
+                    SpringContext.getSceneService().enter(accountID, mapId);
                     revMsg = "切换地图成功，当前地图为：" + mapName;
                 }catch (Exception e){
                     revMsg = e.getMessage();
@@ -62,44 +61,9 @@ public class MessageHandler {
                     revMsg = e.getMessage();
                 }
                 break;
-//            case "cur-map":
-//                try {
-//                    MapEnt mapEnt = SpringContext.getWorldService().getCurMap();
-//                    String curMap = mapEnt.getName();
-//                    revMsg = "当前地图为：" + curMap;
-//                }catch (Exception e){
-//                    revMsg = e.getMessage();
-//                }
-//                break;
-            case "print-map":
-                try {
-                    String mapName = split[1];
-                    String result = SpringContext.getWorldService().printMap(mapName);
-                    revMsg = result;
-                }catch (Exception e){
-                    revMsg = e.getMessage();
-                }
-                break;
-//            case "print-account":
-//                try {
-//                    String result = SpringContext.getWorldService().printAccount();
-//                    revMsg = result;
-//                }catch (Exception e){
-//                    revMsg = e.getMessage();
-//                }
-//                break;
             case "clear":
                 revMsg = "clear";
                 break;
-//            case "login-player":
-//                try {
-//                    long playerId = Long.parseLong(split[1]);
-//                    SpringContext.getPlayerService().login(playerId);
-//                    revMsg = "登录成功";
-//                }catch (Exception e){
-//                    revMsg = e.getMessage();
-//                }
-//                break;
         }
 
         setMessage(revMsg);

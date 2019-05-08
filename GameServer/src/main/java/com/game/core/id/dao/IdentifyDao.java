@@ -13,6 +13,7 @@ import java.util.List;
 @Component("IdentifyDao")
 @Transactional
 public class IdentifyDao {
+
     @Autowired
     private SessionFactory sessionFactory;
 
@@ -37,6 +38,4 @@ public class IdentifyDao {
     public void save(IdentifyEnt identifyEnt) {
         getSession().saveOrUpdate(identifyEnt);
     }
-
-
 }

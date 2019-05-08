@@ -3,7 +3,7 @@
         "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
 <!--声明Hibernate配置文件的开始-->
 <hibernate-configuration>
-    <!--表明以下的配置是针对session-factory配置的，SessionFactory是Hibernate中的一个类，这个类主要负责保存HIbernate的配置信息，以及对Session的操作-->
+    <!--表明以下的配置是针对session-factory配置的，SessionFactory是Hibernate中的一个类，这个类主要负责保存Hibernate的配置信息，以及对Session的操作-->
     <session-factory>
 
         <!--<property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>

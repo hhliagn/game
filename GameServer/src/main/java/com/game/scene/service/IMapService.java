@@ -1,9 +1,6 @@
-package com.game.world.map.service;
+package com.game.scene.service;
 
-import com.game.world.service.map.entity.MapEnt;
-import com.game.world.service.pojo.entity.EntityEnt;
-
-import java.util.List;
+import com.game.scene.entity.MapEnt;
 
 public interface IMapService {
 
@@ -17,9 +14,10 @@ public interface IMapService {
 
     MapEnt getMapEntByName(String mapName);
 
-    List<EntityEnt> getEntities(int mapId);
-
     boolean isPlayerCurMap(String accountId, int mapId);
 
-    void changeMap(String mapName);
+    void changeMap(String accountId, String mapName);
+
+    int name2Id(String mapName);
 }
+

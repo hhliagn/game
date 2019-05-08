@@ -1,15 +1,13 @@
 package com.game;
 
 import com.game.core.id.service.IdentifyService;
-import com.game.publicsystem.common.service.GlobalService;
 import com.game.role.player.service.IPlayerService;
+import com.game.scene.service.IMapService;
+import com.game.scene.service.ISceneService;
 import com.game.user.account.service.IAccountService;
 import com.game.user.login.service.ILoginService;
 import com.game.user.logout.ILogoutService;
 import com.game.user.mapInfo.service.IMapInfoService;
-import com.game.world.map.service.IMapService;
-import com.game.world.service.IWorldService;
-import com.game.world.service.pojo.service.IEntityService;
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
@@ -23,12 +21,6 @@ public class SpringContext implements ApplicationContextAware {
 
     @Autowired
     public static ApplicationContext applicationContext;
-
-    @Autowired
-    public IEntityService entityService;
-
-    @Autowired
-    public IMapService mapService;
 
     @Autowired
     private IdentifyService identifyService;
@@ -52,10 +44,17 @@ public class SpringContext implements ApplicationContextAware {
     private ILogoutService logoutService;
 
     @Autowired
-    private IWorldService worldService;
+    private IMapService mapService;
 
-    public static IWorldService getWorldService(){
-        return instance.worldService;
+    @Autowired
+    private ISceneService sceneService;
+
+    public static ISceneService getSceneService(){
+        return instance.sceneService;
+    }
+
+    public static IMapService getMapService(){
+        return instance.mapService;
     }
 
     public static ILogoutService getLogoutService(){
@@ -85,14 +84,6 @@ public class SpringContext implements ApplicationContextAware {
 
     public static IMapInfoService getMapInfoService(){
         return instance.mapInfoService;
-    }
-
-    public static IMapService getMapService() {
-        return instance.mapService;
-    }
-
-    public static IEntityService getEntityService() {
-        return instance.entityService;
     }
 
     private static SpringContext instance;
