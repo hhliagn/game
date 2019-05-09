@@ -1,7 +1,5 @@
-package com.game.scene.dao;
+package com.game.scene.entity;
 
-
-import com.game.scene.entity.NpcEnt;
 import org.hibernate.Query;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;

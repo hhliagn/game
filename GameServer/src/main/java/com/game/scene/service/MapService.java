@@ -1,7 +1,7 @@
 package com.game.scene.service;
 
 import com.game.SpringContext;
-import com.game.scene.dao.MapEntDao;
+import com.game.scene.entity.MapEntDao;
 import com.game.scene.entity.MapEnt;
 import com.game.user.mapInfo.entity.MapInfoEnt;
 import com.game.user.mapInfo.service.IMapInfoService;
@@ -39,8 +39,7 @@ public class MapService implements IMapService {
     }
 
     @Override
-    public void saveMapEnt(int mapId) {
-        MapEnt mapEnt = getMapEnt(mapId);
+    public void saveMapEnt(MapEnt mapEnt) {
         mapEntDao.save(mapEnt);
     }
 
@@ -91,7 +90,7 @@ public class MapService implements IMapService {
         int curMapId = mapInfoEnt.getCurMapId();
         mapInfoEnt.setLastMapId(curMapId);
 
-        mapInfoService.saveMapInfoEnt(accountId);
+        mapInfoService.saveMapInfoEnt(mapInfoEnt);
         logger.info("离开旧地图");
     }
 
@@ -99,9 +98,9 @@ public class MapService implements IMapService {
         MapInfoEnt mapInfoEnt = SpringContext.getMapInfoService().getMapInfoEnt(accountId);
         int curMapId = mapInfoEnt.getCurMapId();
         MapEnt curMap = getMapEnt(curMapId);
-        Integer[] mapIdNearbys = (Integer[]) curMap.getMapNearByIds().toArray();
-        for (int i = 0; i < mapIdNearbys.length; i++) {
-            if (mapIdNearbys[i] == mapId){
+        List<Integer> mapNearByIds = curMap.getMapNearByIds();
+        for (Integer mapNearById : mapNearByIds) {
+            if (mapNearById == mapId){
                 return true;
             }
         }

@@ -1,4 +1,4 @@
-package com.game.scene.dao;
+package com.game.scene.entity;
 
 import com.game.scene.entity.MonsterEnt;
 import org.hibernate.Query;

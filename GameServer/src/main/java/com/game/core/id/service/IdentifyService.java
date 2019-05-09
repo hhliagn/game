@@ -1,13 +1,11 @@
 package com.game.core.id.service;
 
-import com.game.core.id.dao.IdentifyDao;
+import com.game.core.id.entity.IdentifyDao;
 import com.game.core.id.entity.IdentifyEnt;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
-
-import java.util.concurrent.ConcurrentHashMap;
 
 @Component
 public class IdentifyService {

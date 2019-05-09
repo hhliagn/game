@@ -11,10 +11,9 @@
         <property name="accountData" column="accountData" type="byte[]"/>
         <property name="lastLogin" column="lastLogin" type="java.util.Date"/>
         <property name="lastLogout" column="lastLogout" type="java.util.Date"/>
-        <property name="recentPlayerId" column="recentPlayerId" type="java.lang.Long"/>
-        <property name="showPlayerId" column="showPlayerId" type="java.lang.Long"/>
         <property name="createTime" column="createTime" type="java.util.Date"/>
         <property name="nickName" column="nickName" type="java.lang.String"/>
         <property name="password" column="password" type="string"/>
+        <property name="curMapId" column="curMapId" type="int"/>
     </class>
 </hibernate-mapping>

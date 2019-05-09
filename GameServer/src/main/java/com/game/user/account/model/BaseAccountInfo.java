@@ -1,11 +1,6 @@
 package com.game.user.account.model;
 
-import com.game.SpringContext;
-import com.game.role.player.model.BasePlayerInfo;
-import org.springframework.util.CollectionUtils;
-
 import java.util.Date;
-import java.util.List;
 
 public class BaseAccountInfo {
 
@@ -13,43 +8,21 @@ public class BaseAccountInfo {
 
     private String nickName;
 
-    private long showPlayerId;
-
-    private long recentPlayerId;
-
     private Date loginTime;
 
     private Date logoutTime;
 
-    ////
+    ///场景使用
     private transient int x;
     private transient int y;
     private transient long sceneId;
+    private transient int mapId;
 
     public static BaseAccountInfo valueOf(String accountId) {
         BaseAccountInfo baseAccountInfo = new BaseAccountInfo();
         baseAccountInfo.accountId = accountId;
+        baseAccountInfo.mapId = 1;
         return baseAccountInfo;
-    }
-
-    public List<BasePlayerInfo> getBasePlayerInfos(){
-        return SpringContext.getPlayerService().getBasePlayerInfos(this.getAccountId());
-    }
-
-    public BasePlayerInfo getRecentPlayerInfo(){
-        BasePlayerInfo result = null;
-        if (CollectionUtils.isEmpty(getBasePlayerInfos())){
-            return result;
-        }
-        for (BasePlayerInfo basePlayerInfo : getBasePlayerInfos()) {
-            if (basePlayerInfo.getId() == recentPlayerId){
-                result = basePlayerInfo;
-            }
-        }
-        if (result == null){
-            result = getBasePlayerInfos().get(0);
-        }
-        return result;
     }
 
     public String getAccountId() {
@@ -68,10 +41,6 @@ public class BaseAccountInfo {
         this.nickName = nickName;
     }
 
-    public long getRecentPlayerId() {
-        return recentPlayerId;
-    }
-
     public Date getLoginTime() {
         return loginTime;
     }
@@ -87,20 +56,6 @@ public class BaseAccountInfo {
     public void setLogoutTime(Date logoutTime) {
         this.logoutTime = logoutTime;
     }
-
-    public long getShowPlayerId() {
-        return showPlayerId;
-    }
-
-    public void setShowPlayerId(long showPlayerId) {
-        this.showPlayerId = showPlayerId;
-    }
-
-    public void setRecentPlayerId(long recentPlayerId) {
-        this.recentPlayerId = recentPlayerId;
-    }
-
-    ////
 
     public int getX() {
         return x;
@@ -124,5 +79,13 @@ public class BaseAccountInfo {
 
     public void setSceneId(long sceneId) {
         this.sceneId = sceneId;
+    }
+
+    public int getMapId() {
+        return mapId;
+    }
+
+    public void setMapId(int mapId) {
+        this.mapId = mapId;
     }
 }

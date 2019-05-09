@@ -33,17 +33,14 @@ public class AccountEnt implements Serializable {
     @Column(columnDefinition = "int default 0 comment '创建时间'")
     private Date createTime;
 
-    @Column(columnDefinition = "bigint comment '显示玩家id'")
-    private long showPlayerId;
-
-    @Column(columnDefinition = "bigint comment '最近登录玩家id'")
-    private long recentPlayerId;
-
     @Column(columnDefinition = "timestamp comment '最后登录时间'")
-    private volatile Date lastLogin;
+    private Date lastLogin;
 
     @Column(columnDefinition = "timestamp comment '上次登出时间'")
-    private volatile Date lastLogout;
+    private Date lastLogout;
+
+    @Column(columnDefinition = "int default 0 comment '用户当前所在地图id")
+    private int curMapId;
 
     public static AccountEnt valueOf(String accountId, String password) {
         AccountEnt accountEnt = new AccountEnt();
@@ -57,26 +54,24 @@ public class AccountEnt implements Serializable {
         return accountId;
     }
 
-    public boolean doSerialize(){
+    public void doSerialize(){
         BaseAccountInfo baseAccountInfo = account.getBaseAccountInfo();
         this.nickName = baseAccountInfo.getNickName();
-        this.recentPlayerId = baseAccountInfo.getRecentPlayerId();
-        this.showPlayerId = baseAccountInfo.getShowPlayerId();
+        this.curMapId = baseAccountInfo.getMapId();
         this.lastLogin = account.getLastLogin();
         this.lastLogout = account.getLastLogout();
         this.createTime = account.getCreateTime();
+
         Account account = getAccount();
         this.accountData = JsonUtils.toNoCompressBytes(account);
-        return true;
     }
 
-    public boolean doDeserialize(){
+    public void doDeserialize(){
         account = JsonUtils.toObjectWithNoCompress(getAccountData(), Account.class);
         account.setBaseAccountInfo(SpringContext.getAccountService().getBaseAccountInfo(accountId));
         account.setLastLogin(this.lastLogin);
         account.setLastLogout(this.lastLogout);
         account.setCreateTime(this.createTime);
-        return true;
     }
 
     public Account getAccount() {
@@ -127,14 +122,6 @@ public class AccountEnt implements Serializable {
         this.createTime = createTime;
     }
 
-    public long getRecentPlayerId() {
-        return recentPlayerId;
-    }
-
-    public void setRecentPlayerId(long recentPlayerId) {
-        this.recentPlayerId = recentPlayerId;
-    }
-
     public Date getLastLogin() {
         return lastLogin;
     }
@@ -151,11 +138,11 @@ public class AccountEnt implements Serializable {
         this.lastLogout = lastLogout;
     }
 
-    public long getShowPlayerId() {
-        return showPlayerId;
+    public int getCurMapId() {
+        return curMapId;
     }
 
-    public void setShowPlayerId(long showPlayerId) {
-        this.showPlayerId = showPlayerId;
+    public void setCurMapId(int curMapId) {
+        this.curMapId = curMapId;
     }
 }

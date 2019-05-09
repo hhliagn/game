@@ -5,15 +5,12 @@ import com.game.role.player.service.IPlayerService;
 import com.game.scene.service.IMapService;
 import com.game.scene.service.ISceneService;
 import com.game.user.account.service.IAccountService;
-import com.game.user.login.service.ILoginService;
-import com.game.user.logout.ILogoutService;
 import com.game.user.mapInfo.service.IMapInfoService;
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.ApplicationContextAware;
 import org.springframework.stereotype.Component;
-
 import javax.annotation.PostConstruct;
 
 @Component
@@ -35,13 +32,7 @@ public class SpringContext implements ApplicationContextAware {
     private IAccountService accountService;
 
     @Autowired
-    private ILoginService loginService;
-
-    @Autowired
     private GlobalService globalService;
-
-    @Autowired
-    private ILogoutService logoutService;
 
     @Autowired
     private IMapService mapService;
@@ -57,17 +48,8 @@ public class SpringContext implements ApplicationContextAware {
         return instance.mapService;
     }
 
-    public static ILogoutService getLogoutService(){
-        return instance.logoutService;
-    }
-
     public static GlobalService getGlobalService(){
         return instance.globalService;
-    }
-
-
-    public static ILoginService getLoginService(){
-        return instance.loginService;
     }
 
     public static IAccountService getAccountService(){

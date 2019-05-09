@@ -1,4 +1,4 @@
-package com.game.role.player.dao;
+package com.game.role.player.entity;
 
 import com.game.role.player.entity.PlayerEnt;
 import org.hibernate.Query;

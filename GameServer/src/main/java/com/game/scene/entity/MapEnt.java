@@ -1,5 +1,6 @@
 package com.game.scene.entity;
 
+import com.game.SpringContext;
 import com.game.common.util.JsonUtils;
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -36,6 +37,20 @@ public class MapEnt implements Serializable {
     private transient List<Long> existMonsterIds;
 
     private transient List<Integer> mapNearByIds;
+
+    public static MapEnt valueOf(int mapId, String mapName,
+                                 List<Long> existMonsterIds,
+                                 List<Long> existNpcIds,
+                                 List<Integer> mapNearByIds){
+        MapEnt mapEnt = new MapEnt();
+        mapEnt.setMapId(mapId);
+        mapEnt.setMapName(mapName);
+        mapEnt.setExistNpcIds(existNpcIds);
+        mapEnt.setExistMonsterIds(existMonsterIds);
+        mapEnt.setMapNearByIds(mapNearByIds);
+        SpringContext.getMapService().saveMapEnt(mapEnt);
+        return mapEnt;
+    }
 
     public void doSerialize(){
         this.existNpcidsData = JsonUtils.toNoCompressBytes(existNpcIds);

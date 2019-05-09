@@ -14,6 +14,7 @@ public class Scene {
     private List<MonsterEnt> monsterList = new ArrayList<>();
     private List<NpcEnt> npcList = new ArrayList<>();
     private BaseAccountInfo baseAccountInfo;
+    private String message;
 
     public void move(int x, int y){
         baseAccountInfo.setX(x);
@@ -70,28 +71,34 @@ public class Scene {
         this.baseAccountInfo = baseAccountInfo;
     }
 
+    public String getMessage() {
+        return message;
+    }
+
+    public void setMessage(String message) {
+        this.message = message;
+    }
+
     private void search(){
         int x = baseAccountInfo.getX();
         int y = baseAccountInfo.getY();
         for (MonsterEnt monsterEnt : monsterList) {
             if (Math.abs(x - monsterEnt.getX()) < 2 || Math.abs(y - monsterEnt.getY()) < 2){
-                attack();
+                attack(monsterEnt.getName());
             }
         }
         for (NpcEnt npcEnt : npcList) {
             if (Math.abs(x - npcEnt.getX()) < 2 || Math.abs(y - npcEnt.getY()) < 2){
-                talk();
+                talk(npcEnt.getName());
             }
         }
     }
 
-    private void talk() {
-        System.out.println("遇到npc,对话");
-        System.out.println("对话结束");
+    private void talk(String name) {
+        setMessage("遇到npc " + name + ",对话" + "\n" + "对话结束");
     }
 
-    private void attack() {
-        System.out.println("遇到怪物，攻击");
-        System.out.println("杀死怪物");
+    private void attack(String name) {
+        setMessage("遇到怪物 " + name + "，攻击" + "\n" + "杀死怪物");
     }
 }

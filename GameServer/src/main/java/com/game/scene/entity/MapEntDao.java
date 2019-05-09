@@ -1,4 +1,4 @@
-package com.game.scene.dao;
+package com.game.scene.entity;
 
 import com.game.scene.entity.MapEnt;
 import org.hibernate.Query;
@@ -26,6 +26,9 @@ public class MapEntDao{
             String hql = "FROM MapEnt";
             Query query = getSession().createQuery(hql);
             List<MapEnt> list = query.list();
+            for (MapEnt mapEnt : list) {
+                mapEnt.doDeserialize();
+            }
             return list;
         }catch (Exception e){
             throw new RuntimeException("获取地图数据出错");
@@ -36,10 +39,12 @@ public class MapEntDao{
         String hql = "select m from MapEnt m where id = ?";
         Query query = getSession().createQuery(hql).setInteger(0, id);
         MapEnt mapEnt = (MapEnt) query.uniqueResult();
+        mapEnt.doDeserialize();
         return mapEnt;
     }
 
     public void save(MapEnt mapEnt) {
+        mapEnt.doSerialize();
         getSession().saveOrUpdate(mapEnt);
     }
 }

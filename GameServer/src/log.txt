@@ -1391,28 +1391,28 @@ Adding transactional method 'com.game.world.service.map.dao.MapEntDao.findAll' w
 Adding transactional method 'com.game.world.service.map.dao.MapEntDao.findOne' with attribute: PROPAGATION_REQUIRED,ISOLATION_DEFAULT; ''
 Creating shared instance of singleton bean 'identifyService'
 Creating shared instance of singleton bean 'IdentifyDao'
-Adding transactional method 'com.game.core.id.dao.IdentifyDao.save' with attribute: PROPAGATION_REQUIRED,ISOLATION_DEFAULT; ''
-Adding transactional method 'com.game.core.id.dao.IdentifyDao.findAll' with attribute: PROPAGATION_REQUIRED,ISOLATION_DEFAULT; ''
-Adding transactional method 'com.game.core.id.dao.IdentifyDao.findOne' with attribute: PROPAGATION_REQUIRED,ISOLATION_DEFAULT; ''
+Adding transactional method 'com.game.core.id.entity.IdentifyDao.save' with attribute: PROPAGATION_REQUIRED,ISOLATION_DEFAULT; ''
+Adding transactional method 'com.game.core.id.entity.IdentifyDao.findAll' with attribute: PROPAGATION_REQUIRED,ISOLATION_DEFAULT; ''
+Adding transactional method 'com.game.core.id.entity.IdentifyDao.findOne' with attribute: PROPAGATION_REQUIRED,ISOLATION_DEFAULT; ''
 Creating shared instance of singleton bean 'mapInfoService'
 Creating shared instance of singleton bean 'MapInfoDao'
-Adding transactional method 'com.game.user.mapInfo.dao.MapInfoDao.save' with attribute: PROPAGATION_REQUIRED,ISOLATION_DEFAULT; ''
-Adding transactional method 'com.game.user.mapInfo.dao.MapInfoDao.findAll' with attribute: PROPAGATION_REQUIRED,ISOLATION_DEFAULT; ''
-Adding transactional method 'com.game.user.mapInfo.dao.MapInfoDao.findOne' with attribute: PROPAGATION_REQUIRED,ISOLATION_DEFAULT; ''
+Adding transactional method 'com.game.user.mapInfo.entity.MapInfoDao.save' with attribute: PROPAGATION_REQUIRED,ISOLATION_DEFAULT; ''
+Adding transactional method 'com.game.user.mapInfo.entity.MapInfoDao.findAll' with attribute: PROPAGATION_REQUIRED,ISOLATION_DEFAULT; ''
+Adding transactional method 'com.game.user.mapInfo.entity.MapInfoDao.findOne' with attribute: PROPAGATION_REQUIRED,ISOLATION_DEFAULT; ''
 Creating shared instance of singleton bean 'playerService'
 Creating shared instance of singleton bean 'PlayerDao'
-Adding transactional method 'com.game.role.player.dao.PlayerDao.find' with attribute: PROPAGATION_REQUIRED,ISOLATION_DEFAULT; ''
-Adding transactional method 'com.game.role.player.dao.PlayerDao.save' with attribute: PROPAGATION_REQUIRED,ISOLATION_DEFAULT; ''
-Adding transactional method 'com.game.role.player.dao.PlayerDao.findAll' with attribute: PROPAGATION_REQUIRED,ISOLATION_DEFAULT; ''
-Adding transactional method 'com.game.role.player.dao.PlayerDao.getSession' with attribute: PROPAGATION_REQUIRED,ISOLATION_DEFAULT; ''
-Adding transactional method 'com.game.role.player.dao.PlayerDao.findOne' with attribute: PROPAGATION_REQUIRED,ISOLATION_DEFAULT; ''
-Adding transactional method 'com.game.role.player.dao.PlayerDao.createPlayer' with attribute: PROPAGATION_REQUIRED,ISOLATION_DEFAULT; ''
+Adding transactional method 'com.game.role.player.entity.PlayerDao.find' with attribute: PROPAGATION_REQUIRED,ISOLATION_DEFAULT; ''
+Adding transactional method 'com.game.role.player.entity.PlayerDao.save' with attribute: PROPAGATION_REQUIRED,ISOLATION_DEFAULT; ''
+Adding transactional method 'com.game.role.player.entity.PlayerDao.findAll' with attribute: PROPAGATION_REQUIRED,ISOLATION_DEFAULT; ''
+Adding transactional method 'com.game.role.player.entity.PlayerDao.getSession' with attribute: PROPAGATION_REQUIRED,ISOLATION_DEFAULT; ''
+Adding transactional method 'com.game.role.player.entity.PlayerDao.findOne' with attribute: PROPAGATION_REQUIRED,ISOLATION_DEFAULT; ''
+Adding transactional method 'com.game.role.player.entity.PlayerDao.createPlayer' with attribute: PROPAGATION_REQUIRED,ISOLATION_DEFAULT; ''
 Creating shared instance of singleton bean 'accountService'
 Creating shared instance of singleton bean 'accountDao'
-Adding transactional method 'com.game.user.account.dao.AccountDao.save' with attribute: PROPAGATION_REQUIRED,ISOLATION_DEFAULT; ''
-Adding transactional method 'com.game.user.account.dao.AccountDao.findAll' with attribute: PROPAGATION_REQUIRED,ISOLATION_DEFAULT; ''
-Adding transactional method 'com.game.user.account.dao.AccountDao.findOne' with attribute: PROPAGATION_REQUIRED,ISOLATION_DEFAULT; ''
-Adding transactional method 'com.game.user.account.dao.AccountDao.createAccount' with attribute: PROPAGATION_REQUIRED,ISOLATION_DEFAULT; ''
+Adding transactional method 'com.game.user.account.entity.AccountDao.save' with attribute: PROPAGATION_REQUIRED,ISOLATION_DEFAULT; ''
+Adding transactional method 'com.game.user.account.entity.AccountDao.findAll' with attribute: PROPAGATION_REQUIRED,ISOLATION_DEFAULT; ''
+Adding transactional method 'com.game.user.account.entity.AccountDao.findOne' with attribute: PROPAGATION_REQUIRED,ISOLATION_DEFAULT; ''
+Adding transactional method 'com.game.user.account.entity.AccountDao.createAccount' with attribute: PROPAGATION_REQUIRED,ISOLATION_DEFAULT; ''
 Creating shared instance of singleton bean 'registerService'
 Creating shared instance of singleton bean 'loginService'
 Creating shared instance of singleton bean 'globalService'
@@ -1420,7 +1420,7 @@ Creating shared instance of singleton bean 'logoutService'
 Creating shared instance of singleton bean 'worldService'
 Creating shared instance of singleton bean 'transactionManager'
 初始化账号数据。。。
-Creating new transaction with name [com.game.role.player.dao.PlayerDao.findAll]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT; ''
+Creating new transaction with name [com.game.role.player.entity.PlayerDao.findAll]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT; ''
 Acquired Connection [1568450200, URL=jdbc:mysql://localhost/game?useUnicode=true&characterEncoding=utf-8, UserName=root@localhost, MySQL Connector Java] for JDBC transaction
 Switching JDBC Connection [1568450200, URL=jdbc:mysql://localhost/game?useUnicode=true&characterEncoding=utf-8, UserName=root@localhost, MySQL Connector Java] to manual commit
 parse() - HQL: FROM com.game.role.player.entity.PlayerEnt
@@ -1591,7 +1591,7 @@ Initiating transaction commit
 Committing JDBC transaction on Connection [1568450200, URL=jdbc:mysql://localhost/game?useUnicode=true&characterEncoding=utf-8, UserName=root@localhost, MySQL Connector Java]
 Releasing JDBC Connection [1568450200, URL=jdbc:mysql://localhost/game?useUnicode=true&characterEncoding=utf-8, UserName=root@localhost, MySQL Connector Java] after transaction
 Returning JDBC Connection to DataSource
-Creating new transaction with name [com.game.user.account.dao.AccountDao.findAll]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT; ''
+Creating new transaction with name [com.game.user.account.entity.AccountDao.findAll]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT; ''
 Acquired Connection [1261545224, URL=jdbc:mysql://localhost/game?useUnicode=true&characterEncoding=utf-8, UserName=root@localhost, MySQL Connector Java] for JDBC transaction
 Switching JDBC Connection [1261545224, URL=jdbc:mysql://localhost/game?useUnicode=true&characterEncoding=utf-8, UserName=root@localhost, MySQL Connector Java] to manual commit
 parse() - HQL: FROM com.game.user.account.entity.AccountEnt
@@ -2086,7 +2086,7 @@ Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@484545b1
 -Dio.netty.recycler.maxSharedCapacityFactor: 2
 -Dio.netty.recycler.linkCapacity: 16
 -Dio.netty.recycler.ratio: 8
-Creating new transaction with name [com.game.user.account.dao.AccountDao.save]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT; ''
+Creating new transaction with name [com.game.user.account.entity.AccountDao.save]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT; ''
 Acquired Connection [1873087548, URL=jdbc:mysql://localhost/game?useUnicode=true&characterEncoding=utf-8, UserName=root@localhost, MySQL Connector Java] for JDBC transaction
 Switching JDBC Connection [1873087548, URL=jdbc:mysql://localhost/game?useUnicode=true&characterEncoding=utf-8, UserName=root@localhost, MySQL Connector Java] to manual commit
 Flushing Hibernate Session on transaction synchronization
@@ -2130,7 +2130,7 @@ java.sql.SQLWarning: Data truncated for column 'LastLogin' at row 1
 	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:96)
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
 	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:688)
-	at com.game.user.account.dao.AccountDao$$EnhancerBySpringCGLIB$$b3786ab1.save(<generated>)
+	at com.game.user.account.entity.AccountDao$$EnhancerBySpringCGLIB$$b3786ab1.save(<generated>)
 	at com.game.user.account.service.AccountService.saveAccount(AccountService.java:54)
 	at com.game.user.login.service.LoginService.login(LoginService.java:26)
 	at com.game.core.server.NettyServerHandler.channelRead0(NettyServerHandler.java:37)
@@ -2561,3 +2561,1921 @@ HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
 HHH000399: Using default transaction strategy (direct JDBC transactions)
 HHH000397: Using ASTQueryTranslatorFactory
 Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'springContext': Unsatisfied dependency expressed through field 'identifyService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'identifyService': Unsatisfied dependency expressed through field 'identifyDao'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'IdentifyDao': Unsatisfied dependency expressed through field 'sessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sessionFactory' defined in class path resource [applicationContext.xml]: Invocation of init method failed; nested exception is org.hibernate.MappingException: entity class not found: com.game.world.service.map.entity.MapEnt
+Autowired annotation is not supported on static fields: public static org.springframework.context.ApplicationContext com.game.SpringContext.applicationContext
+HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+HHH000412: Hibernate Core {4.3.11.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HHH000044: Configuring from URL: file:/D:/game/game/GameServer/target/classes/hibernate.cfg.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/PlayerEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/AccountEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/IdentifyEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/MapEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/MapInfoEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000041: Configured SessionFactory: null
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'springContext': Unsatisfied dependency expressed through field 'identifyService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'identifyService': Unsatisfied dependency expressed through field 'identifyDao'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'IdentifyDao': Unsatisfied dependency expressed through field 'sessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sessionFactory' defined in class path resource [applicationContext.xml]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: @org.hibernate.annotations.Table references an unknown table: monster
+HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+HHH000412: Hibernate Core {4.3.11.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HHH000043: Configuring from resource: /hibernate.cfg.xml
+HHH000040: Configuration resource: /hibernate.cfg.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/PlayerEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/AccountEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/IdentifyEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/MapEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/MapInfoEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000041: Configured SessionFactory: null
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+HHH000227: Running hbm2ddl schema export
+HHH000181: No appropriate connection provider encountered, assuming application will be supplying connections
+HHH000231: Schema export unsuccessful
+java.lang.UnsupportedOperationException: The application must supply JDBC connections
+	at org.hibernate.engine.jdbc.connections.internal.UserSuppliedConnectionProviderImpl.getConnection(UserSuppliedConnectionProviderImpl.java:61)
+	at org.hibernate.tool.hbm2ddl.ManagedProviderConnectionHelper.prepare(ManagedProviderConnectionHelper.java:55)
+	at org.hibernate.tool.hbm2ddl.DatabaseExporter.<init>(DatabaseExporter.java:52)
+	at org.hibernate.tool.hbm2ddl.SchemaExport.execute(SchemaExport.java:368)
+	at org.hibernate.tool.hbm2ddl.SchemaExport.create(SchemaExport.java:305)
+	at org.hibernate.tool.hbm2ddl.SchemaExport.create(SchemaExport.java:294)
+	at com.game.AutoCreateTable.main(AutoCreateTable.java:10)
+HHH000230: Schema export complete
+HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+HHH000412: Hibernate Core {4.3.11.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HHH000043: Configuring from resource: /hibernate.cfg.xml
+HHH000040: Configuration resource: /hibernate.cfg.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/PlayerEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/AccountEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/IdentifyEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/MapEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/MapInfoEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/MonsterEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/NpcEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000041: Configured SessionFactory: null
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+HHH000227: Running hbm2ddl schema export
+HHH000402: Using Hibernate built-in connection pool (not for production use!)
+HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/game]
+HHH000046: Connection properties: {user=root, password=****}
+HHH000006: Autocommit mode: false
+HHH000115: Hibernate connection pool size: 20 (min=1)
+HHH000030: Cleaning up connection pool [jdbc:mysql://localhost:3306/game]
+HHH000230: Schema export complete
+HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+HHH000412: Hibernate Core {4.3.11.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HHH000043: Configuring from resource: /hibernate.cfg.xml
+HHH000040: Configuration resource: /hibernate.cfg.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/PlayerEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/AccountEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/IdentifyEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/MapEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/MapInfoEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/MonsterEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/NpcEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000041: Configured SessionFactory: null
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+HHH000227: Running hbm2ddl schema export
+HHH000181: No appropriate connection provider encountered, assuming application will be supplying connections
+HHH000231: Schema export unsuccessful
+java.lang.UnsupportedOperationException: The application must supply JDBC connections
+	at org.hibernate.engine.jdbc.connections.internal.UserSuppliedConnectionProviderImpl.getConnection(UserSuppliedConnectionProviderImpl.java:61)
+	at org.hibernate.tool.hbm2ddl.ManagedProviderConnectionHelper.prepare(ManagedProviderConnectionHelper.java:55)
+	at org.hibernate.tool.hbm2ddl.DatabaseExporter.<init>(DatabaseExporter.java:52)
+	at org.hibernate.tool.hbm2ddl.SchemaExport.execute(SchemaExport.java:368)
+	at org.hibernate.tool.hbm2ddl.SchemaExport.create(SchemaExport.java:305)
+	at org.hibernate.tool.hbm2ddl.SchemaExport.create(SchemaExport.java:294)
+	at com.game.AutoCreateTable.main(AutoCreateTable.java:10)
+HHH000230: Schema export complete
+HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+HHH000412: Hibernate Core {4.3.11.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HHH000043: Configuring from resource: /hibernate.cfg.xml
+HHH000040: Configuration resource: /hibernate.cfg.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/PlayerEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/AccountEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/IdentifyEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/MapEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/MapInfoEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/MonsterEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/NpcEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000041: Configured SessionFactory: null
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+HHH000227: Running hbm2ddl schema export
+HHH000402: Using Hibernate built-in connection pool (not for production use!)
+HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/game]
+HHH000046: Connection properties: {user=root, password=****}
+HHH000006: Autocommit mode: false
+HHH000115: Hibernate connection pool size: 20 (min=1)
+HHH000030: Cleaning up connection pool [jdbc:mysql://localhost:3306/game]
+HHH000230: Schema export complete
+Autowired annotation is not supported on static fields: public static org.springframework.context.ApplicationContext com.game.SpringContext.applicationContext
+HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+HHH000412: Hibernate Core {4.3.11.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HHH000044: Configuring from URL: file:/D:/game/game/GameServer/target/classes/hibernate.cfg.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/PlayerEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/AccountEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/IdentifyEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/MapEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/MapInfoEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/MonsterEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/NpcEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000041: Configured SessionFactory: null
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+HHH000422: Disabling contextual LOB creation as connection was null
+HHH000399: Using default transaction strategy (direct JDBC transactions)
+HHH000397: Using ASTQueryTranslatorFactory
+HHH000228: Running hbm2ddl schema update
+HHH000102: Fetching database metadata
+HHH000299: Could not complete schema update
+java.lang.UnsupportedOperationException: Not supported by BasicDataSource
+	at org.apache.commons.dbcp2.BasicDataSource.getConnection(BasicDataSource.java:829)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:139)
+	at org.hibernate.tool.hbm2ddl.SuppliedConnectionProviderConnectionHelper.prepare(SuppliedConnectionProviderConnectionHelper.java:51)
+	at org.hibernate.tool.hbm2ddl.SchemaUpdate.execute(SchemaUpdate.java:219)
+	at org.hibernate.tool.hbm2ddl.SchemaUpdate.execute(SchemaUpdate.java:203)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:522)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1859)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1930)
+	at org.springframework.orm.hibernate4.LocalSessionFactoryBuilder.buildSessionFactory(LocalSessionFactoryBuilder.java:372)
+	at org.springframework.orm.hibernate4.LocalSessionFactoryBean.buildSessionFactory(LocalSessionFactoryBean.java:454)
+	at org.springframework.orm.hibernate4.LocalSessionFactoryBean.afterPropertiesSet(LocalSessionFactoryBean.java:439)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1837)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1774)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:277)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1247)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1167)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:593)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:374)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1411)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:592)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:277)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1247)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1167)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:593)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:374)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1411)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:592)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:277)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1247)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1167)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:593)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:374)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1411)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:592)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:849)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:877)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:144)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:85)
+	at com.game.Start.main(Start.java:23)
+启动游戏
+初始化账号数据...
+Autowired annotation is not supported on static fields: public static org.springframework.context.ApplicationContext com.game.SpringContext.applicationContext
+HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+HHH000412: Hibernate Core {4.3.11.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HHH000044: Configuring from URL: file:/D:/game/game/GameServer/target/classes/hibernate.cfg.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/PlayerEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/AccountEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/IdentifyEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/MapEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/MapInfoEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/MonsterEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/NpcEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000041: Configured SessionFactory: null
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+HHH000399: Using default transaction strategy (direct JDBC transactions)
+HHH000397: Using ASTQueryTranslatorFactory
+HHH000228: Running hbm2ddl schema update
+HHH000102: Fetching database metadata
+HHH000396: Updating schema
+HHH000261: Table found: game.account
+HHH000037: Columns: [accountdata, accountid, createtime, password, curmapid, lastlogin, nickname, lastlogout]
+HHH000108: Foreign keys: []
+HHH000126: Indexes: [primary]
+HHH000261: Table found: game.identify
+HHH000037: Columns: [val, id]
+HHH000108: Foreign keys: []
+HHH000126: Indexes: [primary]
+HHH000261: Table found: game.map
+HHH000037: Columns: [existmonsteridsdata, existnpcidsdata, name, mapnearbyidsdata, id]
+HHH000108: Foreign keys: []
+HHH000126: Indexes: [primary]
+HHH000261: Table found: game.mapinfo
+HHH000037: Columns: [accountid, curmapid, id, lastmapid]
+HHH000108: Foreign keys: []
+HHH000126: Indexes: [primary]
+HHH000261: Table found: game.monster
+HHH000037: Columns: [existmonsteridsdata, name, mapid, mapnearbyidsdata, id]
+HHH000108: Foreign keys: []
+HHH000126: Indexes: [primary]
+HHH000261: Table found: game.npc
+HHH000037: Columns: [name, x, y, mapid, id]
+HHH000108: Foreign keys: []
+HHH000126: Indexes: [primary]
+HHH000261: Table found: game.player
+HHH000037: Columns: [accountid, alive, sex, name, id, job]
+HHH000108: Foreign keys: []
+HHH000126: Indexes: [primary]
+HHH000232: Schema update complete
+启动游戏
+初始化账号数据...
+初始化地图数据...
+账号注册
+[DEPRECATION] Encountered positional parameter near line 1, column 75 in HQL: [select a from com.game.user.account.entity.AccountEnt a where accountId = ? and password = ?].  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+[DEPRECATION] Encountered positional parameter near line 1, column 92 in HQL: [select a from com.game.user.account.entity.AccountEnt a where accountId = ? and password = ?].  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+[DEPRECATION] Encountered positional parameter near line 1, column 75 in HQL: [select a from com.game.user.account.entity.AccountEnt a where accountId = ?].  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+用户登录
+SQL Error: 1406, SQLState: 22001
+Data truncation: Data too long for column 'accountData' at row 1
+HHH000010: On release of batch it still contained JDBC statements
+SQL Warning Code: 1406, SQLState: 22001
+Data too long for column 'accountData' at row 1
+SQL Warning Code: 1406, SQLState: 22001
+Data too long for column 'accountData' at row 1
+SQL Warning Code: 1406, SQLState: 22001
+Data too long for column 'accountData' at row 1
+SQL Warning Code: 1406, SQLState: 22001
+Data too long for column 'accountData' at row 1
+SQL Error: 1406, SQLState: 22001
+Data truncation: Data too long for column 'accountData' at row 1
+HHH000010: On release of batch it still contained JDBC statements
+SQL Warning Code: 1406, SQLState: 22001
+Data too long for column 'accountData' at row 1
+用户登出
+[DEPRECATION] Encountered positional parameter near line 1, column 64 in HQL: [select i from com.game.core.id.entity.IdentifyEnt i where id = ?].  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+[DEPRECATION] Encountered positional parameter near line 1, column 75 in HQL: [select m from com.game.user.mapInfo.entity.MapInfoEnt m where accountId = ?].  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+[DEPRECATION] Encountered positional parameter near line 1, column 64 in HQL: [select p from com.game.scene.entity.MonsterEnt p where mapId = ?].  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+[DEPRECATION] Encountered positional parameter near line 1, column 60 in HQL: [select p from com.game.scene.entity.NpcEnt p where mapId = ?].  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+HHH000412: Hibernate Core {4.3.11.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HHH000043: Configuring from resource: /hibernate.cfg.xml
+HHH000040: Configuration resource: /hibernate.cfg.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/PlayerEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/AccountEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/IdentifyEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/MapEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/MapInfoEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/MonsterEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/NpcEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000041: Configured SessionFactory: null
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+HHH000227: Running hbm2ddl schema export
+HHH000181: No appropriate connection provider encountered, assuming application will be supplying connections
+HHH000231: Schema export unsuccessful
+java.lang.UnsupportedOperationException: The application must supply JDBC connections
+	at org.hibernate.engine.jdbc.connections.internal.UserSuppliedConnectionProviderImpl.getConnection(UserSuppliedConnectionProviderImpl.java:61)
+	at org.hibernate.tool.hbm2ddl.ManagedProviderConnectionHelper.prepare(ManagedProviderConnectionHelper.java:55)
+	at org.hibernate.tool.hbm2ddl.DatabaseExporter.<init>(DatabaseExporter.java:52)
+	at org.hibernate.tool.hbm2ddl.SchemaExport.execute(SchemaExport.java:368)
+	at org.hibernate.tool.hbm2ddl.SchemaExport.create(SchemaExport.java:305)
+	at org.hibernate.tool.hbm2ddl.SchemaExport.create(SchemaExport.java:294)
+	at com.game.Start.autoCreateTable(Start.java:15)
+	at com.game.Start.main(Start.java:21)
+HHH000230: Schema export complete
+Autowired annotation is not supported on static fields: public static org.springframework.context.ApplicationContext com.game.SpringContext.applicationContext
+HHH000044: Configuring from URL: file:/D:/game/game/GameServer/target/classes/hibernate.cfg.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/PlayerEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/AccountEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/IdentifyEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/MapEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/MapInfoEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/MonsterEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/NpcEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000041: Configured SessionFactory: null
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+HHH000399: Using default transaction strategy (direct JDBC transactions)
+HHH000397: Using ASTQueryTranslatorFactory
+HHH000228: Running hbm2ddl schema update
+HHH000102: Fetching database metadata
+HHH000396: Updating schema
+HHH000261: Table found: game.account
+HHH000037: Columns: [accountdata, accountid, createtime, password, curmapid, lastlogin, nickname, lastlogout]
+HHH000108: Foreign keys: []
+HHH000126: Indexes: [primary]
+HHH000261: Table found: game.identify
+HHH000037: Columns: [val, id]
+HHH000108: Foreign keys: []
+HHH000126: Indexes: [primary]
+HHH000261: Table found: game.map
+HHH000037: Columns: [existmonsteridsdata, existnpcidsdata, name, mapnearbyidsdata, id]
+HHH000108: Foreign keys: []
+HHH000126: Indexes: [primary]
+HHH000261: Table found: game.mapinfo
+HHH000037: Columns: [accountid, curmapid, id, lastmapid]
+HHH000108: Foreign keys: []
+HHH000126: Indexes: [primary]
+HHH000261: Table found: game.monster
+HHH000037: Columns: [existmonsteridsdata, name, mapid, mapnearbyidsdata, id]
+HHH000108: Foreign keys: []
+HHH000126: Indexes: [primary]
+HHH000261: Table found: game.npc
+HHH000037: Columns: [name, x, y, mapid, id]
+HHH000108: Foreign keys: []
+HHH000126: Indexes: [primary]
+HHH000261: Table found: game.player
+HHH000037: Columns: [accountid, alive, sex, name, id, job]
+HHH000108: Foreign keys: []
+HHH000126: Indexes: [primary]
+HHH000232: Schema update complete
+启动游戏
+初始化账号数据...
+HHH000010: On release of batch it still contained JDBC statements
+HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+HHH000412: Hibernate Core {4.3.11.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HHH000043: Configuring from resource: /hibernate.cfg.xml
+HHH000040: Configuration resource: /hibernate.cfg.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/PlayerEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/AccountEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/IdentifyEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/MapEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/MapInfoEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/MonsterEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/NpcEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000041: Configured SessionFactory: null
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+HHH000227: Running hbm2ddl schema export
+HHH000181: No appropriate connection provider encountered, assuming application will be supplying connections
+HHH000231: Schema export unsuccessful
+java.lang.UnsupportedOperationException: The application must supply JDBC connections
+	at org.hibernate.engine.jdbc.connections.internal.UserSuppliedConnectionProviderImpl.getConnection(UserSuppliedConnectionProviderImpl.java:61)
+	at org.hibernate.tool.hbm2ddl.ManagedProviderConnectionHelper.prepare(ManagedProviderConnectionHelper.java:55)
+	at org.hibernate.tool.hbm2ddl.DatabaseExporter.<init>(DatabaseExporter.java:52)
+	at org.hibernate.tool.hbm2ddl.SchemaExport.execute(SchemaExport.java:368)
+	at org.hibernate.tool.hbm2ddl.SchemaExport.create(SchemaExport.java:305)
+	at org.hibernate.tool.hbm2ddl.SchemaExport.create(SchemaExport.java:294)
+	at com.game.Start.autoCreateTable(Start.java:15)
+	at com.game.Start.main(Start.java:21)
+HHH000230: Schema export complete
+Autowired annotation is not supported on static fields: public static org.springframework.context.ApplicationContext com.game.SpringContext.applicationContext
+HHH000044: Configuring from URL: file:/D:/game/game/GameServer/target/classes/hibernate.cfg.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/PlayerEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/AccountEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/IdentifyEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/MapEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/MapInfoEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/MonsterEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/NpcEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000041: Configured SessionFactory: null
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+HHH000399: Using default transaction strategy (direct JDBC transactions)
+HHH000397: Using ASTQueryTranslatorFactory
+HHH000228: Running hbm2ddl schema update
+HHH000102: Fetching database metadata
+HHH000396: Updating schema
+HHH000261: Table found: game.account
+HHH000037: Columns: [accountdata, accountid, createtime, password, curmapid, lastlogin, nickname, lastlogout]
+HHH000108: Foreign keys: []
+HHH000126: Indexes: [primary]
+HHH000261: Table found: game.identify
+HHH000037: Columns: [val, id]
+HHH000108: Foreign keys: []
+HHH000126: Indexes: [primary]
+HHH000261: Table found: game.map
+HHH000037: Columns: [existmonsteridsdata, existnpcidsdata, name, mapnearbyidsdata, id]
+HHH000108: Foreign keys: []
+HHH000126: Indexes: [primary]
+HHH000261: Table found: game.mapinfo
+HHH000037: Columns: [accountid, curmapid, id, lastmapid]
+HHH000108: Foreign keys: []
+HHH000126: Indexes: [primary]
+HHH000261: Table found: game.monster
+HHH000037: Columns: [existmonsteridsdata, name, x, y, mapid, mapnearbyidsdata, id, status]
+HHH000108: Foreign keys: []
+HHH000126: Indexes: [primary]
+HHH000261: Table found: game.npc
+HHH000037: Columns: [name, x, y, mapid, id, status]
+HHH000108: Foreign keys: []
+HHH000126: Indexes: [primary]
+HHH000261: Table found: game.player
+HHH000037: Columns: [accountid, alive, sex, name, id, job]
+HHH000108: Foreign keys: []
+HHH000126: Indexes: [primary]
+HHH000232: Schema update complete
+启动游戏
+初始化账号数据...
+HHH000010: On release of batch it still contained JDBC statements
+HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+HHH000412: Hibernate Core {4.3.11.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HHH000043: Configuring from resource: /hibernate.cfg.xml
+HHH000040: Configuration resource: /hibernate.cfg.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/PlayerEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/AccountEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/IdentifyEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/MapEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/MapInfoEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/MonsterEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/NpcEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000041: Configured SessionFactory: null
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+HHH000227: Running hbm2ddl schema export
+HHH000402: Using Hibernate built-in connection pool (not for production use!)
+HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/game]
+HHH000046: Connection properties: {user=root, password=****}
+HHH000006: Autocommit mode: false
+HHH000115: Hibernate connection pool size: 20 (min=1)
+HHH000030: Cleaning up connection pool [jdbc:mysql://localhost:3306/game]
+HHH000230: Schema export complete
+Autowired annotation is not supported on static fields: public static org.springframework.context.ApplicationContext com.game.SpringContext.applicationContext
+HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+HHH000412: Hibernate Core {4.3.11.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HHH000044: Configuring from URL: file:/D:/game/game/GameServer/target/classes/hibernate.cfg.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/PlayerEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/AccountEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/IdentifyEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/MapEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/MapInfoEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/MonsterEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/NpcEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000041: Configured SessionFactory: null
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+HHH000399: Using default transaction strategy (direct JDBC transactions)
+HHH000397: Using ASTQueryTranslatorFactory
+HHH000228: Running hbm2ddl schema update
+HHH000102: Fetching database metadata
+HHH000396: Updating schema
+HHH000261: Table found: game.account
+HHH000037: Columns: [accountdata, accountid, createtime, password, curmapid, lastlogin, nickname, lastlogout]
+HHH000108: Foreign keys: []
+HHH000126: Indexes: [primary]
+HHH000261: Table found: game.identify
+HHH000037: Columns: [val, id]
+HHH000108: Foreign keys: []
+HHH000126: Indexes: [primary]
+HHH000261: Table found: game.map
+HHH000037: Columns: [existmonsteridsdata, existnpcidsdata, name, mapnearbyidsdata, id]
+HHH000108: Foreign keys: []
+HHH000126: Indexes: [primary]
+HHH000261: Table found: game.mapinfo
+HHH000037: Columns: [accountid, curmapid, id, lastmapid]
+HHH000108: Foreign keys: []
+HHH000126: Indexes: [primary]
+HHH000261: Table found: game.monster
+HHH000037: Columns: [name, x, y, mapid, id, status]
+HHH000108: Foreign keys: []
+HHH000126: Indexes: [primary]
+HHH000261: Table found: game.npc
+HHH000037: Columns: [name, x, y, mapid, id, status]
+HHH000108: Foreign keys: []
+HHH000126: Indexes: [primary]
+HHH000261: Table found: game.player
+HHH000037: Columns: [accountid, alive, sex, name, id, job]
+HHH000108: Foreign keys: []
+HHH000126: Indexes: [primary]
+HHH000232: Schema update complete
+启动游戏
+初始化账号数据...
+初始化地图数据...
+Autowired annotation is not supported on static fields: public static org.springframework.context.ApplicationContext com.game.SpringContext.applicationContext
+HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+HHH000412: Hibernate Core {4.3.11.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HHH000044: Configuring from URL: file:/D:/game/game/GameServer/target/classes/hibernate.cfg.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/PlayerEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/AccountEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/IdentifyEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/MapEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/MapInfoEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/MonsterEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/NpcEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000041: Configured SessionFactory: null
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+HHH000399: Using default transaction strategy (direct JDBC transactions)
+HHH000397: Using ASTQueryTranslatorFactory
+HHH000228: Running hbm2ddl schema update
+HHH000102: Fetching database metadata
+HHH000396: Updating schema
+HHH000261: Table found: game.account
+HHH000037: Columns: [accountdata, accountid, createtime, password, curmapid, lastlogin, nickname, lastlogout]
+HHH000108: Foreign keys: []
+HHH000126: Indexes: [primary]
+HHH000261: Table found: game.identify
+HHH000037: Columns: [val, id]
+HHH000108: Foreign keys: []
+HHH000126: Indexes: [primary]
+HHH000261: Table found: game.map
+HHH000037: Columns: [existmonsteridsdata, existnpcidsdata, name, mapnearbyidsdata, id]
+HHH000108: Foreign keys: []
+HHH000126: Indexes: [primary]
+HHH000261: Table found: game.mapinfo
+HHH000037: Columns: [accountid, curmapid, id, lastmapid]
+HHH000108: Foreign keys: []
+HHH000126: Indexes: [primary]
+HHH000261: Table found: game.monster
+HHH000037: Columns: [name, x, y, mapid, id, status]
+HHH000108: Foreign keys: []
+HHH000126: Indexes: [primary]
+HHH000261: Table found: game.npc
+HHH000037: Columns: [name, x, y, mapid, id, status]
+HHH000108: Foreign keys: []
+HHH000126: Indexes: [primary]
+HHH000261: Table found: game.player
+HHH000037: Columns: [accountid, alive, sex, name, id, job]
+HHH000108: Foreign keys: []
+HHH000126: Indexes: [primary]
+HHH000232: Schema update complete
+Autowired annotation is not supported on static fields: public static org.springframework.context.ApplicationContext com.game.SpringContext.applicationContext
+HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+HHH000412: Hibernate Core {4.3.11.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HHH000044: Configuring from URL: file:/D:/game/game/GameServer/target/classes/hibernate.cfg.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/PlayerEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/AccountEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/IdentifyEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/MapEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/MapInfoEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/MonsterEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/NpcEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000041: Configured SessionFactory: null
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+HHH000399: Using default transaction strategy (direct JDBC transactions)
+HHH000397: Using ASTQueryTranslatorFactory
+HHH000228: Running hbm2ddl schema update
+HHH000102: Fetching database metadata
+HHH000396: Updating schema
+HHH000261: Table found: game.account
+HHH000037: Columns: [accountdata, accountid, createtime, password, curmapid, lastlogin, nickname, lastlogout]
+HHH000108: Foreign keys: []
+HHH000126: Indexes: [primary]
+HHH000261: Table found: game.identify
+HHH000037: Columns: [val, id]
+HHH000108: Foreign keys: []
+HHH000126: Indexes: [primary]
+HHH000261: Table found: game.map
+HHH000037: Columns: [existmonsteridsdata, existnpcidsdata, name, mapnearbyidsdata, id]
+HHH000108: Foreign keys: []
+HHH000126: Indexes: [primary]
+HHH000261: Table found: game.mapinfo
+HHH000037: Columns: [accountid, curmapid, id, lastmapid]
+HHH000108: Foreign keys: []
+HHH000126: Indexes: [primary]
+HHH000261: Table found: game.monster
+HHH000037: Columns: [name, x, y, mapid, id, status]
+HHH000108: Foreign keys: []
+HHH000126: Indexes: [primary]
+HHH000261: Table found: game.npc
+HHH000037: Columns: [name, x, y, mapid, id, status]
+HHH000108: Foreign keys: []
+HHH000126: Indexes: [primary]
+HHH000261: Table found: game.player
+HHH000037: Columns: [accountid, alive, sex, name, id, job]
+HHH000108: Foreign keys: []
+HHH000126: Indexes: [primary]
+HHH000232: Schema update complete
+Autowired annotation is not supported on static fields: public static org.springframework.context.ApplicationContext com.game.SpringContext.applicationContext
+HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+HHH000412: Hibernate Core {4.3.11.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HHH000044: Configuring from URL: file:/D:/game/game/GameServer/target/classes/hibernate.cfg.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/PlayerEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/AccountEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/IdentifyEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/MapEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/MapInfoEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/MonsterEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/NpcEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000041: Configured SessionFactory: null
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+HHH000399: Using default transaction strategy (direct JDBC transactions)
+HHH000397: Using ASTQueryTranslatorFactory
+HHH000228: Running hbm2ddl schema update
+HHH000102: Fetching database metadata
+HHH000396: Updating schema
+HHH000261: Table found: game.account
+HHH000037: Columns: [accountdata, accountid, createtime, password, curmapid, lastlogin, nickname, lastlogout]
+HHH000108: Foreign keys: []
+HHH000126: Indexes: [primary]
+HHH000261: Table found: game.identify
+HHH000037: Columns: [val, id]
+HHH000108: Foreign keys: []
+HHH000126: Indexes: [primary]
+HHH000261: Table found: game.map
+HHH000037: Columns: [existmonsteridsdata, existnpcidsdata, name, mapnearbyidsdata, id]
+HHH000108: Foreign keys: []
+HHH000126: Indexes: [primary]
+HHH000261: Table found: game.mapinfo
+HHH000037: Columns: [accountid, curmapid, id, lastmapid]
+HHH000108: Foreign keys: []
+HHH000126: Indexes: [primary]
+HHH000261: Table found: game.monster
+HHH000037: Columns: [name, x, y, mapid, id, status]
+HHH000108: Foreign keys: []
+HHH000126: Indexes: [primary]
+HHH000261: Table found: game.npc
+HHH000037: Columns: [name, x, y, mapid, id, status]
+HHH000108: Foreign keys: []
+HHH000126: Indexes: [primary]
+HHH000261: Table found: game.player
+HHH000037: Columns: [accountid, alive, sex, name, id, job]
+HHH000108: Foreign keys: []
+HHH000126: Indexes: [primary]
+HHH000232: Schema update complete
+Autowired annotation is not supported on static fields: private static com.game.scene.entity.MonsterDao com.game.scene.service.SceneService.monsterDao
+Autowired annotation is not supported on static fields: private static com.game.scene.entity.NpcDao com.game.scene.service.SceneService.npcDao
+HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+HHH000412: Hibernate Core {4.3.11.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HHH000044: Configuring from URL: file:/D:/game/game/GameServer/target/classes/hibernate.cfg.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/PlayerEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/AccountEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/IdentifyEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/MapEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/MapInfoEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/MonsterEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/NpcEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000041: Configured SessionFactory: null
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+HHH000399: Using default transaction strategy (direct JDBC transactions)
+HHH000397: Using ASTQueryTranslatorFactory
+HHH000228: Running hbm2ddl schema update
+HHH000102: Fetching database metadata
+HHH000396: Updating schema
+HHH000261: Table found: game.account
+HHH000037: Columns: [accountdata, accountid, createtime, password, curmapid, lastlogin, nickname, lastlogout]
+HHH000108: Foreign keys: []
+HHH000126: Indexes: [primary]
+HHH000261: Table found: game.identify
+HHH000037: Columns: [val, id]
+HHH000108: Foreign keys: []
+HHH000126: Indexes: [primary]
+HHH000261: Table found: game.map
+HHH000037: Columns: [existmonsteridsdata, existnpcidsdata, name, mapnearbyidsdata, id]
+HHH000108: Foreign keys: []
+HHH000126: Indexes: [primary]
+HHH000261: Table found: game.mapinfo
+HHH000037: Columns: [accountid, curmapid, id, lastmapid]
+HHH000108: Foreign keys: []
+HHH000126: Indexes: [primary]
+HHH000261: Table found: game.monster
+HHH000037: Columns: [name, x, y, mapid, id, status]
+HHH000108: Foreign keys: []
+HHH000126: Indexes: [primary]
+HHH000261: Table found: game.npc
+HHH000037: Columns: [name, x, y, mapid, id, status]
+HHH000108: Foreign keys: []
+HHH000126: Indexes: [primary]
+HHH000261: Table found: game.player
+HHH000037: Columns: [accountid, alive, sex, name, id, job]
+HHH000108: Foreign keys: []
+HHH000126: Indexes: [primary]
+HHH000232: Schema update complete
+Autowired annotation is not supported on static fields: public static org.springframework.context.ApplicationContext com.game.SpringContext.applicationContext
+Autowired annotation is not supported on static fields: private static com.game.scene.entity.MonsterDao com.game.scene.service.SceneService.monsterDao
+Autowired annotation is not supported on static fields: private static com.game.scene.entity.NpcDao com.game.scene.service.SceneService.npcDao
+启动游戏
+初始化账号数据...
+初始化地图数据...
+账号注册
+[DEPRECATION] Encountered positional parameter near line 1, column 75 in HQL: [select a from com.game.user.account.entity.AccountEnt a where accountId = ? and password = ?].  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+[DEPRECATION] Encountered positional parameter near line 1, column 92 in HQL: [select a from com.game.user.account.entity.AccountEnt a where accountId = ? and password = ?].  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+[DEPRECATION] Encountered positional parameter near line 1, column 75 in HQL: [select a from com.game.user.account.entity.AccountEnt a where accountId = ?].  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+用户登录
+[DEPRECATION] Encountered positional parameter near line 1, column 64 in HQL: [select i from com.game.core.id.entity.IdentifyEnt i where id = ?].  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+HHH000010: On release of batch it still contained JDBC statements
+HHH000010: On release of batch it still contained JDBC statements
+HHH000010: On release of batch it still contained JDBC statements
+HHH000010: On release of batch it still contained JDBC statements
+HHH000010: On release of batch it still contained JDBC statements
+HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+HHH000412: Hibernate Core {4.3.11.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HHH000044: Configuring from URL: file:/D:/game/game/GameServer/target/classes/hibernate.cfg.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/PlayerEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/AccountEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/IdentifyEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/MapEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/MapInfoEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/MonsterEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/NpcEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000041: Configured SessionFactory: null
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+HHH000399: Using default transaction strategy (direct JDBC transactions)
+HHH000397: Using ASTQueryTranslatorFactory
+HHH000228: Running hbm2ddl schema update
+HHH000102: Fetching database metadata
+HHH000396: Updating schema
+HHH000261: Table found: game.account
+HHH000037: Columns: [accountdata, accountid, createtime, password, curmapid, lastlogin, nickname, lastlogout]
+HHH000108: Foreign keys: []
+HHH000126: Indexes: [primary]
+HHH000261: Table found: game.identify
+HHH000037: Columns: [val, id]
+HHH000108: Foreign keys: []
+HHH000126: Indexes: [primary]
+HHH000261: Table found: game.map
+HHH000037: Columns: [existmonsteridsdata, existnpcidsdata, name, mapnearbyidsdata, id]
+HHH000108: Foreign keys: []
+HHH000126: Indexes: [primary]
+HHH000261: Table found: game.mapinfo
+HHH000037: Columns: [accountid, curmapid, id, lastmapid]
+HHH000108: Foreign keys: []
+HHH000126: Indexes: [primary]
+HHH000261: Table found: game.monster
+HHH000037: Columns: [name, x, y, mapid, id, status]
+HHH000108: Foreign keys: []
+HHH000126: Indexes: [primary]
+HHH000261: Table found: game.npc
+HHH000037: Columns: [name, x, y, mapid, id, status]
+HHH000108: Foreign keys: []
+HHH000126: Indexes: [primary]
+HHH000261: Table found: game.player
+HHH000037: Columns: [accountid, alive, sex, name, id, job]
+HHH000108: Foreign keys: []
+HHH000126: Indexes: [primary]
+HHH000232: Schema update complete
+Autowired annotation is not supported on static fields: public static org.springframework.context.ApplicationContext com.game.SpringContext.applicationContext
+Autowired annotation is not supported on static fields: private static com.game.scene.entity.MonsterDao com.game.scene.service.SceneService.monsterDao
+Autowired annotation is not supported on static fields: private static com.game.scene.entity.NpcDao com.game.scene.service.SceneService.npcDao
+启动游戏
+初始化账号数据...
+初始化地图数据...
+[DEPRECATION] Encountered positional parameter near line 1, column 75 in HQL: [select a from com.game.user.account.entity.AccountEnt a where accountId = ? and password = ?].  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+[DEPRECATION] Encountered positional parameter near line 1, column 92 in HQL: [select a from com.game.user.account.entity.AccountEnt a where accountId = ? and password = ?].  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+[DEPRECATION] Encountered positional parameter near line 1, column 75 in HQL: [select a from com.game.user.account.entity.AccountEnt a where accountId = ?].  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+用户登录
+[DEPRECATION] Encountered positional parameter near line 1, column 64 in HQL: [select i from com.game.core.id.entity.IdentifyEnt i where id = ?].  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+HHH000010: On release of batch it still contained JDBC statements
+HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+HHH000412: Hibernate Core {4.3.11.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HHH000044: Configuring from URL: file:/D:/game/game/GameServer/target/classes/hibernate.cfg.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/PlayerEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/AccountEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/IdentifyEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/MapEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/MapInfoEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/MonsterEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/NpcEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000041: Configured SessionFactory: null
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+HHH000399: Using default transaction strategy (direct JDBC transactions)
+HHH000397: Using ASTQueryTranslatorFactory
+HHH000228: Running hbm2ddl schema update
+HHH000102: Fetching database metadata
+HHH000396: Updating schema
+HHH000261: Table found: game.account
+HHH000037: Columns: [accountdata, accountid, createtime, password, curmapid, lastlogin, nickname, lastlogout]
+HHH000108: Foreign keys: []
+HHH000126: Indexes: [primary]
+HHH000261: Table found: game.identify
+HHH000037: Columns: [val, id]
+HHH000108: Foreign keys: []
+HHH000126: Indexes: [primary]
+HHH000261: Table found: game.map
+HHH000037: Columns: [existmonsteridsdata, existnpcidsdata, name, mapnearbyidsdata, id]
+HHH000108: Foreign keys: []
+HHH000126: Indexes: [primary]
+HHH000261: Table found: game.mapinfo
+HHH000037: Columns: [accountid, curmapid, id, lastmapid]
+HHH000108: Foreign keys: []
+HHH000126: Indexes: [primary]
+HHH000261: Table found: game.monster
+HHH000037: Columns: [name, x, y, mapid, id, status]
+HHH000108: Foreign keys: []
+HHH000126: Indexes: [primary]
+HHH000261: Table found: game.npc
+HHH000037: Columns: [name, x, y, mapid, id, status]
+HHH000108: Foreign keys: []
+HHH000126: Indexes: [primary]
+HHH000261: Table found: game.player
+HHH000037: Columns: [accountid, alive, sex, name, id, job]
+HHH000108: Foreign keys: []
+HHH000126: Indexes: [primary]
+HHH000232: Schema update complete
+Autowired annotation is not supported on static fields: public static org.springframework.context.ApplicationContext com.game.SpringContext.applicationContext
+Autowired annotation is not supported on static fields: private static com.game.scene.entity.MonsterDao com.game.scene.service.SceneService.monsterDao
+Autowired annotation is not supported on static fields: private static com.game.scene.entity.NpcDao com.game.scene.service.SceneService.npcDao
+启动游戏
+初始化账号数据...
+初始化地图数据...
+[DEPRECATION] Encountered positional parameter near line 1, column 75 in HQL: [select a from com.game.user.account.entity.AccountEnt a where accountId = ? and password = ?].  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+[DEPRECATION] Encountered positional parameter near line 1, column 92 in HQL: [select a from com.game.user.account.entity.AccountEnt a where accountId = ? and password = ?].  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+[DEPRECATION] Encountered positional parameter near line 1, column 75 in HQL: [select a from com.game.user.account.entity.AccountEnt a where accountId = ?].  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+用户登录
+[DEPRECATION] Encountered positional parameter near line 1, column 64 in HQL: [select i from com.game.core.id.entity.IdentifyEnt i where id = ?].  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+HHH000010: On release of batch it still contained JDBC statements
+HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+HHH000412: Hibernate Core {4.3.11.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HHH000044: Configuring from URL: file:/D:/game/game/GameServer/target/classes/hibernate.cfg.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/PlayerEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/AccountEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/IdentifyEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/MapEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/MapInfoEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/MonsterEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/NpcEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000041: Configured SessionFactory: null
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+HHH000399: Using default transaction strategy (direct JDBC transactions)
+HHH000397: Using ASTQueryTranslatorFactory
+HHH000228: Running hbm2ddl schema update
+HHH000102: Fetching database metadata
+HHH000396: Updating schema
+HHH000261: Table found: game.account
+HHH000037: Columns: [accountdata, accountid, createtime, password, curmapid, lastlogin, nickname, lastlogout]
+HHH000108: Foreign keys: []
+HHH000126: Indexes: [primary]
+HHH000261: Table found: game.identify
+HHH000037: Columns: [val, id]
+HHH000108: Foreign keys: []
+HHH000126: Indexes: [primary]
+HHH000261: Table found: game.map
+HHH000037: Columns: [existmonsteridsdata, existnpcidsdata, name, mapnearbyidsdata, id]
+HHH000108: Foreign keys: []
+HHH000126: Indexes: [primary]
+HHH000261: Table found: game.mapinfo
+HHH000037: Columns: [accountid, curmapid, id, lastmapid]
+HHH000108: Foreign keys: []
+HHH000126: Indexes: [primary]
+HHH000261: Table found: game.monster
+HHH000037: Columns: [name, x, y, mapid, id, status]
+HHH000108: Foreign keys: []
+HHH000126: Indexes: [primary]
+HHH000261: Table found: game.npc
+HHH000037: Columns: [name, x, y, mapid, id, status]
+HHH000108: Foreign keys: []
+HHH000126: Indexes: [primary]
+HHH000261: Table found: game.player
+HHH000037: Columns: [accountid, alive, sex, name, id, job]
+HHH000108: Foreign keys: []
+HHH000126: Indexes: [primary]
+HHH000232: Schema update complete
+Autowired annotation is not supported on static fields: public static org.springframework.context.ApplicationContext com.game.SpringContext.applicationContext
+Autowired annotation is not supported on static fields: private static com.game.scene.entity.MonsterDao com.game.scene.service.SceneService.monsterDao
+Autowired annotation is not supported on static fields: private static com.game.scene.entity.NpcDao com.game.scene.service.SceneService.npcDao
+启动游戏
+初始化账号数据...
+初始化地图数据...
+[DEPRECATION] Encountered positional parameter near line 1, column 75 in HQL: [select a from com.game.user.account.entity.AccountEnt a where accountId = ? and password = ?].  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+[DEPRECATION] Encountered positional parameter near line 1, column 92 in HQL: [select a from com.game.user.account.entity.AccountEnt a where accountId = ? and password = ?].  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+[DEPRECATION] Encountered positional parameter near line 1, column 75 in HQL: [select a from com.game.user.account.entity.AccountEnt a where accountId = ?].  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+用户登录
+[DEPRECATION] Encountered positional parameter near line 1, column 64 in HQL: [select i from com.game.core.id.entity.IdentifyEnt i where id = ?].  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+创建角色
+HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+HHH000412: Hibernate Core {4.3.11.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HHH000044: Configuring from URL: file:/D:/game/game/GameServer/target/classes/hibernate.cfg.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/PlayerEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/AccountEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/IdentifyEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/MapEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/MapInfoEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/MonsterEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/NpcEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000041: Configured SessionFactory: null
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+HHH000399: Using default transaction strategy (direct JDBC transactions)
+HHH000397: Using ASTQueryTranslatorFactory
+HHH000228: Running hbm2ddl schema update
+HHH000102: Fetching database metadata
+HHH000396: Updating schema
+HHH000261: Table found: game.account
+HHH000037: Columns: [accountdata, accountid, createtime, password, curmapid, lastlogin, nickname, lastlogout]
+HHH000108: Foreign keys: []
+HHH000126: Indexes: [primary]
+HHH000261: Table found: game.identify
+HHH000037: Columns: [val, id]
+HHH000108: Foreign keys: []
+HHH000126: Indexes: [primary]
+HHH000261: Table found: game.map
+HHH000037: Columns: [existmonsteridsdata, existnpcidsdata, name, mapnearbyidsdata, id]
+HHH000108: Foreign keys: []
+HHH000126: Indexes: [primary]
+HHH000261: Table found: game.mapinfo
+HHH000037: Columns: [accountid, curmapid, id, lastmapid]
+HHH000108: Foreign keys: []
+HHH000126: Indexes: [primary]
+HHH000261: Table found: game.monster
+HHH000037: Columns: [name, x, y, mapid, id, status]
+HHH000108: Foreign keys: []
+HHH000126: Indexes: [primary]
+HHH000261: Table found: game.npc
+HHH000037: Columns: [name, x, y, mapid, id, status]
+HHH000108: Foreign keys: []
+HHH000126: Indexes: [primary]
+HHH000261: Table found: game.player
+HHH000037: Columns: [accountid, alive, sex, name, id, job]
+HHH000108: Foreign keys: []
+HHH000126: Indexes: [primary]
+HHH000232: Schema update complete
+Autowired annotation is not supported on static fields: public static org.springframework.context.ApplicationContext com.game.SpringContext.applicationContext
+Autowired annotation is not supported on static fields: private static com.game.scene.entity.MonsterDao com.game.scene.service.SceneService.monsterDao
+Autowired annotation is not supported on static fields: private static com.game.scene.entity.NpcDao com.game.scene.service.SceneService.npcDao
+启动游戏
+初始化账号数据...
+初始化地图数据...
+[DEPRECATION] Encountered positional parameter near line 1, column 64 in HQL: [select i from com.game.core.id.entity.IdentifyEnt i where id = ?].  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+创建角色
+[DEPRECATION] Encountered positional parameter near line 1, column 75 in HQL: [select a from com.game.user.account.entity.AccountEnt a where accountId = ?].  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+[DEPRECATION] Encountered positional parameter near line 1, column 75 in HQL: [select m from com.game.user.mapInfo.entity.MapInfoEnt m where accountId = ?].  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+HHH000412: Hibernate Core {4.3.11.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HHH000044: Configuring from URL: file:/D:/game/game/GameServer/target/classes/hibernate.cfg.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/PlayerEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/AccountEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/IdentifyEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/MapEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/MapInfoEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/MonsterEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/NpcEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000041: Configured SessionFactory: null
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+HHH000399: Using default transaction strategy (direct JDBC transactions)
+HHH000397: Using ASTQueryTranslatorFactory
+HHH000228: Running hbm2ddl schema update
+HHH000102: Fetching database metadata
+HHH000396: Updating schema
+HHH000261: Table found: game.account
+HHH000037: Columns: [accountdata, accountid, createtime, password, curmapid, lastlogin, nickname, lastlogout]
+HHH000108: Foreign keys: []
+HHH000126: Indexes: [primary]
+HHH000261: Table found: game.identify
+HHH000037: Columns: [val, id]
+HHH000108: Foreign keys: []
+HHH000126: Indexes: [primary]
+HHH000261: Table found: game.map
+HHH000037: Columns: [existmonsteridsdata, existnpcidsdata, name, mapnearbyidsdata, id]
+HHH000108: Foreign keys: []
+HHH000126: Indexes: [primary]
+HHH000261: Table found: game.mapinfo
+HHH000037: Columns: [accountid, curmapid, id, lastmapid]
+HHH000108: Foreign keys: []
+HHH000126: Indexes: [primary]
+HHH000261: Table found: game.monster
+HHH000037: Columns: [name, x, y, mapid, id, status]
+HHH000108: Foreign keys: []
+HHH000126: Indexes: [primary]
+HHH000261: Table found: game.npc
+HHH000037: Columns: [name, x, y, mapid, id, status]
+HHH000108: Foreign keys: []
+HHH000126: Indexes: [primary]
+HHH000261: Table found: game.player
+HHH000037: Columns: [accountid, alive, sex, name, id, job]
+HHH000108: Foreign keys: []
+HHH000126: Indexes: [primary]
+HHH000232: Schema update complete
+Autowired annotation is not supported on static fields: public static org.springframework.context.ApplicationContext com.game.SpringContext.applicationContext
+启动游戏
+初始化账号数据...
+初始化地图数据...
+[DEPRECATION] Encountered positional parameter near line 1, column 75 in HQL: [select m from com.game.user.mapInfo.entity.MapInfoEnt m where accountId = ?].  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+[DEPRECATION] Encountered positional parameter near line 1, column 64 in HQL: [select i from com.game.core.id.entity.IdentifyEnt i where id = ?].  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+[DEPRECATION] Encountered positional parameter near line 1, column 64 in HQL: [select p from com.game.scene.entity.MonsterEnt p where mapId = ?].  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+[DEPRECATION] Encountered positional parameter near line 1, column 60 in HQL: [select p from com.game.scene.entity.NpcEnt p where mapId = ?].  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+进入场景
+HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+HHH000412: Hibernate Core {4.3.11.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HHH000044: Configuring from URL: file:/D:/game/game/GameServer/target/classes/hibernate.cfg.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/PlayerEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/AccountEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/IdentifyEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/MapEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/MapInfoEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/MonsterEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/NpcEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000041: Configured SessionFactory: null
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+HHH000399: Using default transaction strategy (direct JDBC transactions)
+HHH000397: Using ASTQueryTranslatorFactory
+HHH000228: Running hbm2ddl schema update
+HHH000102: Fetching database metadata
+HHH000396: Updating schema
+HHH000261: Table found: game.account
+HHH000037: Columns: [accountdata, accountid, createtime, password, curmapid, lastlogin, nickname, lastlogout]
+HHH000108: Foreign keys: []
+HHH000126: Indexes: [primary]
+HHH000261: Table found: game.identify
+HHH000037: Columns: [val, id]
+HHH000108: Foreign keys: []
+HHH000126: Indexes: [primary]
+HHH000261: Table found: game.map
+HHH000037: Columns: [existmonsteridsdata, existnpcidsdata, name, mapnearbyidsdata, id]
+HHH000108: Foreign keys: []
+HHH000126: Indexes: [primary]
+HHH000261: Table found: game.mapinfo
+HHH000037: Columns: [accountid, curmapid, id, lastmapid]
+HHH000108: Foreign keys: []
+HHH000126: Indexes: [primary]
+HHH000261: Table found: game.monster
+HHH000037: Columns: [name, x, y, mapid, id, status]
+HHH000108: Foreign keys: []
+HHH000126: Indexes: [primary]
+HHH000261: Table found: game.npc
+HHH000037: Columns: [name, x, y, mapid, id, status]
+HHH000108: Foreign keys: []
+HHH000126: Indexes: [primary]
+HHH000261: Table found: game.player
+HHH000037: Columns: [accountid, alive, sex, name, id, job]
+HHH000108: Foreign keys: []
+HHH000126: Indexes: [primary]
+HHH000232: Schema update complete
+Autowired annotation is not supported on static fields: public static org.springframework.context.ApplicationContext com.game.SpringContext.applicationContext
+启动游戏
+初始化账号数据...
+初始化地图数据...
+HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+HHH000412: Hibernate Core {4.3.11.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HHH000044: Configuring from URL: file:/D:/game/game/GameServer/target/classes/hibernate.cfg.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/PlayerEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/AccountEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/IdentifyEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/MapEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/MapInfoEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/MonsterEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/NpcEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000041: Configured SessionFactory: null
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+HHH000399: Using default transaction strategy (direct JDBC transactions)
+HHH000397: Using ASTQueryTranslatorFactory
+HHH000228: Running hbm2ddl schema update
+HHH000102: Fetching database metadata
+HHH000396: Updating schema
+HHH000261: Table found: game.account
+HHH000037: Columns: [accountdata, accountid, createtime, password, curmapid, lastlogin, nickname, lastlogout]
+HHH000108: Foreign keys: []
+HHH000126: Indexes: [primary]
+HHH000261: Table found: game.identify
+HHH000037: Columns: [val, id]
+HHH000108: Foreign keys: []
+HHH000126: Indexes: [primary]
+HHH000261: Table found: game.map
+HHH000037: Columns: [existmonsteridsdata, existnpcidsdata, name, mapnearbyidsdata, id]
+HHH000108: Foreign keys: []
+HHH000126: Indexes: [primary]
+HHH000261: Table found: game.mapinfo
+HHH000037: Columns: [accountid, curmapid, id, lastmapid]
+HHH000108: Foreign keys: []
+HHH000126: Indexes: [primary]
+HHH000261: Table found: game.monster
+HHH000037: Columns: [name, x, y, mapid, id, status]
+HHH000108: Foreign keys: []
+HHH000126: Indexes: [primary]
+HHH000261: Table found: game.npc
+HHH000037: Columns: [name, x, y, mapid, id, status]
+HHH000108: Foreign keys: []
+HHH000126: Indexes: [primary]
+HHH000261: Table found: game.player
+HHH000037: Columns: [accountid, alive, sex, name, id, job]
+HHH000108: Foreign keys: []
+HHH000126: Indexes: [primary]
+HHH000232: Schema update complete
+Autowired annotation is not supported on static fields: public static org.springframework.context.ApplicationContext com.game.SpringContext.applicationContext
+启动游戏
+初始化账号数据...
+初始化地图数据...
+HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+HHH000412: Hibernate Core {4.3.11.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HHH000044: Configuring from URL: file:/D:/game/game/GameServer/target/classes/hibernate.cfg.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/PlayerEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/AccountEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/IdentifyEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/MapEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/MapInfoEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/MonsterEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/NpcEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000041: Configured SessionFactory: null
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+HHH000399: Using default transaction strategy (direct JDBC transactions)
+HHH000397: Using ASTQueryTranslatorFactory
+HHH000228: Running hbm2ddl schema update
+HHH000102: Fetching database metadata
+HHH000396: Updating schema
+HHH000261: Table found: game.account
+HHH000037: Columns: [accountdata, accountid, createtime, password, curmapid, lastlogin, nickname, lastlogout]
+HHH000108: Foreign keys: []
+HHH000126: Indexes: [primary]
+HHH000261: Table found: game.identify
+HHH000037: Columns: [val, id]
+HHH000108: Foreign keys: []
+HHH000126: Indexes: [primary]
+HHH000261: Table found: game.map
+HHH000037: Columns: [existmonsteridsdata, existnpcidsdata, name, mapnearbyidsdata, id]
+HHH000108: Foreign keys: []
+HHH000126: Indexes: [primary]
+HHH000261: Table found: game.mapinfo
+HHH000037: Columns: [accountid, curmapid, id, lastmapid]
+HHH000108: Foreign keys: []
+HHH000126: Indexes: [primary]
+HHH000261: Table found: game.monster
+HHH000037: Columns: [name, x, y, mapid, id, status]
+HHH000108: Foreign keys: []
+HHH000126: Indexes: [primary]
+HHH000261: Table found: game.npc
+HHH000037: Columns: [name, x, y, mapid, id, status]
+HHH000108: Foreign keys: []
+HHH000126: Indexes: [primary]
+HHH000261: Table found: game.player
+HHH000037: Columns: [accountid, alive, sex, name, id, job]
+HHH000108: Foreign keys: []
+HHH000126: Indexes: [primary]
+HHH000232: Schema update complete
+Autowired annotation is not supported on static fields: public static org.springframework.context.ApplicationContext com.game.SpringContext.applicationContext
+启动游戏
+初始化账号数据...
+初始化地图数据...
+HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+HHH000412: Hibernate Core {4.3.11.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HHH000044: Configuring from URL: file:/D:/game/game/GameServer/target/classes/hibernate.cfg.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/PlayerEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/AccountEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/IdentifyEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/MapEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/MapInfoEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/MonsterEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/NpcEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000041: Configured SessionFactory: null
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+HHH000399: Using default transaction strategy (direct JDBC transactions)
+HHH000397: Using ASTQueryTranslatorFactory
+HHH000228: Running hbm2ddl schema update
+HHH000102: Fetching database metadata
+HHH000396: Updating schema
+HHH000261: Table found: game.account
+HHH000037: Columns: [accountdata, accountid, createtime, password, curmapid, lastlogin, nickname, lastlogout]
+HHH000108: Foreign keys: []
+HHH000126: Indexes: [primary]
+HHH000261: Table found: game.identify
+HHH000037: Columns: [val, id]
+HHH000108: Foreign keys: []
+HHH000126: Indexes: [primary]
+HHH000261: Table found: game.map
+HHH000037: Columns: [existmonsteridsdata, existnpcidsdata, name, mapnearbyidsdata, id]
+HHH000108: Foreign keys: []
+HHH000126: Indexes: [primary]
+HHH000261: Table found: game.mapinfo
+HHH000037: Columns: [accountid, curmapid, id, lastmapid]
+HHH000108: Foreign keys: []
+HHH000126: Indexes: [primary]
+HHH000261: Table found: game.monster
+HHH000037: Columns: [name, x, y, mapid, id, status]
+HHH000108: Foreign keys: []
+HHH000126: Indexes: [primary]
+HHH000261: Table found: game.npc
+HHH000037: Columns: [name, x, y, mapid, id, status]
+HHH000108: Foreign keys: []
+HHH000126: Indexes: [primary]
+HHH000261: Table found: game.player
+HHH000037: Columns: [accountid, alive, sex, name, id, job]
+HHH000108: Foreign keys: []
+HHH000126: Indexes: [primary]
+HHH000232: Schema update complete
+Autowired annotation is not supported on static fields: public static org.springframework.context.ApplicationContext com.game.SpringContext.applicationContext
+启动游戏
+初始化账号数据...
+初始化地图数据...
+[DEPRECATION] Encountered positional parameter near line 1, column 75 in HQL: [select a from com.game.user.account.entity.AccountEnt a where accountId = ? and password = ?].  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+[DEPRECATION] Encountered positional parameter near line 1, column 92 in HQL: [select a from com.game.user.account.entity.AccountEnt a where accountId = ? and password = ?].  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+[DEPRECATION] Encountered positional parameter near line 1, column 75 in HQL: [select a from com.game.user.account.entity.AccountEnt a where accountId = ?].  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+用户登录
+HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+HHH000412: Hibernate Core {4.3.11.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HHH000044: Configuring from URL: file:/D:/game/game/GameServer/target/classes/hibernate.cfg.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/PlayerEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/AccountEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/IdentifyEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/MapEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/MapInfoEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/MonsterEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/NpcEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000041: Configured SessionFactory: null
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+HHH000399: Using default transaction strategy (direct JDBC transactions)
+HHH000397: Using ASTQueryTranslatorFactory
+HHH000228: Running hbm2ddl schema update
+HHH000102: Fetching database metadata
+HHH000396: Updating schema
+HHH000261: Table found: game.account
+HHH000037: Columns: [accountdata, accountid, createtime, password, curmapid, lastlogin, nickname, lastlogout]
+HHH000108: Foreign keys: []
+HHH000126: Indexes: [primary]
+HHH000261: Table found: game.identify
+HHH000037: Columns: [val, id]
+HHH000108: Foreign keys: []
+HHH000126: Indexes: [primary]
+HHH000261: Table found: game.map
+HHH000037: Columns: [existmonsteridsdata, existnpcidsdata, name, mapnearbyidsdata, id]
+HHH000108: Foreign keys: []
+HHH000126: Indexes: [primary]
+HHH000261: Table found: game.mapinfo
+HHH000037: Columns: [accountid, curmapid, id, lastmapid]
+HHH000108: Foreign keys: []
+HHH000126: Indexes: [primary]
+HHH000261: Table found: game.monster
+HHH000037: Columns: [name, x, y, mapid, id, status]
+HHH000108: Foreign keys: []
+HHH000126: Indexes: [primary]
+HHH000261: Table found: game.npc
+HHH000037: Columns: [name, x, y, mapid, id, status]
+HHH000108: Foreign keys: []
+HHH000126: Indexes: [primary]
+HHH000261: Table found: game.player
+HHH000037: Columns: [accountid, alive, sex, name, id, job]
+HHH000108: Foreign keys: []
+HHH000126: Indexes: [primary]
+HHH000232: Schema update complete
+Autowired annotation is not supported on static fields: public static org.springframework.context.ApplicationContext com.game.SpringContext.applicationContext
+启动游戏
+初始化账号数据...
+初始化地图数据...
+[DEPRECATION] Encountered positional parameter near line 1, column 75 in HQL: [select a from com.game.user.account.entity.AccountEnt a where accountId = ? and password = ?].  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+[DEPRECATION] Encountered positional parameter near line 1, column 92 in HQL: [select a from com.game.user.account.entity.AccountEnt a where accountId = ? and password = ?].  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+[DEPRECATION] Encountered positional parameter near line 1, column 75 in HQL: [select a from com.game.user.account.entity.AccountEnt a where accountId = ?].  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+用户登录
+[DEPRECATION] Encountered positional parameter near line 1, column 75 in HQL: [select m from com.game.user.mapInfo.entity.MapInfoEnt m where accountId = ?].  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+[DEPRECATION] Encountered positional parameter near line 1, column 64 in HQL: [select i from com.game.core.id.entity.IdentifyEnt i where id = ?].  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+[DEPRECATION] Encountered positional parameter near line 1, column 64 in HQL: [select p from com.game.scene.entity.MonsterEnt p where mapId = ?].  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+[DEPRECATION] Encountered positional parameter near line 1, column 60 in HQL: [select p from com.game.scene.entity.NpcEnt p where mapId = ?].  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+进入场景
+HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+HHH000412: Hibernate Core {4.3.11.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HHH000044: Configuring from URL: file:/D:/game/game/GameServer/target/classes/hibernate.cfg.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/PlayerEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/AccountEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/IdentifyEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/MapEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/MapInfoEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/MonsterEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/NpcEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000041: Configured SessionFactory: null
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+HHH000399: Using default transaction strategy (direct JDBC transactions)
+HHH000397: Using ASTQueryTranslatorFactory
+HHH000228: Running hbm2ddl schema update
+HHH000102: Fetching database metadata
+HHH000396: Updating schema
+HHH000261: Table found: game.account
+HHH000037: Columns: [accountdata, accountid, createtime, password, curmapid, lastlogin, nickname, lastlogout]
+HHH000108: Foreign keys: []
+HHH000126: Indexes: [primary]
+HHH000261: Table found: game.identify
+HHH000037: Columns: [val, id]
+HHH000108: Foreign keys: []
+HHH000126: Indexes: [primary]
+HHH000261: Table found: game.map
+HHH000037: Columns: [existmonsteridsdata, existnpcidsdata, name, mapnearbyidsdata, id]
+HHH000108: Foreign keys: []
+HHH000126: Indexes: [primary]
+HHH000261: Table found: game.mapinfo
+HHH000037: Columns: [accountid, curmapid, id, lastmapid]
+HHH000108: Foreign keys: []
+HHH000126: Indexes: [primary]
+HHH000261: Table found: game.monster
+HHH000037: Columns: [name, x, y, mapid, id, status]
+HHH000108: Foreign keys: []
+HHH000126: Indexes: [primary]
+HHH000261: Table found: game.npc
+HHH000037: Columns: [name, x, y, mapid, id, status]
+HHH000108: Foreign keys: []
+HHH000126: Indexes: [primary]
+HHH000261: Table found: game.player
+HHH000037: Columns: [accountid, alive, sex, name, id, job]
+HHH000108: Foreign keys: []
+HHH000126: Indexes: [primary]
+HHH000232: Schema update complete
+Autowired annotation is not supported on static fields: public static org.springframework.context.ApplicationContext com.game.SpringContext.applicationContext
+启动游戏
+初始化账号数据...
+初始化地图数据...
+[DEPRECATION] Encountered positional parameter near line 1, column 75 in HQL: [select a from com.game.user.account.entity.AccountEnt a where accountId = ? and password = ?].  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+[DEPRECATION] Encountered positional parameter near line 1, column 92 in HQL: [select a from com.game.user.account.entity.AccountEnt a where accountId = ? and password = ?].  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+[DEPRECATION] Encountered positional parameter near line 1, column 75 in HQL: [select a from com.game.user.account.entity.AccountEnt a where accountId = ?].  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+用户登录
+[DEPRECATION] Encountered positional parameter near line 1, column 75 in HQL: [select m from com.game.user.mapInfo.entity.MapInfoEnt m where accountId = ?].  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+[DEPRECATION] Encountered positional parameter near line 1, column 64 in HQL: [select i from com.game.core.id.entity.IdentifyEnt i where id = ?].  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+[DEPRECATION] Encountered positional parameter near line 1, column 64 in HQL: [select p from com.game.scene.entity.MonsterEnt p where mapId = ?].  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+[DEPRECATION] Encountered positional parameter near line 1, column 60 in HQL: [select p from com.game.scene.entity.NpcEnt p where mapId = ?].  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+进入场景
+HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+HHH000412: Hibernate Core {4.3.11.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HHH000044: Configuring from URL: file:/D:/game/game/GameServer/target/classes/hibernate.cfg.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/PlayerEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/AccountEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/IdentifyEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/MapEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/MapInfoEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/MonsterEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/NpcEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000041: Configured SessionFactory: null
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+HHH000399: Using default transaction strategy (direct JDBC transactions)
+HHH000397: Using ASTQueryTranslatorFactory
+HHH000228: Running hbm2ddl schema update
+HHH000102: Fetching database metadata
+HHH000396: Updating schema
+HHH000261: Table found: game.account
+HHH000037: Columns: [accountdata, accountid, createtime, password, curmapid, lastlogin, nickname, lastlogout]
+HHH000108: Foreign keys: []
+HHH000126: Indexes: [primary]
+HHH000261: Table found: game.identify
+HHH000037: Columns: [val, id]
+HHH000108: Foreign keys: []
+HHH000126: Indexes: [primary]
+HHH000261: Table found: game.map
+HHH000037: Columns: [existmonsteridsdata, existnpcidsdata, name, mapnearbyidsdata, id]
+HHH000108: Foreign keys: []
+HHH000126: Indexes: [primary]
+HHH000261: Table found: game.mapinfo
+HHH000037: Columns: [accountid, curmapid, id, lastmapid]
+HHH000108: Foreign keys: []
+HHH000126: Indexes: [primary]
+HHH000261: Table found: game.monster
+HHH000037: Columns: [name, x, y, mapid, id, status]
+HHH000108: Foreign keys: []
+HHH000126: Indexes: [primary]
+HHH000261: Table found: game.npc
+HHH000037: Columns: [name, x, y, mapid, id, status]
+HHH000108: Foreign keys: []
+HHH000126: Indexes: [primary]
+HHH000261: Table found: game.player
+HHH000037: Columns: [accountid, alive, sex, name, id, job]
+HHH000108: Foreign keys: []
+HHH000126: Indexes: [primary]
+HHH000232: Schema update complete
+Autowired annotation is not supported on static fields: public static org.springframework.context.ApplicationContext com.game.SpringContext.applicationContext
+启动游戏
+初始化账号数据...
+初始化地图数据...
+[DEPRECATION] Encountered positional parameter near line 1, column 75 in HQL: [select a from com.game.user.account.entity.AccountEnt a where accountId = ? and password = ?].  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+[DEPRECATION] Encountered positional parameter near line 1, column 92 in HQL: [select a from com.game.user.account.entity.AccountEnt a where accountId = ? and password = ?].  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+[DEPRECATION] Encountered positional parameter near line 1, column 75 in HQL: [select a from com.game.user.account.entity.AccountEnt a where accountId = ?].  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+用户登录
+[DEPRECATION] Encountered positional parameter near line 1, column 75 in HQL: [select m from com.game.user.mapInfo.entity.MapInfoEnt m where accountId = ?].  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+[DEPRECATION] Encountered positional parameter near line 1, column 64 in HQL: [select i from com.game.core.id.entity.IdentifyEnt i where id = ?].  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+[DEPRECATION] Encountered positional parameter near line 1, column 64 in HQL: [select p from com.game.scene.entity.MonsterEnt p where mapId = ?].  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+[DEPRECATION] Encountered positional parameter near line 1, column 60 in HQL: [select p from com.game.scene.entity.NpcEnt p where mapId = ?].  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+进入场景
+HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+HHH000412: Hibernate Core {4.3.11.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HHH000044: Configuring from URL: file:/D:/game/game/GameServer/target/classes/hibernate.cfg.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/PlayerEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/AccountEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/IdentifyEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/MapEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/MapInfoEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/MonsterEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/NpcEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000041: Configured SessionFactory: null
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+HHH000399: Using default transaction strategy (direct JDBC transactions)
+HHH000397: Using ASTQueryTranslatorFactory
+HHH000228: Running hbm2ddl schema update
+HHH000102: Fetching database metadata
+HHH000396: Updating schema
+HHH000261: Table found: game.account
+HHH000037: Columns: [accountdata, accountid, createtime, password, curmapid, lastlogin, nickname, lastlogout]
+HHH000108: Foreign keys: []
+HHH000126: Indexes: [primary]
+HHH000261: Table found: game.identify
+HHH000037: Columns: [val, id]
+HHH000108: Foreign keys: []
+HHH000126: Indexes: [primary]
+HHH000261: Table found: game.map
+HHH000037: Columns: [existmonsteridsdata, existnpcidsdata, name, mapnearbyidsdata, id]
+HHH000108: Foreign keys: []
+HHH000126: Indexes: [primary]
+HHH000261: Table found: game.mapinfo
+HHH000037: Columns: [accountid, curmapid, id, lastmapid]
+HHH000108: Foreign keys: []
+HHH000126: Indexes: [primary]
+HHH000261: Table found: game.monster
+HHH000037: Columns: [name, x, y, mapid, id, status]
+HHH000108: Foreign keys: []
+HHH000126: Indexes: [primary]
+HHH000261: Table found: game.npc
+HHH000037: Columns: [name, x, y, mapid, id, status]
+HHH000108: Foreign keys: []
+HHH000126: Indexes: [primary]
+HHH000261: Table found: game.player
+HHH000037: Columns: [accountid, alive, sex, name, id, job]
+HHH000108: Foreign keys: []
+HHH000126: Indexes: [primary]
+HHH000232: Schema update complete
+Autowired annotation is not supported on static fields: public static org.springframework.context.ApplicationContext com.game.SpringContext.applicationContext
+启动游戏
+初始化账号数据...
+初始化地图数据...
+[DEPRECATION] Encountered positional parameter near line 1, column 75 in HQL: [select a from com.game.user.account.entity.AccountEnt a where accountId = ? and password = ?].  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+[DEPRECATION] Encountered positional parameter near line 1, column 92 in HQL: [select a from com.game.user.account.entity.AccountEnt a where accountId = ? and password = ?].  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+[DEPRECATION] Encountered positional parameter near line 1, column 75 in HQL: [select a from com.game.user.account.entity.AccountEnt a where accountId = ?].  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+用户登录
+[DEPRECATION] Encountered positional parameter near line 1, column 75 in HQL: [select m from com.game.user.mapInfo.entity.MapInfoEnt m where accountId = ?].  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+[DEPRECATION] Encountered positional parameter near line 1, column 64 in HQL: [select i from com.game.core.id.entity.IdentifyEnt i where id = ?].  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+[DEPRECATION] Encountered positional parameter near line 1, column 64 in HQL: [select p from com.game.scene.entity.MonsterEnt p where mapId = ?].  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+[DEPRECATION] Encountered positional parameter near line 1, column 60 in HQL: [select p from com.game.scene.entity.NpcEnt p where mapId = ?].  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+进入场景
+[DEPRECATION] Encountered positional parameter near line 1, column 57 in HQL: [select m from com.game.scene.entity.MapEnt m where id = ?].  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+HHH000412: Hibernate Core {4.3.11.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HHH000044: Configuring from URL: file:/D:/game/game/GameServer/target/classes/hibernate.cfg.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/PlayerEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/AccountEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/IdentifyEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/MapEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/MapInfoEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/MonsterEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/NpcEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000041: Configured SessionFactory: null
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+HHH000399: Using default transaction strategy (direct JDBC transactions)
+HHH000397: Using ASTQueryTranslatorFactory
+HHH000228: Running hbm2ddl schema update
+HHH000102: Fetching database metadata
+HHH000396: Updating schema
+HHH000261: Table found: game.account
+HHH000037: Columns: [accountdata, accountid, createtime, password, curmapid, lastlogin, nickname, lastlogout]
+HHH000108: Foreign keys: []
+HHH000126: Indexes: [primary]
+HHH000261: Table found: game.identify
+HHH000037: Columns: [val, id]
+HHH000108: Foreign keys: []
+HHH000126: Indexes: [primary]
+HHH000261: Table found: game.map
+HHH000037: Columns: [existmonsteridsdata, existnpcidsdata, name, mapnearbyidsdata, id]
+HHH000108: Foreign keys: []
+HHH000126: Indexes: [primary]
+HHH000261: Table found: game.mapinfo
+HHH000037: Columns: [accountid, curmapid, id, lastmapid]
+HHH000108: Foreign keys: []
+HHH000126: Indexes: [primary]
+HHH000261: Table found: game.monster
+HHH000037: Columns: [name, x, y, mapid, id, status]
+HHH000108: Foreign keys: []
+HHH000126: Indexes: [primary]
+HHH000261: Table found: game.npc
+HHH000037: Columns: [name, x, y, mapid, id, status]
+HHH000108: Foreign keys: []
+HHH000126: Indexes: [primary]
+HHH000261: Table found: game.player
+HHH000037: Columns: [accountid, alive, sex, name, id, job]
+HHH000108: Foreign keys: []
+HHH000126: Indexes: [primary]
+HHH000232: Schema update complete
+Autowired annotation is not supported on static fields: public static org.springframework.context.ApplicationContext com.game.SpringContext.applicationContext
+启动游戏
+初始化账号数据...
+初始化地图数据...
+[DEPRECATION] Encountered positional parameter near line 1, column 75 in HQL: [select a from com.game.user.account.entity.AccountEnt a where accountId = ? and password = ?].  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+[DEPRECATION] Encountered positional parameter near line 1, column 92 in HQL: [select a from com.game.user.account.entity.AccountEnt a where accountId = ? and password = ?].  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+[DEPRECATION] Encountered positional parameter near line 1, column 75 in HQL: [select a from com.game.user.account.entity.AccountEnt a where accountId = ?].  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+用户登录
+[DEPRECATION] Encountered positional parameter near line 1, column 75 in HQL: [select m from com.game.user.mapInfo.entity.MapInfoEnt m where accountId = ?].  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+[DEPRECATION] Encountered positional parameter near line 1, column 64 in HQL: [select i from com.game.core.id.entity.IdentifyEnt i where id = ?].  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+[DEPRECATION] Encountered positional parameter near line 1, column 64 in HQL: [select p from com.game.scene.entity.MonsterEnt p where mapId = ?].  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+[DEPRECATION] Encountered positional parameter near line 1, column 60 in HQL: [select p from com.game.scene.entity.NpcEnt p where mapId = ?].  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+进入场景
+[DEPRECATION] Encountered positional parameter near line 1, column 57 in HQL: [select m from com.game.scene.entity.MapEnt m where id = ?].  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+离开旧地图
+进入新地图
+进入场景
+HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+HHH000412: Hibernate Core {4.3.11.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HHH000044: Configuring from URL: file:/D:/game/game/GameServer/target/classes/hibernate.cfg.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/PlayerEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/AccountEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/IdentifyEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/MapEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/MapInfoEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/MonsterEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/NpcEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000041: Configured SessionFactory: null
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+HHH000399: Using default transaction strategy (direct JDBC transactions)
+HHH000397: Using ASTQueryTranslatorFactory
+HHH000228: Running hbm2ddl schema update
+HHH000102: Fetching database metadata
+HHH000396: Updating schema
+HHH000261: Table found: game.account
+HHH000037: Columns: [accountdata, accountid, createtime, password, curmapid, lastlogin, nickname, lastlogout]
+HHH000108: Foreign keys: []
+HHH000126: Indexes: [primary]
+HHH000261: Table found: game.identify
+HHH000037: Columns: [val, id]
+HHH000108: Foreign keys: []
+HHH000126: Indexes: [primary]
+HHH000261: Table found: game.map
+HHH000037: Columns: [existmonsteridsdata, existnpcidsdata, name, mapnearbyidsdata, id]
+HHH000108: Foreign keys: []
+HHH000126: Indexes: [primary]
+HHH000261: Table found: game.mapinfo
+HHH000037: Columns: [accountid, curmapid, id, lastmapid]
+HHH000108: Foreign keys: []
+HHH000126: Indexes: [primary]
+HHH000261: Table found: game.monster
+HHH000037: Columns: [name, x, y, mapid, id, status]
+HHH000108: Foreign keys: []
+HHH000126: Indexes: [primary]
+HHH000261: Table found: game.npc
+HHH000037: Columns: [name, x, y, mapid, id, status]
+HHH000108: Foreign keys: []
+HHH000126: Indexes: [primary]
+HHH000261: Table found: game.player
+HHH000037: Columns: [accountid, alive, sex, name, id, job]
+HHH000108: Foreign keys: []
+HHH000126: Indexes: [primary]
+HHH000232: Schema update complete
+Autowired annotation is not supported on static fields: public static org.springframework.context.ApplicationContext com.game.SpringContext.applicationContext
+启动游戏
+初始化账号数据...
+初始化地图数据...
+[DEPRECATION] Encountered positional parameter near line 1, column 75 in HQL: [select a from com.game.user.account.entity.AccountEnt a where accountId = ? and password = ?].  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+[DEPRECATION] Encountered positional parameter near line 1, column 92 in HQL: [select a from com.game.user.account.entity.AccountEnt a where accountId = ? and password = ?].  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+[DEPRECATION] Encountered positional parameter near line 1, column 75 in HQL: [select a from com.game.user.account.entity.AccountEnt a where accountId = ?].  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+用户登录
+[DEPRECATION] Encountered positional parameter near line 1, column 75 in HQL: [select m from com.game.user.mapInfo.entity.MapInfoEnt m where accountId = ?].  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+[DEPRECATION] Encountered positional parameter near line 1, column 64 in HQL: [select i from com.game.core.id.entity.IdentifyEnt i where id = ?].  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+[DEPRECATION] Encountered positional parameter near line 1, column 64 in HQL: [select p from com.game.scene.entity.MonsterEnt p where mapId = ?].  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+[DEPRECATION] Encountered positional parameter near line 1, column 60 in HQL: [select p from com.game.scene.entity.NpcEnt p where mapId = ?].  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+进入场景
+HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+HHH000412: Hibernate Core {4.3.11.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HHH000044: Configuring from URL: file:/D:/game/game/GameServer/target/classes/hibernate.cfg.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/PlayerEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/AccountEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/IdentifyEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/MapEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/MapInfoEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/MonsterEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000221: Reading mappings from resource: hibernateMapping/NpcEnt.hbm.xml
+HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+HHH000041: Configured SessionFactory: null
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+HHH000399: Using default transaction strategy (direct JDBC transactions)
+HHH000397: Using ASTQueryTranslatorFactory
+HHH000228: Running hbm2ddl schema update
+HHH000102: Fetching database metadata
+HHH000396: Updating schema
+HHH000261: Table found: game.account
+HHH000037: Columns: [accountdata, accountid, createtime, password, curmapid, lastlogin, nickname, lastlogout]
+HHH000108: Foreign keys: []
+HHH000126: Indexes: [primary]
+HHH000261: Table found: game.identify
+HHH000037: Columns: [val, id]
+HHH000108: Foreign keys: []
+HHH000126: Indexes: [primary]
+HHH000261: Table found: game.map
+HHH000037: Columns: [existmonsteridsdata, existnpcidsdata, name, mapnearbyidsdata, id]
+HHH000108: Foreign keys: []
+HHH000126: Indexes: [primary]
+HHH000261: Table found: game.mapinfo
+HHH000037: Columns: [accountid, curmapid, id, lastmapid]
+HHH000108: Foreign keys: []
+HHH000126: Indexes: [primary]
+HHH000261: Table found: game.monster
+HHH000037: Columns: [name, x, y, mapid, id, status]
+HHH000108: Foreign keys: []
+HHH000126: Indexes: [primary]
+HHH000261: Table found: game.npc
+HHH000037: Columns: [name, x, y, mapid, id, status]
+HHH000108: Foreign keys: []
+HHH000126: Indexes: [primary]
+HHH000261: Table found: game.player
+HHH000037: Columns: [accountid, alive, sex, name, id, job]
+HHH000108: Foreign keys: []
+HHH000126: Indexes: [primary]
+HHH000232: Schema update complete
+Autowired annotation is not supported on static fields: public static org.springframework.context.ApplicationContext com.game.SpringContext.applicationContext
+启动游戏
+初始化账号数据...
+初始化地图数据...
+[DEPRECATION] Encountered positional parameter near line 1, column 75 in HQL: [select a from com.game.user.account.entity.AccountEnt a where accountId = ? and password = ?].  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+[DEPRECATION] Encountered positional parameter near line 1, column 92 in HQL: [select a from com.game.user.account.entity.AccountEnt a where accountId = ? and password = ?].  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+[DEPRECATION] Encountered positional parameter near line 1, column 75 in HQL: [select a from com.game.user.account.entity.AccountEnt a where accountId = ?].  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+用户登录
+[DEPRECATION] Encountered positional parameter near line 1, column 75 in HQL: [select m from com.game.user.mapInfo.entity.MapInfoEnt m where accountId = ?].  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+[DEPRECATION] Encountered positional parameter near line 1, column 64 in HQL: [select i from com.game.core.id.entity.IdentifyEnt i where id = ?].  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+[DEPRECATION] Encountered positional parameter near line 1, column 64 in HQL: [select p from com.game.scene.entity.MonsterEnt p where mapId = ?].  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+[DEPRECATION] Encountered positional parameter near line 1, column 60 in HQL: [select p from com.game.scene.entity.NpcEnt p where mapId = ?].  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+进入场景

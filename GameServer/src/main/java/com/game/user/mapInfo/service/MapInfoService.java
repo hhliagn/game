@@ -1,6 +1,6 @@
 package com.game.user.mapInfo.service;
 
-import com.game.user.mapInfo.dao.MapInfoDao;
+import com.game.user.mapInfo.entity.MapInfoDao;
 import com.game.user.mapInfo.entity.MapInfoEnt;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -17,24 +17,10 @@ public class MapInfoService implements IMapInfoService {
 
     @Override
     public MapInfoEnt getMapInfoEnt(String accountId) {
-        MapInfoEnt mapInfoEnt = mapInfoDao.get(accountId);
-        return mapInfoEnt;
-    }
-
-    public void saveMapInfoEnt(String accountId){
-        mapInfoDao.save(getMapInfoEnt(accountId));
+        return mapInfoDao.get(accountId);
     }
 
     public void saveMapInfoEnt(MapInfoEnt mapInfoEnt){
         mapInfoDao.save(mapInfoEnt);
-    }
-
-    public void createMapInfoEnt(String accountId){
-        MapInfoEnt mapInfoEnt = new MapInfoEnt();
-        mapInfoEnt.setAccountId(accountId);
-        mapInfoEnt.setCurMapId(1);
-        mapInfoEnt.setLastMapId(1);
-        saveMapInfoEnt(mapInfoEnt);
-        logger.info("新增新用户地图数据");
     }
 }

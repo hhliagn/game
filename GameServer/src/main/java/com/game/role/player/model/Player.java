@@ -10,7 +10,6 @@ import java.util.List;
 public class Player {
 
     private transient PlayerEnt playerEnt;
-
     private transient BaseAccountInfo baseAccountInfo;
 
     private Player(PlayerEnt playerEnt, BaseAccountInfo baseAccountInfo){
@@ -36,15 +35,6 @@ public class Player {
         return players;
     }
 
-    public int getStatus(){
-        return playerEnt.getAlive();
-    }
-
-    public void setStatus(int status){
-        playerEnt.setAlive(status);
-    }
-
-    //地图相关
     public int getCurrMapId(){
         MapInfoEnt mapInfoEnt = SpringContext.getMapInfoService().getMapInfoEnt(getAccountId());
         return mapInfoEnt.getCurMapId();
@@ -53,7 +43,15 @@ public class Player {
     public void setCurMapId(int newMapId){
         MapInfoEnt mapInfoEnt = SpringContext.getMapInfoService().getMapInfoEnt(getAccountId());
         mapInfoEnt.setCurMapId(newMapId);
-        SpringContext.getMapInfoService().saveMapInfoEnt(getAccountId());
+        SpringContext.getMapInfoService().saveMapInfoEnt(mapInfoEnt);
+    }
+
+    public int getStatus(){
+        return playerEnt.getAlive();
+    }
+
+    public void setStatus(int status){
+        playerEnt.setAlive(status);
     }
 
     public Long getId(){

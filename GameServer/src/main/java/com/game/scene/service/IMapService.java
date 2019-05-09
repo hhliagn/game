@@ -8,7 +8,7 @@ public interface IMapService {
 
     MapEnt getMapEnt(int mapId);
 
-    void saveMapEnt(int mapId);
+    void saveMapEnt(MapEnt mapEnt);
 
     MapEnt getMapEntById(int mapId);
 

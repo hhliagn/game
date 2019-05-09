@@ -1,4 +1,4 @@
-package com.game.user.account.dao;
+package com.game.user.account.entity;
 
 import com.game.user.account.entity.AccountEnt;
 import org.hibernate.Query;

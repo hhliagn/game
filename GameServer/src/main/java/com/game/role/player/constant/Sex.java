@@ -1,13 +1,17 @@
 package com.game.role.player.constant;
 
 public enum  Sex {
-    MAN(1),
-    WOMAN(2);
 
-    private final int id;
+    MAN(1, "男"),
+    WOMAN(2, "女"),
+    ;
 
-    Sex(int id) {
+    private int id;
+    private String name;
+
+    Sex(int id, String name) {
         this.id = id;
+        this.name = name;
     }
 
     public Sex valueOf(int sexId){
@@ -21,5 +25,17 @@ public enum  Sex {
 
     public int getId() {
         return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 }

@@ -3,8 +3,6 @@ package com.game.role.player.entity;
 import com.game.SpringContext;
 import com.game.role.player.model.Player;
 import com.game.user.account.model.BaseAccountInfo;
-import org.springframework.stereotype.Component;
-
 import javax.persistence.*;
 import java.io.Serializable;
 import java.util.Date;
@@ -14,7 +12,7 @@ import java.util.Date;
 public class PlayerEnt implements Serializable {
 
     @Transient
-    private volatile Player player;
+    private Player player;
 
     @Id
     @Column(columnDefinition = "bigint default 0 comment '玩家Id'", nullable = false)
@@ -53,14 +51,19 @@ public class PlayerEnt implements Serializable {
         return playerEnt;
     }
 
-    public boolean doSerialize(){
-        return true;
+    public void doSerialize(){
+
     }
 
-    public boolean doDeserialize(){
+    public void doDeserialize(){
         BaseAccountInfo baseAccountInfo = SpringContext.getAccountService().getBaseAccountInfo(accountId);
         Player player = Player.valueOf(this, baseAccountInfo);
         this.setPlayer(player);
+    }
+
+    public boolean alive(){
+        if (alive == 0) return false;
+        if (alive == 1) return true;
         return true;
     }
 

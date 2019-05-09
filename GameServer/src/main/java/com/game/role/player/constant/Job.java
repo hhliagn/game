@@ -11,8 +11,8 @@ public enum Job {
     TAOIST(3, "道士"),
     ;
 
-    private final int value;
-    private final String name;
+    private int value;
+    private String name;
 
     private static Map<Integer, List<String>> job2NamesMap = new HashMap<>(3);
 

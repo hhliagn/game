@@ -1,4 +1,4 @@
-package com.game.user.mapInfo.dao;
+package com.game.user.mapInfo.entity;
 
 import com.game.scene.entity.MapEnt;
 import com.game.user.mapInfo.entity.MapInfoEnt;

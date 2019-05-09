@@ -1,4 +1,4 @@
-package com.game.core.id.dao;
+package com.game.core.id.entity;
 
 import com.game.core.id.entity.IdentifyEnt;
 import org.hibernate.Query;

@@ -1,10 +1,6 @@
 package com.game.user.account.model;
 
 import com.game.SpringContext;
-import com.game.user.account.entity.AccountEnt;
-
-import javax.persistence.Transient;
-import javax.transaction.Transactional;
 import java.util.Date;
 
 public class Account {

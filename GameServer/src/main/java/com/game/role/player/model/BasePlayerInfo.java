@@ -9,17 +9,6 @@ public class BasePlayerInfo {
     private int job;
     private int sex;
 
-    public void refreshInfo(Player player){
-        this.name = player.getName();
-        this.status = player.getStatus();
-        this.job = player.getJob();
-        this.sex = player.getSex();
-    }
-
-    public void refreshJobInfo(Player player){
-        this.job = player.getJob();
-    }
-
     public long getPlayerId() {
         return playerId;
     }

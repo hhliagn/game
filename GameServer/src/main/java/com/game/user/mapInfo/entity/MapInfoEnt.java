@@ -15,6 +15,14 @@ public class MapInfoEnt implements Serializable {
     private int curMapId;
     private int lastMapId;
 
+    public static MapInfoEnt valueOf(String accountId){
+        MapInfoEnt mapInfoEnt = new MapInfoEnt();
+        mapInfoEnt.setAccountId(accountId);
+        mapInfoEnt.setCurMapId(1);
+        mapInfoEnt.setLastMapId(1);
+        return mapInfoEnt;
+    }
+
     public int getId() {
         return id;
     }
