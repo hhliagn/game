@@ -20,9 +20,6 @@ public class PlayerEnt implements Serializable {
     @Column(columnDefinition = "bigint default 0 comment '玩家Id'", nullable = false)
     private long id;
 
-    //@Column(columnDefinition = "varchar(255) CHARSET SET utf8 COLLATE utf8_bin DEFAULT NULL comment '玩家姓名'")
-    //private String name;
-
     @Column(columnDefinition = "varchar(255) CHARSET SET utf8 COLLATE utf8_bin DEFAULT NULL comment '账号Id'")
     private String accountId;
 
@@ -38,16 +35,8 @@ public class PlayerEnt implements Serializable {
     @Column(columnDefinition = "int default 1 comment '性别'", nullable = false)
     private int sex;
 
-    //private volatile int level;
-
-    //private volatile long exp;
-
-    //private long levelUpTime;
-
     @Column(columnDefinition = "timestamp comment '创建玩家时间'")
     private Date createTime;
-
-    //private volatile long battleScore;
 
     public static PlayerEnt valueOf(long id, String accountId, String name, int job, int sex) {
         PlayerEnt playerEnt = new PlayerEnt();

@@ -20,10 +20,9 @@ public class PlayerManager {
 
     private int ACCOUNT_MAX_PLAYER = 5;
 
-    private ConcurrentHashMap<Long, BasePlayerInfo> id2BasePlayerInfos = new ConcurrentHashMap<>();
+    private Map<Long, BasePlayerInfo> id2BasePlayerInfos = new HashMap<>();
 
-    private ConcurrentHashMap<String, CopyOnWriteArrayList<BasePlayerInfo>> accountId2PlayerInfos
-            = new ConcurrentHashMap<>();
+    private Map<String, List<BasePlayerInfo>> accountId2PlayerInfos = new HashMap<>();
 
     public void loadAllPlayerInfo(){
         List<PlayerEnt> playerEntList = playerDao.loadAll();
@@ -58,15 +57,9 @@ public class PlayerManager {
     }
 
     public List<BasePlayerInfo> getOrCreateBasePlayerInfos(String accountId) {
-        CopyOnWriteArrayList<BasePlayerInfo> basePlayerInfos = accountId2PlayerInfos.get(accountId);
+        List<BasePlayerInfo> basePlayerInfos = accountId2PlayerInfos.get(accountId);
         if (basePlayerInfos == null){
-            basePlayerInfos = new CopyOnWriteArrayList<>();
-            CopyOnWriteArrayList<BasePlayerInfo> oldBasePlayerInfos
-                    = accountId2PlayerInfos.putIfAbsent(accountId, basePlayerInfos);
-
-            if (oldBasePlayerInfos != null){
-                basePlayerInfos = oldBasePlayerInfos;
-            }
+            basePlayerInfos = new ArrayList<>();
         }
         return basePlayerInfos;
     }

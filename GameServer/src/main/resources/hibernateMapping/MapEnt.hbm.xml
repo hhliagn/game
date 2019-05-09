@@ -3,13 +3,14 @@
         <!DOCTYPE hibernate-mapping PUBLIC
                 "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
                 "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
-<hibernate-mapping package="com.game.world.map.entity">
-<class name="com.game.world.service.map.entity.MapEnt" table="map">
-    <id name="id" column="id" type="int">
+<hibernate-mapping package="com.game.scene.entity">
+<class name="com.game.scene.entity.MapEnt" table="map">
+    <id name="mapId" column="id" type="int">
         <generator class="assigned"/>
     </id>
-    <property name="name" column="name" type="java.lang.String"/>
-    <property name="entityIdList" column="entityIdList" type="java.lang.String"/>
-    <property name="mapIdNearby" column="mapIdNearby" type="java.lang.String"/>
+    <property name="mapName" column="name" type="java.lang.String"/>
+    <property name="existNpcidsData" column="existNpcidsData" type="byte[]"/>
+    <property name="existMonsterIdsData" column="existMonsterIdsData" type="byte[]"/>
+    <property name="mapNearByIdsData" column="mapNearByIdsData" type="byte[]"/>
 </class>
 </hibernate-mapping>

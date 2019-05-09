@@ -13,6 +13,7 @@ public class Start {
 
         SpringContext.getGlobalService().onStart();
 
+        //netty server
         new Thread(new Runnable() {
             @Override
             public void run() {

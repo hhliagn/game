@@ -20,7 +20,7 @@
         <!--指定多个映射文件为-->
         <mapping resource="hibernateMapping/PlayerEnt.hbm.xml"/>
         <mapping resource="hibernateMapping/AccountEnt.hbm.xml"/>
-        <mapping resource="hibernateMapping/EntityEnt.hbm.xml"/>
+        <!--<mapping resource="hibernateMapping/EntityEnt.hbm.xml"/>-->
         <mapping resource="hibernateMapping/IdentifyEnt.hbm.xml"/>
         <mapping resource="hibernateMapping/MapEnt.hbm.xml"/>
         <mapping resource="hibernateMapping/MapInfoEnt.hbm.xml"/>
